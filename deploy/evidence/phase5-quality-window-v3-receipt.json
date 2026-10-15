@@ -1,0 +1,139 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "3da778b8-2774-4f54-9632-b71d66d02ab4",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/3da778b8-2774-4f54-9632-b71d66d02ab4/jobs/instances/f1b2c50a-c34f-4da1-b06f-f6176be61e72",
+  "status": "COMPLETED",
+  "job": {
+    "id": "f1b2c50a-c34f-4da1-b06f-f6176be61e72",
+    "itemId": "3da778b8-2774-4f54-9632-b71d66d02ab4",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "20d64fdc-b3a0-4d6c-97b9-714bd36a618d",
+    "startTimeUtc": "2026-10-11T10:51:04.1404904",
+    "endTimeUtc": "2026-10-11T10:54:22.5175997",
+    "exit_result": {
+      "all_filtered_metrics": {
+        "bronze_count": 4,
+        "counts": {
+          "FILTERED": 4,
+          "PASSED": 0,
+          "REJECTED": 0
+        },
+        "rules": [
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 0,
+            "rule_id": "DQ-CUST-001",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          }
+        ]
+      },
+      "business_data_written": false,
+      "metrics": {
+        "bronze_count": 4,
+        "counts": {
+          "FILTERED": 1,
+          "PASSED": 1,
+          "REJECTED": 2
+        },
+        "rules": [
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 3,
+            "rule_id": "DQ-CUST-001",
+            "threshold_percent": 100,
+            "violation_percent": 66.66666666666667,
+            "violations": 2
+          }
+        ]
+      },
+      "phase5_version": "0.3.0",
+      "production_release_accepted": false,
+      "scalar_regression": {
+        "accounting": {
+          "bronze_count": 5,
+          "counts": {
+            "FILTERED": 1,
+            "PASSED": 3,
+            "REJECTED": 1
+          },
+          "rules": [
+            {
+              "action": "FAIL_BATCH",
+              "breached": false,
+              "population": 4,
+              "rule_id": "key_present",
+              "threshold_percent": 25,
+              "violation_percent": 25.0,
+              "violations": 1
+            },
+            {
+              "action": "FAIL_BATCH",
+              "breached": false,
+              "population": 4,
+              "rule_id": "key_nonblank",
+              "threshold_percent": 25,
+              "violation_percent": 25.0,
+              "violations": 1
+            },
+            {
+              "action": "CONTINUE",
+              "breached": false,
+              "population": 4,
+              "rule_id": "name_nonblank",
+              "threshold_percent": 100,
+              "violation_percent": 25.0,
+              "violations": 1
+            }
+          ]
+        },
+        "fingerprints": {
+          "FILTERED": "c8ec6b1cb8bfecbb318bcbdccc224c9b5d7194af3d227ef580915d974258fe27",
+          "PASSED": "0805bc92cd3f3d10d31e72bed448e3d9e4bfef848480491172c225cb6a450d7d",
+          "REJECTED": "37a68e86b86beeed4e680387df0111e54d450a2d9d05e58eec00fb641604310a"
+        },
+        "new_runtime_committed_as_old_runtime": false,
+        "original_commits": {
+          "BRONZE": "e085ca73f0d021bf58dcb3043402257d45aff233b9940efe5e87aaa2f32c6b55",
+          "QUALITY": "539fae8c54e89b41275dea518f3100c85fd5f8372290df72a0a0883ed49d40a1"
+        },
+        "targets_unchanged": true
+      },
+      "scope": "PHASE5_QUALITY_POST_FILTER_WINDOW",
+      "status": "SUCCEEDED",
+      "terminal_records": {
+        "record-0": [
+          "PASSED",
+          [],
+          []
+        ],
+        "record-1": [
+          "FILTERED",
+          [],
+          []
+        ],
+        "record-2": [
+          "REJECTED",
+          [
+            "DUPLICATE_CUSTOMER"
+          ],
+          []
+        ],
+        "record-3": [
+          "REJECTED",
+          [
+            "DUPLICATE_CUSTOMER"
+          ],
+          []
+        ]
+      },
+      "threshold_failure": "Quality thresholds blocked: DQ-CUST-001:FAIL_BATCH"
+    }
+  }
+}

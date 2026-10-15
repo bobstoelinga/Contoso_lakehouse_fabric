@@ -1,0 +1,1 @@
+SELECT holiday_date, holiday_name, local_name, country_code, global_holiday, holiday_types, valid_from AS version_valid_from, valid_to AS version_valid_to, is_current, _record_source AS record_source FROM {processing}.business_vault.ref_nager_holidays_nl_h

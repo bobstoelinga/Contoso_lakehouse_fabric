@@ -1,0 +1,79 @@
+{
+  "addendum_id": "C0-MAPPED-RELATIONSHIPS-01",
+  "base_contract_full_sha256": "0893cf612d1fd9ca639c23bf8807013d8b2cac198e6dce4a1f7b39cfaba36ae5",
+  "fabric_preparation_full_sha256": "7d63676f435fc107132bee97bc5ea33ddf9aeca7e1bffca6f8c92877ab8ea717",
+  "cross_platform_matrix_full_sha256": "4e5f842048ed8586e707bf719fdeef5103fe6392cf51eae6757ac55779f5e01c",
+  "prior_pins_unchanged": true,
+  "canonicalization": "fabric_etl.contracts.canonical_json-v1",
+  "digest_location": "c0-mapped-relationship-addendum.sha256.json",
+  "supersedes": {
+    "fact_derived_aliases": "Use mapped_product_key/mapped_customer_key/mapped_employee_key on BOTH platforms, replacing unprefixed derived aliases in cross-platform matrix",
+    "fact_business_array": "Physical and mapped relationship columns must be separate arrays, not a single undifferentiated projection",
+    "fact_natural_grain_product_component": "mapped_product_key replaces derived product_key; customer/employee relationships are attributes, not driving grain"
+  },
+  "physical_business_columns": {
+    "source": "c0-fabric-schema-preparation.json products[].ordered_business_columns",
+    "source_pin": "7d63676f435fc107132bee97bc5ea33ddf9aeca7e1bffca6f8c92877ab8ea717",
+    "order": "Use the eleven exact arrays without mutation",
+    "peer_review_status": "CROSS_PLATFORM_PHYSICAL_BUSINESS_COLUMN_NAMES_ORDER_MATCH_LOCAL",
+    "peer_review_scope": "Fabric preparation content read-only versus local DB physical projections; not full schema/output validation"
+  },
+  "mapped_relationship_business_columns": [
+    {"name": "mapped_product_key", "data_type": "STRING", "nullable_declared": false, "physical_fk": "product_hk", "hub": "HUB_PRODUCT", "hub_hash": "hk_product", "hub_natural_key": "product_key"},
+    {"name": "mapped_customer_key", "data_type": "STRING", "nullable_declared": true, "physical_fk": "customer_hk", "hub": "HUB_CUSTOMER", "hub_hash": "hk_customer", "hub_natural_key": "customer_key"},
+    {"name": "mapped_employee_key", "data_type": "STRING", "nullable_declared": true, "physical_fk": "employee_hk", "hub": "HUB_EMPLOYEE", "hub_hash": "hk_employee", "hub_natural_key": "employee_key"}
+  ],
+  "fact_products": {
+    "GH_FCT_SALES": {"natural_grain": ["order_key", "order_line_number", "mapped_product_key"], "historical": true},
+    "GC_FCT_SALES": {"natural_grain": ["order_key", "order_line_number", "mapped_product_key"], "historical": false},
+    "GH_FCT_RETURNS": {"natural_grain": ["return_key", "order_key", "order_line_number", "mapped_product_key"], "historical": true},
+    "GC_FCT_RETURNS": {"natural_grain": ["return_key", "order_key", "order_line_number", "mapped_product_key"], "historical": false}
+  },
+  "non_fact_relationship_arrays": "Empty; physical dimension natural keys remain in physical_business_columns",
+  "comparison_array_order": ["physical_business_columns", "mapped_relationship_business_columns"],
+  "mapping_rules": {
+    "source": "Unique committed as-of hub/link maps per namespace/type, never deleted-filtered GC dimensions",
+    "null_fk": "Preserve null natural key",
+    "non_null_fk_without_unique_match": "MAPPING_ERROR",
+    "ambiguous_or_missing_map": "Report integrity failure, no null fallback/drop/dedupe/winner/many-to-many rescue",
+    "all_physical_hash_columns": "Explicit namespace/type bijection and FK/line identity checks; no suffix-based comparator exclusion",
+    "fact_consistency": ["order_hk versus physical order_key", "return_hk versus physical return_key for returns", "sales and return raw-link grains"],
+    "runtime_mapping_integrity": "NOT_MEASURED",
+    "derived_nullability_provenance": "FK and hub-key declarations only; not observed mapping integrity"
+  },
+  "history_alignment": {
+    "representation": "Natural grain plus attribute_version plus logical_event_delivery",
+    "physical_identity": "Retain (hk,valid_from), actual timestamps, valid_to, is_current and row multiplicity",
+    "event_identity_source": "Committed event lineage, not deduped attribute hash",
+    "a_b_a": "Keep three events even when first and third business values match",
+    "future_bv_rerouting": false
+  },
+  "provenance": {
+    "databricks_review": {
+      "preparation_content": "FILE_CONTENT_INSPECTED",
+      "designation_content": "FILE_CONTENT_INSPECTED",
+      "preparation_digest": "DIGEST_PEER_REPORTED_NOT_RECOMPUTED",
+      "fabric_release_types_nullability": "PEER_REPORTED_NOT_INDEPENDENTLY_READ",
+      "fabric_test_results": "PEER_REPORTED_NOT_REPEATED"
+    },
+    "schema_pairing": {
+      "fabric": "Locally validated pinned release declarations",
+      "databricks_gh": "Peer-reported cached API types/nullability",
+      "databricks_gc": "REPO_DECLARED; full runtime nullability UNKNOWN",
+      "pairing_validation": "Fabric-session local declaration consistency check, not independent DB validation or stored-schema pass"
+    },
+    "designation": "HUMAN_DESIGNATED_TEST_REFERENCE",
+    "reference_gate": "DESIGNATION_RESOLVED_RELEASE_AND_METADATA_UNVERIFIED"
+  },
+  "rate": {
+    "nominal_types": "DECIMAL(9,6) both platforms",
+    "fabric_stored_type": "NOT_FRESHLY_INSPECTED",
+    "numerical_scale": 6,
+    "float_or_tolerance": false,
+    "full_stored_schema_pass": false
+  },
+  "calendar_locale": "UNVERIFIED; exact month/day text, no normalization",
+  "full_comparator_pin": "PENDING",
+  "execution_status": "HOLD",
+  "new_remote_reads_or_runs": false
+}

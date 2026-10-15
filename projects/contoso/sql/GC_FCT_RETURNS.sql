@@ -1,0 +1,1 @@
+SELECT return_line_hk, return_hk, order_hk, product_hk, customer_hk, employee_hk, return_key, order_key, order_line_number, return_date, return_date_key, return_status, return_reason_code, return_quantity, refund_amount, currency_code FROM {gold}.historical.fct_returns_hist WHERE is_current

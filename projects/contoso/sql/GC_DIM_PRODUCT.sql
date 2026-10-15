@@ -1,0 +1,1 @@
+SELECT product_hk, product_key, product_name, product_category, product_subcategory, brand, unit_cost, unit_price, unit_margin, is_discontinued, valid_from AS last_changed_at FROM {gold}.historical.dim_product_hist WHERE is_current AND NOT is_deleted

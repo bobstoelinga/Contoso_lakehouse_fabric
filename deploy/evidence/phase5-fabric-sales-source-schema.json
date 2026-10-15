@@ -1,0 +1,278 @@
+﻿{
+    "status":  "SOURCE_SCHEMA_VERIFIED",
+    "scope":  "READ_ONLY_FABRIC_SALES_SOURCE_SCHEMA",
+    "source_object_id":  "FABRIC_SALES.ORDER_LINES",
+    "server":  "qugtl6ion76ufa4fuwoc6cpmdi-rqr26cxjvolujgkdq6tknur6xu.database.fabric.microsoft.com",
+    "database":  "Contoso_database-a2e53891-642a-4a0c-9a7f-c72e1351ff57",
+    "identity_mode":  "DELEGATED_AZURE_CLI_SCHEMA_PROBE_ONLY",
+    "business_rows_extracted":  false,
+    "connection_alias_activated":  false,
+    "started_at_utc":  "2026-10-11T10:16:44.5026827Z",
+    "columns":  [
+                    {
+                        "name":  "sales_order_detail_id",
+                        "ordinal":  0,
+                        "type":  "int",
+                        "nullable":  false,
+                        "precision":  10,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "sales_order_id",
+                        "ordinal":  1,
+                        "type":  "int",
+                        "nullable":  false,
+                        "precision":  10,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "product_id",
+                        "ordinal":  2,
+                        "type":  "int",
+                        "nullable":  false,
+                        "precision":  10,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "customer_id",
+                        "ordinal":  3,
+                        "type":  "int",
+                        "nullable":  false,
+                        "precision":  10,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "bill_to_address_id",
+                        "ordinal":  4,
+                        "type":  "int",
+                        "nullable":  true,
+                        "precision":  10,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "ship_to_address_id",
+                        "ordinal":  5,
+                        "type":  "int",
+                        "nullable":  true,
+                        "precision":  10,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "order_quantity",
+                        "ordinal":  6,
+                        "type":  "smallint",
+                        "nullable":  false,
+                        "precision":  5,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "unit_price",
+                        "ordinal":  7,
+                        "type":  "money",
+                        "nullable":  false,
+                        "precision":  19,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "unit_price_discount",
+                        "ordinal":  8,
+                        "type":  "money",
+                        "nullable":  false,
+                        "precision":  19,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "order_date",
+                        "ordinal":  9,
+                        "type":  "datetime",
+                        "nullable":  false,
+                        "precision":  23,
+                        "scale":  3
+                    },
+                    {
+                        "name":  "due_date",
+                        "ordinal":  10,
+                        "type":  "datetime",
+                        "nullable":  false,
+                        "precision":  23,
+                        "scale":  3
+                    },
+                    {
+                        "name":  "ship_date",
+                        "ordinal":  11,
+                        "type":  "datetime",
+                        "nullable":  true,
+                        "precision":  23,
+                        "scale":  3
+                    },
+                    {
+                        "name":  "order_status_code",
+                        "ordinal":  12,
+                        "type":  "tinyint",
+                        "nullable":  false,
+                        "precision":  3,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "is_online_order",
+                        "ordinal":  13,
+                        "type":  "bit",
+                        "nullable":  true,
+                        "precision":  255,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "subtotal_amount",
+                        "ordinal":  14,
+                        "type":  "money",
+                        "nullable":  false,
+                        "precision":  19,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "tax_amount",
+                        "ordinal":  15,
+                        "type":  "money",
+                        "nullable":  false,
+                        "precision":  19,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "freight_amount",
+                        "ordinal":  16,
+                        "type":  "money",
+                        "nullable":  false,
+                        "precision":  19,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "customer_first_name",
+                        "ordinal":  17,
+                        "type":  "nvarchar",
+                        "nullable":  true,
+                        "precision":  255,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "customer_last_name",
+                        "ordinal":  18,
+                        "type":  "nvarchar",
+                        "nullable":  true,
+                        "precision":  255,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "bill_to_city",
+                        "ordinal":  19,
+                        "type":  "nvarchar",
+                        "nullable":  false,
+                        "precision":  255,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "bill_to_postal_code",
+                        "ordinal":  20,
+                        "type":  "nvarchar",
+                        "nullable":  false,
+                        "precision":  255,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "ship_to_city",
+                        "ordinal":  21,
+                        "type":  "nvarchar",
+                        "nullable":  false,
+                        "precision":  255,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "ship_to_postal_code",
+                        "ordinal":  22,
+                        "type":  "nvarchar",
+                        "nullable":  false,
+                        "precision":  255,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "product_name",
+                        "ordinal":  23,
+                        "type":  "nvarchar",
+                        "nullable":  true,
+                        "precision":  255,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "product_number",
+                        "ordinal":  24,
+                        "type":  "nvarchar",
+                        "nullable":  false,
+                        "precision":  255,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "product_color",
+                        "ordinal":  25,
+                        "type":  "nvarchar",
+                        "nullable":  true,
+                        "precision":  255,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "product_standard_cost",
+                        "ordinal":  26,
+                        "type":  "money",
+                        "nullable":  false,
+                        "precision":  19,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "product_list_price",
+                        "ordinal":  27,
+                        "type":  "money",
+                        "nullable":  false,
+                        "precision":  19,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "product_category_name",
+                        "ordinal":  28,
+                        "type":  "nvarchar",
+                        "nullable":  true,
+                        "precision":  255,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "product_model_name",
+                        "ordinal":  29,
+                        "type":  "nvarchar",
+                        "nullable":  true,
+                        "precision":  255,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "product_description",
+                        "ordinal":  30,
+                        "type":  "nvarchar",
+                        "nullable":  true,
+                        "precision":  255,
+                        "scale":  255
+                    },
+                    {
+                        "name":  "source_last_modified_at",
+                        "ordinal":  31,
+                        "type":  "datetime",
+                        "nullable":  true,
+                        "precision":  23,
+                        "scale":  3
+                    },
+                    {
+                        "name":  "is_deleted",
+                        "ordinal":  32,
+                        "type":  "bit",
+                        "nullable":  true,
+                        "precision":  255,
+                        "scale":  255
+                    }
+                ],
+    "finished_at_utc":  "2026-10-11T10:17:12.2394850Z"
+}

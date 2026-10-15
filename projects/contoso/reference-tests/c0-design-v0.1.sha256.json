@@ -1,0 +1,9 @@
+{
+  "contract_file": "c0-design-v0.1.json",
+  "design_id": "C0-DESIGN-v0.1",
+  "canonicalization": "fabric_etl.contracts.canonical_json-v1",
+  "full_sha256": "0893cf612d1fd9ca639c23bf8807013d8b2cac198e6dce4a1f7b39cfaba36ae5",
+  "canonical_bytes": 16309,
+  "status": "DESIGN_PINNED_EXECUTION_HOLD",
+  "hash_is_not_raw_pretty_json_file_hash": true
+}

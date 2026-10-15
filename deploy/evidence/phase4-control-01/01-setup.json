@@ -1,0 +1,23 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "c3a033d1-850e-49c6-92b6-f076b0e269ca",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/c3a033d1-850e-49c6-92b6-f076b0e269ca/jobs/instances/49f43cbd-f771-4600-995b-a29ff9a1aed8",
+  "parameters_fingerprint": "c8e60f1207e0d4d5bc107ee4145b52da3697f29d993228b76341d6f467aaadd4",
+  "status": "Failed",
+  "job": {
+    "id": "49f43cbd-f771-4600-995b-a29ff9a1aed8",
+    "itemId": "c3a033d1-850e-49c6-92b6-f076b0e269ca",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Failed",
+    "failureReason": {
+      "requestId": "2768bd26-b09d-4ff2-9079-927ffc6ee54f",
+      "errorCode": "System_Cancelled_Session_Statements_Failed",
+      "message": "System cancelled the Spark session due to statement execution failures",
+      "isRetriable": false
+    },
+    "rootActivityId": "740dbe6e-f538-4829-b0c5-4b37326ada5e",
+    "startTimeUtc": "2026-10-10T13:11:30.6550033",
+    "endTimeUtc": "2026-10-10T13:14:23.9504834"
+  }
+}

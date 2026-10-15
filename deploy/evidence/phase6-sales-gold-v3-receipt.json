@@ -1,0 +1,559 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "2e56d882-1b62-4cc8-959f-2b240c75bc4c",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/2e56d882-1b62-4cc8-959f-2b240c75bc4c/jobs/instances/bd24d09f-f7f9-409a-a0f0-05c6e1fb2a5b",
+  "status": "COMPLETED",
+  "job": {
+    "id": "bd24d09f-f7f9-409a-a0f0-05c6e1fb2a5b",
+    "itemId": "2e56d882-1b62-4cc8-959f-2b240c75bc4c",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "a3482dfb-dec2-4513-b1e4-c706114caf8f",
+    "startTimeUtc": "2026-10-12T09:07:24.4520348",
+    "endTimeUtc": "2026-10-12T09:33:18.9517218",
+    "exit_result": {
+      "business_data_written": false,
+      "consumer_published": false,
+      "deliveries": [
+        {
+          "audit_output_verified": true,
+          "batch_id": "be2008c7-5d85-5692-ade3-3eb78a39d457",
+          "delivery_number": 1,
+          "expected_output_verified": true,
+          "gold": {
+            "commit": {
+              "commit_id": "b003bdbfd68b8d4044efa26671a38982669c6347b31c8f938faa9c2c6eed89ca",
+              "status": "VERIFIED"
+            },
+            "consumer_published": false,
+            "cutoff": "2026-10-12T05:58:21.042199+00:00",
+            "input_commit_ids": [
+              "0a92b9fdff7f500a32e47c7d6266e6b6c1c9494238b1b0920528c81c78f044b3",
+              "2503b43092231856bcb23bedfd7d8ab91fd93b3c8abb0460dfe4173f92abe6ee",
+              "3c7e552879f1b3336a1b67f3e14c18a3b1261247332d6cc513128619634727c8",
+              "438e1b936bc21b452670c9e166e23437d65def3df616f79661d90abcd6f3bbd7",
+              "589da4468e8aa1c3ade76cf442019ef31eb59540c732c14b141f023ba99ec39e",
+              "5d5513c3b5abab4ba6f25e36516ed82fb94a9d42986e27dc039cee56fbbdbe5e",
+              "623e8a55ddecb31ca0699bf03965a2a056649f83835b54c71efdd3d86f4da630",
+              "7498b34ebdff21899284bca2228f1224543a0df02a02e4ac0411e07fb03a1757",
+              "7dbdd43c9cb103cdb5b9ab411766b9c1e1393377c7047f3c5ae494fd86432206",
+              "86fe53b8144272d5a984cbc425ce43d13b9541d0f43082317b9c5c84f65aa097",
+              "87bba0142a06ac843cd0cb4a9b2dfab2556c083db0a5f52e840222c113e36bf1",
+              "a2e6c6e15a6086a68828b7fbc16161c2da14d84258fc516b28f76d053ab5d478",
+              "aa045ba9da078a0c699eb344ba36626f198980096e319c54a31a7e7ecedc9119",
+              "adc406c26ffda5561a0c20b5d1fe7d6dd7267c26500e91454ab57404ef850133",
+              "be7f5a81a00f52f73437555aa620d62783495d81a222757ed5cbaf3d8d21358b",
+              "da4e8cd8aaddfe6040b9910582d7a7f3f2bec71b822bc676611ac45d04ca4861",
+              "e1c90e4c67d90a26d3ebf6e315b2d56bee9c1c92353a24a7bef5a30a9cc22384",
+              "e820864098e9feb53837b486120e818b6ee18764a3b96ac2608bc303c2ecd868"
+            ],
+            "outputs": {
+              "GC_DIM_CUSTOMER": {
+                "inserted_count": 0,
+                "output_fingerprint": "246984560e2ac4b3d18ccd9405cc713c6d3cf828880deaee9d863f75ccea9360",
+                "record_count": 1,
+                "retry_count": 1,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_dim_customer`"
+              },
+              "GC_DIM_DATE": {
+                "inserted_count": 0,
+                "output_fingerprint": "d2276772f64984b08df5fe76f0963944656a894af6f7d3e4abb2865969357811",
+                "record_count": 4018,
+                "retry_count": 4018,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_dim_date`"
+              },
+              "GC_DIM_EMPLOYEE": {
+                "inserted_count": 0,
+                "output_fingerprint": "87e3fe5748b33d3b939d774e7c84b859a1fbe76691d639b3e59a05c10d299123",
+                "record_count": 1,
+                "retry_count": 1,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_dim_employee`"
+              },
+              "GC_DIM_PRODUCT": {
+                "inserted_count": 0,
+                "output_fingerprint": "51f76d3cf775b6dfaa58bcbad8e2f21b1c34bfb0ca4519d9f73dac64b5d989be",
+                "record_count": 1,
+                "retry_count": 1,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_dim_product`"
+              },
+              "GC_FCT_RETURNS": {
+                "inserted_count": 0,
+                "output_fingerprint": "e61d6bb3d726c87e82cab08c2575f92a43d6db7362628991fd2c83618d3a9717",
+                "record_count": 1,
+                "retry_count": 1,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_fct_returns`"
+              },
+              "GC_FCT_SALES": {
+                "inserted_count": 0,
+                "output_fingerprint": "adb3eb92fda5c98e86dad670e95c0a9953ba43e83ea00733d3edb1ac0cf245fc",
+                "record_count": 1,
+                "retry_count": 1,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_fct_sales`"
+              },
+              "GH_DIM_CUSTOMER": {
+                "inserted_count": 0,
+                "output_fingerprint": "042f724369984b2f7c02e10309d8d41b2c68ff1de21e852c111884b61044fd1c",
+                "record_count": 1,
+                "retry_count": 1,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_dim_customer`"
+              },
+              "GH_DIM_EMPLOYEE": {
+                "inserted_count": 0,
+                "output_fingerprint": "ebc5bce8a496cc574cef058328b8ce32e4df6b8ddcfb6d8dc10e5c78468e4026",
+                "record_count": 1,
+                "retry_count": 1,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_dim_employee`"
+              },
+              "GH_DIM_PRODUCT": {
+                "inserted_count": 0,
+                "output_fingerprint": "717a5d0557e11b052af40a49338ae6010cc9beac65daca18d0774aea85cbe60c",
+                "record_count": 1,
+                "retry_count": 1,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_dim_product`"
+              },
+              "GH_FCT_RETURNS": {
+                "inserted_count": 0,
+                "output_fingerprint": "f47eb7966124b4d8d4141206f5581b75695a125f2fa54e92fce504a1f3ca315a",
+                "record_count": 1,
+                "retry_count": 1,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_fct_returns`"
+              },
+              "GH_FCT_SALES": {
+                "inserted_count": 0,
+                "output_fingerprint": "af1cfb562e792e43c9d4391e330fc93848dd230da491b48d593189be2bd29e7e",
+                "record_count": 1,
+                "retry_count": 1,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_fct_sales`"
+              }
+            },
+            "product_release_id": "b4f8cd69444a29191ef0ec30f5d83d51dd53911e4a0d8a087e3e54da565b1db7",
+            "query_sha256": {
+              "GC_DIM_CUSTOMER": "36d97e53e390820df58c8d3138e64d4bbccb24bf5716d32e9e22166e0cdf6541",
+              "GC_DIM_DATE": "83f96acf57d2babc48a5680e402b215dc56b732f96eb415f80954f3b289a8e2c",
+              "GC_DIM_EMPLOYEE": "2fffd9f666013909523d2a95b6c9f1a63fb9506965133ed7f5cba3ea05f819c9",
+              "GC_DIM_PRODUCT": "01b08640513ce4c95b88da8456f07d3cdddb9aaf304835fe193780e0c23104d9",
+              "GC_FCT_RETURNS": "9c6116abf799673fb0b3e1718c3aa468c765ae2660d25260f2f9c94e45ea1944",
+              "GC_FCT_SALES": "973804cb1d4c7d7e59e1628309fac5e24537425e1f0d2ccb74f4ac1e33ba8908",
+              "GH_DIM_CUSTOMER": "121206773aaffe59880a0dff85ba14e6d82299c341de58d12a5c2774fd98dab2",
+              "GH_DIM_EMPLOYEE": "38dedff917d2cff0c7207f95918ad34aea4f0b7b4a1b56b72888596d44907b2f",
+              "GH_DIM_PRODUCT": "ee3fc3bfc18a7755e263ef65c8643320defbd421b350075999a25055261e37ef",
+              "GH_FCT_RETURNS": "2929561e9663c94fe9b29f4e5a47bfdc5b521407cd1da826fb734c700e2c084b",
+              "GH_FCT_SALES": "90232dc0b8d1b5d554a6899ef6d8f7187b4af7a5b46dcea7f4efe72f37414688"
+            }
+          },
+          "pit": {
+            "as_of": "2026-10-12T05:58:21.042199+00:00",
+            "commit": {
+              "commit_id": "d667c0f54a374fa2f6e10763a5b7907d0350ab3706efdc733360b6bf36bf42d3",
+              "status": "VERIFIED"
+            },
+            "input_commit_ids": [
+              "0a92b9fdff7f500a32e47c7d6266e6b6c1c9494238b1b0920528c81c78f044b3",
+              "7498b34ebdff21899284bca2228f1224543a0df02a02e4ac0411e07fb03a1757",
+              "e820864098e9feb53837b486120e818b6ee18764a3b96ac2608bc303c2ecd868"
+            ],
+            "output": {
+              "inserted_count": 0,
+              "output_fingerprint": "7b2c298340f83be588504482f148deb49868c2ee403c8b053e9d7858ca5f5018",
+              "record_count": 1,
+              "retry_count": 1,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase6_pit_customer`"
+            }
+          },
+          "publication": {
+            "active_release_id": "b4f8cd69444a29191ef0ec30f5d83d51dd53911e4a0d8a087e3e54da565b1db7",
+            "generation": 1,
+            "status": "ACTIVATED"
+          }
+        },
+        {
+          "audit_output_verified": true,
+          "batch_id": "035cffd2-9ee0-51db-9162-129bbc0a2ce7",
+          "delivery_number": 2,
+          "expected_output_verified": true,
+          "gold": {
+            "commit": {
+              "commit_id": "b9eb9e1d7e796d170b02031ac0085a46887561aba07f425ac0fb1dc6392f6a7c",
+              "status": "COMMITTED"
+            },
+            "consumer_published": false,
+            "cutoff": "2026-10-12T06:06:26.014796+00:00",
+            "input_commit_ids": [
+              "0a92b9fdff7f500a32e47c7d6266e6b6c1c9494238b1b0920528c81c78f044b3",
+              "2503b43092231856bcb23bedfd7d8ab91fd93b3c8abb0460dfe4173f92abe6ee",
+              "288973b82d03d2e175e110f886f8653e4103889e4c38dafbeb05b6f1227f0ae9",
+              "3032f90f98b219a40e30cee70554be6c22bf8f4b5a6eaa6dfd00d6fdf15d2fae",
+              "3c7e552879f1b3336a1b67f3e14c18a3b1261247332d6cc513128619634727c8",
+              "438e1b936bc21b452670c9e166e23437d65def3df616f79661d90abcd6f3bbd7",
+              "480f83f17be324c947c65b2efdd435255da7d934cbb765bcdbb238642bb179ff",
+              "589da4468e8aa1c3ade76cf442019ef31eb59540c732c14b141f023ba99ec39e",
+              "5d5513c3b5abab4ba6f25e36516ed82fb94a9d42986e27dc039cee56fbbdbe5e",
+              "623e8a55ddecb31ca0699bf03965a2a056649f83835b54c71efdd3d86f4da630",
+              "703462d2a58fcb50b45526c74ab8f2295047ae55cdd9251cabc080cf1d2bbc87",
+              "71555a0c85bd9a0cf70b0ceba05e83c835afef725a3ff18ba95751e13dae5693",
+              "7498b34ebdff21899284bca2228f1224543a0df02a02e4ac0411e07fb03a1757",
+              "7b1553e1560ad8ae96b94cdb648f988eab8a5bad3540c19a67c3fa5d8fc356c9",
+              "7d3edbf690a69bc3b222f2a7b3add30d7a98e40e048bbded50aa21d2c501fed7",
+              "7dbdd43c9cb103cdb5b9ab411766b9c1e1393377c7047f3c5ae494fd86432206",
+              "81d338951b8b2a4fbcb8459b2bdf379ebc6a3ba6943e59cb72ec86fbcc761437",
+              "86fe53b8144272d5a984cbc425ce43d13b9541d0f43082317b9c5c84f65aa097",
+              "87a1a2ab018ab5e7ef7d719662a8548a02e0194b3e13c2ca58315ece64df797a",
+              "87bba0142a06ac843cd0cb4a9b2dfab2556c083db0a5f52e840222c113e36bf1",
+              "96305bab416399c40054ca48b2868e08818eecbafa62607b44d2d789d6580d97",
+              "9b1ad1722619e0b04dea2912f6a5b2a3f0bb77a3b099d360a91d726ad7b803db",
+              "a2e6c6e15a6086a68828b7fbc16161c2da14d84258fc516b28f76d053ab5d478",
+              "aa045ba9da078a0c699eb344ba36626f198980096e319c54a31a7e7ecedc9119",
+              "adc406c26ffda5561a0c20b5d1fe7d6dd7267c26500e91454ab57404ef850133",
+              "ba7f2fdc7cc2a03778bcd314e57af96a002ea7f79c5524ebaa411fd2ecb36bc8",
+              "be7f5a81a00f52f73437555aa620d62783495d81a222757ed5cbaf3d8d21358b",
+              "c30970b4412031788607542b2a4c3055bae3a32501a7ff9c9fd0a15015cddf27",
+              "cb326250f08d78c42758a7ff47d24a653530e889f5030a31fa52589faac4d394",
+              "d368ec62cb504a41280143d57bd18be76433983c239f5448a55a82928d506ebb",
+              "da4e8cd8aaddfe6040b9910582d7a7f3f2bec71b822bc676611ac45d04ca4861",
+              "ddb9a54df965d1d84b9009a623563aa7f86b6595a59171fedeea31310f63b4e1",
+              "e1c90e4c67d90a26d3ebf6e315b2d56bee9c1c92353a24a7bef5a30a9cc22384",
+              "e59c51bc4fa8093285900382b73a5fcebe574773cdf17e15103e3cb3ba2fbb6d",
+              "e820864098e9feb53837b486120e818b6ee18764a3b96ac2608bc303c2ecd868",
+              "fb976cc72e8223dfdc43a956cc6c733cfee0e8ca641265d72a3c678a11d10af8"
+            ],
+            "outputs": {
+              "GC_DIM_CUSTOMER": {
+                "inserted_count": 1,
+                "output_fingerprint": "a723b6e68ea16cb6eb3aa1ec1a1909756e79c1db64282550a9f5c54902aa4a29",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_dim_customer`"
+              },
+              "GC_DIM_DATE": {
+                "inserted_count": 4018,
+                "output_fingerprint": "59b05f0b8fc448e923865688e51c9d0176c909d0a0af718da9e750a126747589",
+                "record_count": 4018,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_dim_date`"
+              },
+              "GC_DIM_EMPLOYEE": {
+                "inserted_count": 1,
+                "output_fingerprint": "14bd8e657dd9fedcde6187f023e75ba62283d68b79c2fe354dfb0d6e2e403300",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_dim_employee`"
+              },
+              "GC_DIM_PRODUCT": {
+                "inserted_count": 1,
+                "output_fingerprint": "87f82ec31c68460e86294278d9cc09f6cc77c15488bf969127e7733e5a5371e6",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_dim_product`"
+              },
+              "GC_FCT_RETURNS": {
+                "inserted_count": 1,
+                "output_fingerprint": "8a030e011b5d0e9e80f2de1f1ec849a80439f935c316fdda2157f51726c09d0f",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_fct_returns`"
+              },
+              "GC_FCT_SALES": {
+                "inserted_count": 1,
+                "output_fingerprint": "f5e76e9c1a2d9eadaa1ac43cf4023f1ae8b10b1f8db11f4bbd293cda9870f3b1",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_fct_sales`"
+              },
+              "GH_DIM_CUSTOMER": {
+                "inserted_count": 0,
+                "output_fingerprint": "6c94c64e3bd60f7f7ca1fbe64547e72bb6e8fdb232497168e42c3c5059fae2a2",
+                "record_count": 2,
+                "retry_count": 2,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_dim_customer`"
+              },
+              "GH_DIM_EMPLOYEE": {
+                "inserted_count": 1,
+                "output_fingerprint": "e56cc4b0bef91e77df79eb803bc12046b22bc4acf537c97962a90402276aa125",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_dim_employee`"
+              },
+              "GH_DIM_PRODUCT": {
+                "inserted_count": 2,
+                "output_fingerprint": "e373b2d168fa6edfa1e692e3e4c0f8182ba9b3bc1b163a883e4b59b94e738b2c",
+                "record_count": 2,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_dim_product`"
+              },
+              "GH_FCT_RETURNS": {
+                "inserted_count": 1,
+                "output_fingerprint": "73e081152f68dc18bb891e6c5352a5cdcc6f424793b03139244b4158cb5a9ce0",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_fct_returns`"
+              },
+              "GH_FCT_SALES": {
+                "inserted_count": 1,
+                "output_fingerprint": "ea186e6f3f61477311f579e34ee78b3a12667c4e85a7ae5f48213b460b42466b",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_fct_sales`"
+              }
+            },
+            "product_release_id": "a1eeb784ec2a099a44be83aae26a9404e68b4590cec2f26dd2bd33706b983ac9",
+            "query_sha256": {
+              "GC_DIM_CUSTOMER": "36d97e53e390820df58c8d3138e64d4bbccb24bf5716d32e9e22166e0cdf6541",
+              "GC_DIM_DATE": "83f96acf57d2babc48a5680e402b215dc56b732f96eb415f80954f3b289a8e2c",
+              "GC_DIM_EMPLOYEE": "2fffd9f666013909523d2a95b6c9f1a63fb9506965133ed7f5cba3ea05f819c9",
+              "GC_DIM_PRODUCT": "01b08640513ce4c95b88da8456f07d3cdddb9aaf304835fe193780e0c23104d9",
+              "GC_FCT_RETURNS": "9c6116abf799673fb0b3e1718c3aa468c765ae2660d25260f2f9c94e45ea1944",
+              "GC_FCT_SALES": "973804cb1d4c7d7e59e1628309fac5e24537425e1f0d2ccb74f4ac1e33ba8908",
+              "GH_DIM_CUSTOMER": "121206773aaffe59880a0dff85ba14e6d82299c341de58d12a5c2774fd98dab2",
+              "GH_DIM_EMPLOYEE": "38dedff917d2cff0c7207f95918ad34aea4f0b7b4a1b56b72888596d44907b2f",
+              "GH_DIM_PRODUCT": "ee3fc3bfc18a7755e263ef65c8643320defbd421b350075999a25055261e37ef",
+              "GH_FCT_RETURNS": "2929561e9663c94fe9b29f4e5a47bfdc5b521407cd1da826fb734c700e2c084b",
+              "GH_FCT_SALES": "90232dc0b8d1b5d554a6899ef6d8f7187b4af7a5b46dcea7f4efe72f37414688"
+            }
+          },
+          "pit": {
+            "as_of": "2026-10-12T06:06:26.014796+00:00",
+            "commit": {
+              "commit_id": "3966adc29302bc780d216d94fa4266d2ec7df789c6779113f29488974a9563fb",
+              "status": "COMMITTED"
+            },
+            "input_commit_ids": [
+              "0a92b9fdff7f500a32e47c7d6266e6b6c1c9494238b1b0920528c81c78f044b3",
+              "7498b34ebdff21899284bca2228f1224543a0df02a02e4ac0411e07fb03a1757",
+              "81d338951b8b2a4fbcb8459b2bdf379ebc6a3ba6943e59cb72ec86fbcc761437",
+              "ba7f2fdc7cc2a03778bcd314e57af96a002ea7f79c5524ebaa411fd2ecb36bc8",
+              "e820864098e9feb53837b486120e818b6ee18764a3b96ac2608bc303c2ecd868",
+              "fb976cc72e8223dfdc43a956cc6c733cfee0e8ca641265d72a3c678a11d10af8"
+            ],
+            "output": {
+              "inserted_count": 1,
+              "output_fingerprint": "1c8124eabd39be313922249e4f1b739762bd1a09c4efd56d9e07f5d8c0a5e5cc",
+              "record_count": 1,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase6_pit_customer`"
+            }
+          },
+          "publication": {
+            "active_release_id": "a1eeb784ec2a099a44be83aae26a9404e68b4590cec2f26dd2bd33706b983ac9",
+            "generation": 2,
+            "status": "ACTIVATED"
+          }
+        },
+        {
+          "audit_output_verified": true,
+          "batch_id": "b8914406-23be-56d8-897e-c194a8ecefda",
+          "delivery_number": 3,
+          "expected_output_verified": true,
+          "gold": {
+            "commit": {
+              "commit_id": "518570e70c448e996340e8f9fd2f348eabcabcb3be63f357e65caa11da6dbeb1",
+              "status": "COMMITTED"
+            },
+            "consumer_published": false,
+            "cutoff": "2026-10-12T06:13:39.557082+00:00",
+            "input_commit_ids": [
+              "060d4cedf4a7242f906c5f647d6a89afb9b0e75c2ed2b3dcd912145ca0f7bf8a",
+              "0a92b9fdff7f500a32e47c7d6266e6b6c1c9494238b1b0920528c81c78f044b3",
+              "1597786ce78cfee74e6d53949ad3b6bc2cd41a8dab3695bc9620e09504355cc1",
+              "2503b43092231856bcb23bedfd7d8ab91fd93b3c8abb0460dfe4173f92abe6ee",
+              "288973b82d03d2e175e110f886f8653e4103889e4c38dafbeb05b6f1227f0ae9",
+              "2f872c2f2ec03b59e542efe3a38f8ef70f3419dd1593a6665a5328404ddd44c6",
+              "3032f90f98b219a40e30cee70554be6c22bf8f4b5a6eaa6dfd00d6fdf15d2fae",
+              "33d57ef40877eadcf94ea0d2a1d3c8570b236b0380363495dde15a3b4aca6416",
+              "3c7e552879f1b3336a1b67f3e14c18a3b1261247332d6cc513128619634727c8",
+              "40d2fa31bf32d8ade7ce28486af6352749962e67ce63a2c52793d5db0e85b1ef",
+              "438e1b936bc21b452670c9e166e23437d65def3df616f79661d90abcd6f3bbd7",
+              "480f83f17be324c947c65b2efdd435255da7d934cbb765bcdbb238642bb179ff",
+              "53bcf790b671326f00d453a3ba7bfdf9f8c34029e3d34bd3ca0bdd11099b7bbd",
+              "589da4468e8aa1c3ade76cf442019ef31eb59540c732c14b141f023ba99ec39e",
+              "5c6c666cdcfd8e355bcdb5768977f7b4bb9dc4a70dc121c24f8a4d255d8b8bf6",
+              "5d5513c3b5abab4ba6f25e36516ed82fb94a9d42986e27dc039cee56fbbdbe5e",
+              "623e8a55ddecb31ca0699bf03965a2a056649f83835b54c71efdd3d86f4da630",
+              "703462d2a58fcb50b45526c74ab8f2295047ae55cdd9251cabc080cf1d2bbc87",
+              "71555a0c85bd9a0cf70b0ceba05e83c835afef725a3ff18ba95751e13dae5693",
+              "738535087e9ef0248572f5bb0d56c48a0c37b80634ba4faa39f9c6b81b9d5b2e",
+              "7498b34ebdff21899284bca2228f1224543a0df02a02e4ac0411e07fb03a1757",
+              "7b1553e1560ad8ae96b94cdb648f988eab8a5bad3540c19a67c3fa5d8fc356c9",
+              "7d3edbf690a69bc3b222f2a7b3add30d7a98e40e048bbded50aa21d2c501fed7",
+              "7dbdd43c9cb103cdb5b9ab411766b9c1e1393377c7047f3c5ae494fd86432206",
+              "81d338951b8b2a4fbcb8459b2bdf379ebc6a3ba6943e59cb72ec86fbcc761437",
+              "86fe53b8144272d5a984cbc425ce43d13b9541d0f43082317b9c5c84f65aa097",
+              "87a1a2ab018ab5e7ef7d719662a8548a02e0194b3e13c2ca58315ece64df797a",
+              "87bba0142a06ac843cd0cb4a9b2dfab2556c083db0a5f52e840222c113e36bf1",
+              "9033d335e682392c89fd0e07a15300360dc6b46c3dc89c716aec6e05e9131eec",
+              "96305bab416399c40054ca48b2868e08818eecbafa62607b44d2d789d6580d97",
+              "98f4b52e6abd2b3c8a3d6e5793c61f00e5d3a3572519e603442e207fc027b3b7",
+              "9b1ad1722619e0b04dea2912f6a5b2a3f0bb77a3b099d360a91d726ad7b803db",
+              "a2e6c6e15a6086a68828b7fbc16161c2da14d84258fc516b28f76d053ab5d478",
+              "a85b79c7dce9268398afb2ea0a2a18b4536ccd7290d083cd09cb93e825173cce",
+              "aa045ba9da078a0c699eb344ba36626f198980096e319c54a31a7e7ecedc9119",
+              "adc406c26ffda5561a0c20b5d1fe7d6dd7267c26500e91454ab57404ef850133",
+              "b720bcccc19628f84675411fc3b159545b4e62670782cdd4257a967518fe762d",
+              "ba7f2fdc7cc2a03778bcd314e57af96a002ea7f79c5524ebaa411fd2ecb36bc8",
+              "bb4977d202796581cd61abe2c12bb24fe582333d88c002e445fda10792f67435",
+              "bbf9461b2d0272daf2e122fa8f4fea2d6e43b0d8759a70fad85f41c70b804a8b",
+              "be7f5a81a00f52f73437555aa620d62783495d81a222757ed5cbaf3d8d21358b",
+              "c30970b4412031788607542b2a4c3055bae3a32501a7ff9c9fd0a15015cddf27",
+              "c739b2d9b5171c8a0b1c3c7a0d125f1875abdef22879d4568536b09cfec631b2",
+              "cb326250f08d78c42758a7ff47d24a653530e889f5030a31fa52589faac4d394",
+              "d1fb405370d3ac7cc423dc44735e37b63aeffa81dc8abca2087d074abe9b8fa7",
+              "d368ec62cb504a41280143d57bd18be76433983c239f5448a55a82928d506ebb",
+              "da4e8cd8aaddfe6040b9910582d7a7f3f2bec71b822bc676611ac45d04ca4861",
+              "ddb9a54df965d1d84b9009a623563aa7f86b6595a59171fedeea31310f63b4e1",
+              "e1c90e4c67d90a26d3ebf6e315b2d56bee9c1c92353a24a7bef5a30a9cc22384",
+              "e59c51bc4fa8093285900382b73a5fcebe574773cdf17e15103e3cb3ba2fbb6d",
+              "e820864098e9feb53837b486120e818b6ee18764a3b96ac2608bc303c2ecd868",
+              "ec0ffaf5155118aec4d4a05b9a699d93c28fc3769c10400028a7f0207cd58d1d",
+              "f44b5f9dccaedefb7e5c4464133ee24f79528aad9ea618198f7349ec1a6cb681",
+              "fb976cc72e8223dfdc43a956cc6c733cfee0e8ca641265d72a3c678a11d10af8"
+            ],
+            "outputs": {
+              "GC_DIM_CUSTOMER": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_dim_customer`"
+              },
+              "GC_DIM_DATE": {
+                "inserted_count": 4018,
+                "output_fingerprint": "35bd55a5b23ebdb598e1624c965af2cfddfb3d64189be714301c1f43c6d05cf0",
+                "record_count": 4018,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_dim_date`"
+              },
+              "GC_DIM_EMPLOYEE": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_dim_employee`"
+              },
+              "GC_DIM_PRODUCT": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_dim_product`"
+              },
+              "GC_FCT_RETURNS": {
+                "inserted_count": 1,
+                "output_fingerprint": "6c7f7e8854ba85e65fde7d2a6c8a76a9dedbb01e33297eb00742dc1de63fb8ff",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_fct_returns`"
+              },
+              "GC_FCT_SALES": {
+                "inserted_count": 1,
+                "output_fingerprint": "d53cc73a79ca606557fa12a3df7dcd6dc9eb5dafbe77260f329ee24b32d6d1be",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase6_gc_fct_sales`"
+              },
+              "GH_DIM_CUSTOMER": {
+                "inserted_count": 3,
+                "output_fingerprint": "7d4454b3450a1427cbd3dc814146ff47432b82a8881473e787be1b4338811bb3",
+                "record_count": 3,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_dim_customer`"
+              },
+              "GH_DIM_EMPLOYEE": {
+                "inserted_count": 2,
+                "output_fingerprint": "ebf8cd8acffe809158789cf259611ee92a99cb37d13ba16f18ebaf0fec842400",
+                "record_count": 2,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_dim_employee`"
+              },
+              "GH_DIM_PRODUCT": {
+                "inserted_count": 3,
+                "output_fingerprint": "f545108749c402b94066133e1505fc2d846eb90c8acf574a13dbce277ecf398e",
+                "record_count": 3,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_dim_product`"
+              },
+              "GH_FCT_RETURNS": {
+                "inserted_count": 1,
+                "output_fingerprint": "cc9c592cc876e23d6d679e3f76b73a6bc61dbcbca8209d47ee6641ced26b3225",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_fct_returns`"
+              },
+              "GH_FCT_SALES": {
+                "inserted_count": 1,
+                "output_fingerprint": "c9c46c410bc82773234d956be1e1d0995a1d922c63d145949352c6803f22a5b8",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase6_gh_fct_sales`"
+              }
+            },
+            "product_release_id": "dc636be1bf4aeb9618540bfe25c8cdedc0435a74f9fb62d4617a11e7ba6c3f0d",
+            "query_sha256": {
+              "GC_DIM_CUSTOMER": "36d97e53e390820df58c8d3138e64d4bbccb24bf5716d32e9e22166e0cdf6541",
+              "GC_DIM_DATE": "83f96acf57d2babc48a5680e402b215dc56b732f96eb415f80954f3b289a8e2c",
+              "GC_DIM_EMPLOYEE": "2fffd9f666013909523d2a95b6c9f1a63fb9506965133ed7f5cba3ea05f819c9",
+              "GC_DIM_PRODUCT": "01b08640513ce4c95b88da8456f07d3cdddb9aaf304835fe193780e0c23104d9",
+              "GC_FCT_RETURNS": "9c6116abf799673fb0b3e1718c3aa468c765ae2660d25260f2f9c94e45ea1944",
+              "GC_FCT_SALES": "973804cb1d4c7d7e59e1628309fac5e24537425e1f0d2ccb74f4ac1e33ba8908",
+              "GH_DIM_CUSTOMER": "121206773aaffe59880a0dff85ba14e6d82299c341de58d12a5c2774fd98dab2",
+              "GH_DIM_EMPLOYEE": "38dedff917d2cff0c7207f95918ad34aea4f0b7b4a1b56b72888596d44907b2f",
+              "GH_DIM_PRODUCT": "ee3fc3bfc18a7755e263ef65c8643320defbd421b350075999a25055261e37ef",
+              "GH_FCT_RETURNS": "2929561e9663c94fe9b29f4e5a47bfdc5b521407cd1da826fb734c700e2c084b",
+              "GH_FCT_SALES": "90232dc0b8d1b5d554a6899ef6d8f7187b4af7a5b46dcea7f4efe72f37414688"
+            }
+          },
+          "pit": {
+            "as_of": "2026-10-12T06:13:39.557082+00:00",
+            "commit": {
+              "commit_id": "38b153175de4ebcd81b757944f943dc2f8584fd863a478f04c0c7da7f871e328",
+              "status": "COMMITTED"
+            },
+            "input_commit_ids": [
+              "0a92b9fdff7f500a32e47c7d6266e6b6c1c9494238b1b0920528c81c78f044b3",
+              "33d57ef40877eadcf94ea0d2a1d3c8570b236b0380363495dde15a3b4aca6416",
+              "7498b34ebdff21899284bca2228f1224543a0df02a02e4ac0411e07fb03a1757",
+              "81d338951b8b2a4fbcb8459b2bdf379ebc6a3ba6943e59cb72ec86fbcc761437",
+              "ba7f2fdc7cc2a03778bcd314e57af96a002ea7f79c5524ebaa411fd2ecb36bc8",
+              "bb4977d202796581cd61abe2c12bb24fe582333d88c002e445fda10792f67435",
+              "d1fb405370d3ac7cc423dc44735e37b63aeffa81dc8abca2087d074abe9b8fa7",
+              "e820864098e9feb53837b486120e818b6ee18764a3b96ac2608bc303c2ecd868",
+              "fb976cc72e8223dfdc43a956cc6c733cfee0e8ca641265d72a3c678a11d10af8"
+            ],
+            "output": {
+              "inserted_count": 1,
+              "output_fingerprint": "3465d6ddd3ceeb2c41635b85d0b9de2dad1b28425261fd305a0f0b04b8b00e0d",
+              "record_count": 1,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase6_pit_customer`"
+            }
+          },
+          "publication": {
+            "active_release_id": "dc636be1bf4aeb9618540bfe25c8cdedc0435a74f9fb62d4617a11e7ba6c3f0d",
+            "generation": 3,
+            "status": "ACTIVATED"
+          }
+        }
+      ],
+      "gold_contract": "sales-gold-v1-committed-multistream-timelines",
+      "owner_released": true,
+      "phase6_complete": false,
+      "phase6_version": "0.3.1",
+      "pit_contract": "sales-customer-pit-v1-committed-event-pointers",
+      "production_release_accepted": false,
+      "recovery": {
+        "active_pointer_unchanged": true,
+        "attempted": true,
+        "batch_id": "035cffd2-9ee0-51db-9162-129bbc0a2ce7",
+        "incomplete_commit_absent": true,
+        "interrupted_after": "GH_DIM_CUSTOMER",
+        "previous_active_release_id": "b4f8cd69444a29191ef0ec30f5d83d51dd53911e4a0d8a087e3e54da565b1db7",
+        "recovered_gold_commit_id": "b9eb9e1d7e796d170b02031ac0085a46887561aba07f425ac0fb1dc6392f6a7c",
+        "recovered_product_release_id": "a1eeb784ec2a099a44be83aae26a9404e68b4590cec2f26dd2bd33706b983ac9"
+      },
+      "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+      "scope": "PHASE6_SALES_COMMITTED_GOLD",
+      "status": "SUCCEEDED",
+      "vault_input_fingerprint": "20de7cfc74ae447fc4433801c578ff2970b3a764c837180d45efe86a73c7109c"
+    }
+  }
+}

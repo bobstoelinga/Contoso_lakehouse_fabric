@@ -1,0 +1,89 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "3da778b8-2774-4f54-9632-b71d66d02ab4",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/3da778b8-2774-4f54-9632-b71d66d02ab4/jobs/instances/6cfc8b12-0828-40bc-a597-d133b5cd7d9f",
+  "status": "COMPLETED",
+  "job": {
+    "id": "6cfc8b12-0828-40bc-a597-d133b5cd7d9f",
+    "itemId": "3da778b8-2774-4f54-9632-b71d66d02ab4",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "d9a1a9eb-a5fd-4f22-8075-973467760ee5",
+    "startTimeUtc": "2026-10-11T10:26:15.5615823",
+    "endTimeUtc": "2026-10-11T10:29:08.8341142",
+    "exit_result": {
+      "all_filtered_metrics": {
+        "bronze_count": 4,
+        "counts": {
+          "FILTERED": 4,
+          "PASSED": 0,
+          "REJECTED": 0
+        },
+        "rules": [
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 0,
+            "rule_id": "DQ-CUST-001",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          }
+        ]
+      },
+      "business_data_written": false,
+      "metrics": {
+        "bronze_count": 4,
+        "counts": {
+          "FILTERED": 1,
+          "PASSED": 1,
+          "REJECTED": 2
+        },
+        "rules": [
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 3,
+            "rule_id": "DQ-CUST-001",
+            "threshold_percent": 100,
+            "violation_percent": 66.66666666666667,
+            "violations": 2
+          }
+        ]
+      },
+      "phase5_version": "0.3.0",
+      "production_release_accepted": false,
+      "scope": "PHASE5_QUALITY_POST_FILTER_WINDOW",
+      "status": "SUCCEEDED",
+      "terminal_records": {
+        "record-0": [
+          "PASSED",
+          [],
+          []
+        ],
+        "record-1": [
+          "FILTERED",
+          [],
+          []
+        ],
+        "record-2": [
+          "REJECTED",
+          [
+            "DUPLICATE_CUSTOMER"
+          ],
+          []
+        ],
+        "record-3": [
+          "REJECTED",
+          [
+            "DUPLICATE_CUSTOMER"
+          ],
+          []
+        ]
+      },
+      "threshold_failure": "Quality thresholds blocked: DQ-CUST-001:FAIL_BATCH"
+    }
+  }
+}

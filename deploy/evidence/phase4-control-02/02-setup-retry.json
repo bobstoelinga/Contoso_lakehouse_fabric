@@ -1,0 +1,169 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "c3a033d1-850e-49c6-92b6-f076b0e269ca",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/c3a033d1-850e-49c6-92b6-f076b0e269ca/jobs/instances/020f32dc-4e18-4729-a965-fad2b73a589a",
+  "parameters_fingerprint": "c8e60f1207e0d4d5bc107ee4145b52da3697f29d993228b76341d6f467aaadd4",
+  "status": "Completed",
+  "job": {
+    "id": "020f32dc-4e18-4729-a965-fad2b73a589a",
+    "itemId": "c3a033d1-850e-49c6-92b6-f076b0e269ca",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "e49ecb67-d775-4566-9b01-c90a5f5e9ca6",
+    "startTimeUtc": "2026-10-10T13:29:07.2349852",
+    "endTimeUtc": "2026-10-10T13:32:56.5219179",
+    "exit_result": {
+      "audit_event_id": "5d76a8cc589d5a1a1e6679b5fb484f78033436f10725b20ff37e93fd46d0dff1",
+      "batch_retry_identical": true,
+      "candidate_activation": "BLOCKED_AS_EXPECTED",
+      "first_batch": {
+        "batch_id": "c0dfbe8a-e5b1-5e11-a60d-80dbf22d77dd",
+        "delivery_id": "retry-vector-1",
+        "load_date_utc": "2026-10-10T13:27:04.422312+00:00",
+        "metadata_release_id": "caac34a0cf503bdb14ebe9bc101cf6c789220f4f78a603394805585c38c36705",
+        "project_id": "contoso",
+        "source_system_id": "PHASE4_PROOF"
+      },
+      "framework_version": "0.1.0",
+      "hash_vectors": [
+        {
+          "hash": "2591dba9a61f3fefb2e57aad172a14cf48a9441e413a1dab862444875905c7ac",
+          "values": [
+            null
+          ]
+        },
+        {
+          "hash": "993e353df86d01995372c7b9e739a7b2a1b4808b2f3c70c978f5c3a806f719f4",
+          "values": [
+            ""
+          ]
+        },
+        {
+          "hash": "d90746fd01a793158aba5e7df2c502733c5449dd87cece104e205f0f493ad326",
+          "values": [
+            " a "
+          ]
+        },
+        {
+          "hash": "1ff6ee74b68d46993f993c920ddd0dc34b1f8e736c000969468c42eb374530cc",
+          "values": [
+            "a||b",
+            "c"
+          ]
+        },
+        {
+          "hash": "4eef244814092e4f780151807d0020046a3afcab38eb5d20cb7607cbb5deea46",
+          "values": [
+            "a",
+            "b||c"
+          ]
+        },
+        {
+          "hash": "432df91de6bb5feb2bf36baa822ed6a704f23c8f646af623dca0c51796fb286e",
+          "values": [
+            "\u00e9"
+          ]
+        },
+        {
+          "hash": "a4db935198a059dc044283ecb846ed08424ef4dd14d337baf25f3bae3ef9f177",
+          "values": [
+            "^^",
+            null
+          ]
+        }
+      ],
+      "load_time_monotonic": true,
+      "migrations": [
+        {
+          "action": "verified",
+          "id": "001_namespaces",
+          "source_sha256": "6736c206e905b19f0c04587469f0a0f48ee79e185486601e6c1c2870f9c2afca",
+          "status": "APPLIED"
+        },
+        {
+          "action": "verified",
+          "id": "003_schema_journal",
+          "source_sha256": "26c0e15bc4330608de58ae4539983f7a62092b0cba0d86b3f6d48409be32bc5b",
+          "status": "APPLIED"
+        },
+        {
+          "action": "verified",
+          "id": "002_control_contract",
+          "source_sha256": "5f4b5f2cfa2c827de0935cb949a898f84dd8b471aaf341b13ec17147872a07f5",
+          "status": "APPLIED"
+        }
+      ],
+      "owner_released": true,
+      "project_release_id": "caac34a0cf503bdb14ebe9bc101cf6c789220f4f78a603394805585c38c36705",
+      "runtime_blocker_count": 70,
+      "scope": "PHASE4_CONTROL_PROOF_NO_BUSINESS_INGESTION",
+      "second_batch": {
+        "batch_id": "cad00944-85b6-569c-bc4f-3e5ddaeda25a",
+        "delivery_id": "retry-vector-2",
+        "load_date_utc": "2026-10-10T13:27:04.422313+00:00",
+        "metadata_release_id": "caac34a0cf503bdb14ebe9bc101cf6c789220f4f78a603394805585c38c36705",
+        "project_id": "contoso",
+        "source_system_id": "PHASE4_PROOF"
+      },
+      "status": "SUCCEEDED",
+      "type_vectors": [
+        {
+          "canonical": "A",
+          "data_type": "STRING",
+          "hash": "e3f8053db67bdad32ab9fc5e514940d0a8322658878bc60e078e5dae46d9d474",
+          "payload": "[\"fabric-dv-key-v1\",\"TYPE_PROOF\",[\"A\"]]"
+        },
+        {
+          "canonical": null,
+          "data_type": "STRING",
+          "hash": "35dbbb56c45ee1e3e7d088851569326386e931638fad8aa5784a7e44d0840cf4",
+          "payload": "[\"fabric-dv-key-v1\",\"TYPE_PROOF\",[null]]"
+        },
+        {
+          "canonical": "TRUE",
+          "data_type": "BOOLEAN",
+          "hash": "1114d15d7d914ab95c82b489f054e3f3ecccc2c686f001495c73d1d215b86af9",
+          "payload": "[\"fabric-dv-key-v1\",\"TYPE_PROOF\",[\"TRUE\"]]"
+        },
+        {
+          "canonical": "9223372036854775807",
+          "data_type": "LONG",
+          "hash": "3f29d39b3cad17eb2c31471a94dca3f9f751e8715413710610e6f73c10464b02",
+          "payload": "[\"fabric-dv-key-v1\",\"TYPE_PROOF\",[\"9223372036854775807\"]]"
+        },
+        {
+          "canonical": "99999999999999999999.999999999999999999",
+          "data_type": "DECIMAL(38,18)",
+          "hash": "da2217f32e60686f1b5de90ccb1d533363aca70d4d0cf9b2a61855969cb1f13c",
+          "payload": "[\"fabric-dv-key-v1\",\"TYPE_PROOF\",[\"99999999999999999999.999999999999999999\"]]"
+        },
+        {
+          "canonical": "0.0000",
+          "data_type": "DECIMAL(18,4)",
+          "hash": "9ec0bdd0b1369ef9fa56aacdc8cc009bc7fb346f3df4832151c70c84b2c93a47",
+          "payload": "[\"fabric-dv-key-v1\",\"TYPE_PROOF\",[\"0.0000\"]]"
+        },
+        {
+          "canonical": "2026-10-10",
+          "data_type": "DATE",
+          "hash": "d39c83e209f8d942a93c2c8cd4c6c1118a4fa8ccdf221c516c2530eec0958bcf",
+          "payload": "[\"fabric-dv-key-v1\",\"TYPE_PROOF\",[\"2026-10-10\"]]"
+        },
+        {
+          "canonical": "2026-10-25T00:30:00.123456Z",
+          "data_type": "TIMESTAMP",
+          "hash": "6c1a1c3473777de569bfece3341f7b59cb7d24c5816bc3dc7215276f55768aee",
+          "payload": "[\"fabric-dv-key-v1\",\"TYPE_PROOF\",[\"2026-10-25T00:30:00.123456Z\"]]"
+        },
+        {
+          "canonical": "2026-10-25T01:30:00.123456Z",
+          "data_type": "TIMESTAMP",
+          "hash": "b32fd60cfc9c24798faa2d0a081c6821840087fe7e9c68452ea029c87c7275a9",
+          "payload": "[\"fabric-dv-key-v1\",\"TYPE_PROOF\",[\"2026-10-25T01:30:00.123456Z\"]]"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+﻿{
+    "status":  "FAILED",
+    "scope":  "READ_ONLY_FABRIC_SALES_SOURCE_SCHEMA",
+    "source_object_id":  "FABRIC_SALES.ORDER_LINES",
+    "server":  "qugtl6ion76ufa4fuwoc6cpmdi-rqr26cxjvolujgkdq6tknur6xu.database.fabric.microsoft.com",
+    "database":  "Contoso_database-a2e53891-642a-4a0c-9a7f-c72e1351ff57",
+    "identity_mode":  "DELEGATED_AZURE_CLI_SCHEMA_PROBE_ONLY",
+    "business_rows_extracted":  false,
+    "connection_alias_activated":  false,
+    "started_at_utc":  "2026-10-11T09:58:37.7019687Z",
+    "error_type":  "System.Reflection.ReflectionTypeLoadException",
+    "error_message":  "Kan een of meer van de gevraagde typen niet laden. Haal de LoaderExceptions-eigenschap op voor meer informatie.",
+    "finished_at_utc":  "2026-10-11T09:58:38.3680311Z"
+}

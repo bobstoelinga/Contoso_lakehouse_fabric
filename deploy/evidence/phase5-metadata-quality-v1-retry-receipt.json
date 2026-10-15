@@ -1,0 +1,1932 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "861b9c7f-115c-40eb-b135-e50195620674",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/861b9c7f-115c-40eb-b135-e50195620674/jobs/instances/a845fc07-33e2-4683-bac4-23073be15a24",
+  "status": "COMPLETED",
+  "job": {
+    "id": "a845fc07-33e2-4683-bac4-23073be15a24",
+    "itemId": "861b9c7f-115c-40eb-b135-e50195620674",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "d6be744a-d070-44c2-ae1c-8234b37be4c5",
+    "startTimeUtc": "2026-10-11T15:27:44.6824466",
+    "endTimeUtc": "2026-10-11T15:31:08.3850267",
+    "exit_result": {
+      "business_data_written": false,
+      "duplicate_threshold_blocked": true,
+      "ecb_filter_accounting": {
+        "bronze_count": 2,
+        "counts": {
+          "FILTERED": 1,
+          "PASSED": 1,
+          "REJECTED": 0
+        },
+        "metadata_rule_ids": [
+          "DQ-ECB-001",
+          "DQ-ECB-002"
+        ],
+        "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+        "rules": [
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-ECB-01",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "REQUIRED-M-QA-ECB-01",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-ECB-02",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "REQUIRED-M-QA-ECB-02",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-ECB-03",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "REQUIRED-M-QA-ECB-03",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-ECB-04",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "REQUIRED-M-QA-ECB-04",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "FAIL_BATCH",
+            "breached": false,
+            "population": 1,
+            "rule_id": "DQ-ECB-001",
+            "threshold_percent": 0.0,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "FAIL_BATCH",
+            "breached": false,
+            "population": 1,
+            "rule_id": "DQ-ECB-002",
+            "threshold_percent": 0.0,
+            "violation_percent": 0.0,
+            "violations": 0
+          }
+        ],
+        "source_object_id": "ECB.EXCHANGE_RATE"
+      },
+      "invalid_cast_accounting": {
+        "bronze_count": 1,
+        "counts": {
+          "FILTERED": 0,
+          "PASSED": 0,
+          "REJECTED": 1
+        },
+        "metadata_rule_ids": [
+          "DQ-CUST-001",
+          "DQ-CUST-002",
+          "DQ-CUST-003",
+          "DQ-CUST-004"
+        ],
+        "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+        "rules": [
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-CUST-01",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "REQUIRED-M-QA-CUST-01",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-CUST-02",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-CUST-03",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-CUST-04",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-CUST-05",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-CUST-06",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-CUST-07",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-CUST-08",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-CUST-09",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-CUST-10",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-CUST-11",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "CAST-M-QA-CUST-12",
+            "threshold_percent": 100,
+            "violation_percent": 100.0,
+            "violations": 1
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "REQUIRED-M-QA-CUST-12",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "FAIL_BATCH",
+            "breached": false,
+            "population": 1,
+            "rule_id": "DQ-CUST-001",
+            "threshold_percent": 0.0,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "FAIL_BATCH",
+            "breached": false,
+            "population": 1,
+            "rule_id": "DQ-CUST-002",
+            "threshold_percent": 1.0,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "DQ-CUST-003",
+            "threshold_percent": 10.0,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 1,
+            "rule_id": "DQ-CUST-004",
+            "threshold_percent": 5.0,
+            "violation_percent": 0.0,
+            "violations": 0
+          }
+        ],
+        "source_object_id": "SALES.CUSTOMERS"
+      },
+      "phase5_version": "0.4.0",
+      "production_release_accepted": false,
+      "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+      "retry_fingerprint_equal": true,
+      "scope": "PHASE5_ACTUAL_METADATA_QUALITY_FIXTURES",
+      "sources": {
+        "CBS.JEUGDZORG_WIJK_2025": {
+          "accounting": {
+            "bronze_count": 1,
+            "counts": {
+              "FILTERED": 0,
+              "PASSED": 1,
+              "REJECTED": 0
+            },
+            "metadata_rule_ids": [
+              "DQ-CBS-001",
+              "DQ-CBS-002"
+            ],
+            "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+            "rules": [
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CBS-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-CBS-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CBS-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-CBS-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CBS-03",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-CBS-03",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CBS-04",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CBS-05",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CBS-06",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CBS-07",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-CBS-001",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-CBS-002",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              }
+            ],
+            "source_object_id": "CBS.JEUGDZORG_WIJK_2025"
+          },
+          "fingerprint": [
+            1,
+            "c234df140c359342c1850221070d72e3ad8fdb24582e8872d95208716cc6b187"
+          ]
+        },
+        "ECB.EXCHANGE_RATE": {
+          "accounting": {
+            "bronze_count": 1,
+            "counts": {
+              "FILTERED": 0,
+              "PASSED": 1,
+              "REJECTED": 0
+            },
+            "metadata_rule_ids": [
+              "DQ-ECB-001",
+              "DQ-ECB-002"
+            ],
+            "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+            "rules": [
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ECB-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-ECB-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ECB-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-ECB-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ECB-03",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-ECB-03",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ECB-04",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-ECB-04",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-ECB-001",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-ECB-002",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              }
+            ],
+            "source_object_id": "ECB.EXCHANGE_RATE"
+          },
+          "fingerprint": [
+            1,
+            "e7633e46b3f794226dee586471bbb9443a635a854f633c0a770d35bfbdf40361"
+          ]
+        },
+        "FABRIC_SALES.ORDER_LINES": {
+          "accounting": {
+            "bronze_count": 1,
+            "counts": {
+              "FILTERED": 0,
+              "PASSED": 1,
+              "REJECTED": 0
+            },
+            "metadata_rule_ids": [
+              "DQ-FAB-001",
+              "DQ-FAB-002",
+              "DQ-FAB-003"
+            ],
+            "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+            "rules": [
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-FAB-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-FAB-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-FAB-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-FAB-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-FAB-03",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-FAB-03",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-FAB-04",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-FAB-04",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-FAB-05",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-FAB-05",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-FAB-06",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-FAB-06",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-FAB-07",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-FAB-07",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-FAB-08",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-FAB-08",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-FAB-001",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-FAB-002",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-FAB-003",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              }
+            ],
+            "source_object_id": "FABRIC_SALES.ORDER_LINES"
+          },
+          "fingerprint": [
+            1,
+            "37b6e4253c27de351fac0df75bc911760fb71567e66b0f6902281b32cb02d940"
+          ]
+        },
+        "NAGER.HOLIDAYS_NL": {
+          "accounting": {
+            "bronze_count": 1,
+            "counts": {
+              "FILTERED": 0,
+              "PASSED": 1,
+              "REJECTED": 0
+            },
+            "metadata_rule_ids": [
+              "DQ-NAG-001",
+              "DQ-NAG-002"
+            ],
+            "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+            "rules": [
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-NAG-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-NAG-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-NAG-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-NAG-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-NAG-03",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-NAG-04",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-NAG-04",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-NAG-05",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-NAG-05",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-NAG-06",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-NAG-001",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-NAG-002",
+                "threshold_percent": 10.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              }
+            ],
+            "source_object_id": "NAGER.HOLIDAYS_NL"
+          },
+          "fingerprint": [
+            1,
+            "6e448d83267dc62bf3107d19655ba1769bbee1752036972c8bbbfc201a0a2ad5"
+          ]
+        },
+        "SALES.CUSTOMERS": {
+          "accounting": {
+            "bronze_count": 1,
+            "counts": {
+              "FILTERED": 0,
+              "PASSED": 1,
+              "REJECTED": 0
+            },
+            "metadata_rule_ids": [
+              "DQ-CUST-001",
+              "DQ-CUST-002",
+              "DQ-CUST-003",
+              "DQ-CUST-004"
+            ],
+            "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+            "rules": [
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CUST-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-CUST-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CUST-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CUST-03",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CUST-04",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CUST-05",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CUST-06",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CUST-07",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CUST-08",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CUST-09",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CUST-10",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CUST-11",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-CUST-12",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-CUST-12",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-CUST-001",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-CUST-002",
+                "threshold_percent": 1.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-CUST-003",
+                "threshold_percent": 10.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-CUST-004",
+                "threshold_percent": 5.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              }
+            ],
+            "source_object_id": "SALES.CUSTOMERS"
+          },
+          "fingerprint": [
+            1,
+            "71e5c7092b4465dcf45e0bfcbde419f93387abcfa001db2a24bfc5e7f2b0367d"
+          ]
+        },
+        "SALES.EMPLOYEES": {
+          "accounting": {
+            "bronze_count": 1,
+            "counts": {
+              "FILTERED": 0,
+              "PASSED": 1,
+              "REJECTED": 0
+            },
+            "metadata_rule_ids": [
+              "DQ-EMP-001",
+              "DQ-EMP-002"
+            ],
+            "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+            "rules": [
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-EMP-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-EMP-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-EMP-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-EMP-03",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-EMP-04",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-EMP-05",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-EMP-06",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-EMP-07",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-EMP-07",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-EMP-001",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-EMP-002",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              }
+            ],
+            "source_object_id": "SALES.EMPLOYEES"
+          },
+          "fingerprint": [
+            1,
+            "b6273948e8d4d298168c03281444f593c51c35ae4dbbb8e3c27d1531093c63c1"
+          ]
+        },
+        "SALES.ORDERS": {
+          "accounting": {
+            "bronze_count": 1,
+            "counts": {
+              "FILTERED": 0,
+              "PASSED": 1,
+              "REJECTED": 0
+            },
+            "metadata_rule_ids": [
+              "DQ-ORD-001",
+              "DQ-ORD-002",
+              "DQ-ORD-003",
+              "DQ-ORD-004",
+              "DQ-ORD-005",
+              "DQ-ORD-006",
+              "DQ-ORD-007",
+              "DQ-ORD-008",
+              "DQ-ORD-009"
+            ],
+            "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+            "rules": [
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ORD-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-ORD-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ORD-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-ORD-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ORD-03",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-ORD-03",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ORD-04",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-ORD-04",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ORD-05",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-ORD-05",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ORD-06",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ORD-07",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ORD-08",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ORD-09",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-ORD-09",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ORD-10",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ORD-11",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-ORD-11",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ORD-12",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ORD-13",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-ORD-13",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-ORD-04A",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-ORD-04A",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-ORD-001",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-ORD-002",
+                "threshold_percent": 0.5,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-ORD-003",
+                "threshold_percent": 1.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-ORD-004",
+                "threshold_percent": 1.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-ORD-005",
+                "threshold_percent": 2.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-ORD-006",
+                "threshold_percent": 5.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-ORD-007",
+                "threshold_percent": 1.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-ORD-008",
+                "threshold_percent": 5.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-ORD-009",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              }
+            ],
+            "source_object_id": "SALES.ORDERS"
+          },
+          "fingerprint": [
+            1,
+            "51418e5221286a9868aa4af338adf923ef141aab0740d30048f1a67f117dd537"
+          ]
+        },
+        "SALES.PRODUCTS": {
+          "accounting": {
+            "bronze_count": 1,
+            "counts": {
+              "FILTERED": 0,
+              "PASSED": 1,
+              "REJECTED": 0
+            },
+            "metadata_rule_ids": [
+              "DQ-PROD-001",
+              "DQ-PROD-002",
+              "DQ-PROD-003"
+            ],
+            "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+            "rules": [
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-PROD-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-PROD-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-PROD-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-PROD-03",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-PROD-04",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-PROD-05",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-PROD-06",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-PROD-07",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-PROD-08",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-PROD-08",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-PROD-09",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-PROD-10",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-PROD-10",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-PROD-001",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-PROD-002",
+                "threshold_percent": 2.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-PROD-003",
+                "threshold_percent": 15.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              }
+            ],
+            "source_object_id": "SALES.PRODUCTS"
+          },
+          "fingerprint": [
+            1,
+            "94727c7a9a479950ac03179ddab2eb0726414afc19c8e32378d4684cf683ea09"
+          ]
+        },
+        "SALES.RETURNS": {
+          "accounting": {
+            "bronze_count": 1,
+            "counts": {
+              "FILTERED": 0,
+              "PASSED": 1,
+              "REJECTED": 0
+            },
+            "metadata_rule_ids": [
+              "DQ-RET-001",
+              "DQ-RET-002",
+              "DQ-RET-003",
+              "DQ-RET-004",
+              "DQ-RET-005",
+              "DQ-RET-006"
+            ],
+            "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+            "rules": [
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-RET-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-RET-01",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-RET-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-RET-02",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-RET-03",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-RET-03",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-RET-04",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-RET-04",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-RET-05",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-RET-05",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-RET-06",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-RET-06",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-RET-07",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-RET-08",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-RET-08",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-RET-09",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-RET-10",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-RET-10",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "CAST-M-QA-RET-04A",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "CONTINUE",
+                "breached": false,
+                "population": 1,
+                "rule_id": "REQUIRED-M-QA-RET-04A",
+                "threshold_percent": 100,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-RET-001",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-RET-002",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-RET-003",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-RET-004",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-RET-005",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 1,
+                "rule_id": "DQ-RET-006",
+                "threshold_percent": 0.0,
+                "violation_percent": 0.0,
+                "violations": 0
+              }
+            ],
+            "source_object_id": "SALES.RETURNS"
+          },
+          "fingerprint": [
+            1,
+            "47a23dfbc76da7c748a4c3cdd2da243f75628f7e075267fbb06408b1abc5550c"
+          ]
+        }
+      },
+      "status": "SUCCEEDED"
+    }
+  }
+}

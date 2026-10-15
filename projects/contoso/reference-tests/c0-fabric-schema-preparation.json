@@ -1,0 +1,124 @@
+{
+  "preparation_id": "C0-FABRIC-SCHEMA-PREPARATION-01",
+  "status": "LOCAL_PREPARATION_NOT_EXECUTABLE",
+  "base_contract_full_sha256": "0893cf612d1fd9ca639c23bf8807013d8b2cac198e6dce4a1f7b39cfaba36ae5",
+  "base_contract_unchanged": true,
+  "fabric_schema_source": {
+    "path": "projects/contoso/release.json",
+    "sha256": "273feda724d5b03186c7a250ab5d5d2f5c7b185974d1193557bb35a3ce7624da",
+    "project_release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+    "binding": "ProjectRelease.load release_id checked equal to successful phase6-sales-gold-v3-receipt.json",
+    "types_and_nullability": "Each schema_id references exact columns in this pinned file; do not infer stored runtime schema from declarations"
+  },
+  "rate_correction": {
+    "supersedes_base_claim": "Fabric discount_rate DECIMAL(18,6) versus DB DECIMAL(9,6)",
+    "fabric_declared_type": "DECIMAL(9,6)",
+    "fabric_surfaces": ["SAT_ORDER_LINE_BV mapping", "SCHEMA_SAT_ORDER_LINE_BV", "SCHEMA_GH_FCT_SALES", "SCHEMA_GC_FCT_SALES"],
+    "databricks_type": "DECIMAL(9,6)",
+    "databricks_evidence": "Peer-reported inspected code and UC REST",
+    "status": "NOMINAL_DECLARED_TYPES_MATCH_9_6",
+    "fabric_stored_type": "NOT_FRESHLY_INSPECTED",
+    "full_schema_equivalence": "NOT_TESTED",
+    "exact_decimal_scale": 6,
+    "float_or_tolerance": false,
+    "reason": "Prior Fabric 18,6 statement was incorrect; preserve immutable base and correct via external evidence"
+  },
+  "comparison_partition": {
+    "business_order": "Explicit ordered_business_columns arrays below",
+    "mapped_keys": "All declared names ending _hk; bijective per namespace/type, not ignored",
+    "temporal_state": ["valid_from", "valid_to", "is_current", "last_changed_at"],
+    "lineage": "record_source and every underscore-prefixed declared column",
+    "all_declared_columns_must_be_accounted_for": true,
+    "historical_matching": "Natural key plus attribute version and logical event delivery; retain real times and check half-open bounds",
+    "technical_differences": "Separate evidence categories, not a broad technical-column drop",
+    "cross_platform_column_mapping": "PROPOSED_PENDING_DB_MATRIX",
+    "missing_fact_natural_keys": "Resolve product_key/return line grain from unique committed as-of hub/link maps; never many-to-many rescue"
+  },
+  "products": [
+    {
+      "id": "GH_DIM_CUSTOMER",
+      "schema_id": "SCHEMA_GH_DIM_CUSTOMER",
+      "ordered_business_columns": ["customer_key", "customer_name", "email", "phone", "full_address", "city", "state_province", "postal_code", "country_code", "customer_segment", "customer_type", "tenure_band", "is_contactable", "customer_since", "is_deleted"],
+      "grain": ["customer_key", "attribute_version", "logical_event_delivery"]
+    },
+    {
+      "id": "GH_DIM_PRODUCT",
+      "schema_id": "SCHEMA_GH_DIM_PRODUCT",
+      "ordered_business_columns": ["product_key", "product_name", "product_category", "product_subcategory", "brand", "unit_cost", "unit_price", "unit_margin", "is_discontinued", "is_deleted"],
+      "grain": ["product_key", "attribute_version", "logical_event_delivery"]
+    },
+    {
+      "id": "GH_DIM_EMPLOYEE",
+      "schema_id": "SCHEMA_GH_DIM_EMPLOYEE",
+      "ordered_business_columns": ["employee_key", "first_name", "last_name", "job_title", "office_city", "hire_date", "is_deleted"],
+      "grain": ["employee_key", "attribute_version", "logical_event_delivery"]
+    },
+    {
+      "id": "GH_FCT_SALES",
+      "schema_id": "SCHEMA_GH_FCT_SALES",
+      "ordered_business_columns": ["order_key", "order_line_number", "order_date", "order_date_key", "order_status", "currency_code", "quantity", "unit_price", "discount_amount", "gross_amount", "net_amount", "discount_rate", "lead_time_days", "is_cancelled", "ship_date", "delivery_date", "ship_date_key", "delivery_date_key"],
+      "grain": ["order_key", "order_line_number", "mapped_product_key", "attribute_version", "logical_event_delivery"]
+    },
+    {
+      "id": "GH_FCT_RETURNS",
+      "schema_id": "SCHEMA_GH_FCT_RETURNS",
+      "ordered_business_columns": ["return_key", "order_key", "order_line_number", "return_date", "return_date_key", "return_status", "return_reason_code", "return_quantity", "refund_amount", "currency_code"],
+      "grain": ["return_key", "order_key", "order_line_number", "mapped_product_key", "attribute_version", "logical_event_delivery"]
+    },
+    {
+      "id": "GC_DIM_CUSTOMER",
+      "schema_id": "SCHEMA_GC_DIM_CUSTOMER",
+      "ordered_business_columns": ["customer_key", "customer_name", "email", "phone", "full_address", "city", "state_province", "postal_code", "country_code", "customer_segment", "customer_type", "tenure_band", "is_contactable", "customer_since"],
+      "grain": ["customer_key"]
+    },
+    {
+      "id": "GC_DIM_PRODUCT",
+      "schema_id": "SCHEMA_GC_DIM_PRODUCT",
+      "ordered_business_columns": ["product_key", "product_name", "product_category", "product_subcategory", "brand", "unit_cost", "unit_price", "unit_margin", "is_discontinued"],
+      "grain": ["product_key"]
+    },
+    {
+      "id": "GC_DIM_EMPLOYEE",
+      "schema_id": "SCHEMA_GC_DIM_EMPLOYEE",
+      "ordered_business_columns": ["employee_key", "first_name", "last_name", "job_title", "office_city", "hire_date"],
+      "grain": ["employee_key"]
+    },
+    {
+      "id": "GC_DIM_DATE",
+      "schema_id": "SCHEMA_GC_DIM_DATE",
+      "ordered_business_columns": ["date_key", "calendar_date", "calendar_year", "calendar_quarter", "month_number", "month_name", "week_number", "day_of_month", "day_of_week", "day_name", "is_weekend"],
+      "grain": ["date_key"]
+    },
+    {
+      "id": "GC_FCT_SALES",
+      "schema_id": "SCHEMA_GC_FCT_SALES",
+      "ordered_business_columns": ["order_key", "order_line_number", "order_date", "order_date_key", "order_status", "currency_code", "quantity", "unit_price", "discount_amount", "gross_amount", "net_amount", "discount_rate", "lead_time_days", "is_cancelled", "ship_date", "delivery_date", "ship_date_key", "delivery_date_key"],
+      "grain": ["order_key", "order_line_number", "mapped_product_key"]
+    },
+    {
+      "id": "GC_FCT_RETURNS",
+      "schema_id": "SCHEMA_GC_FCT_RETURNS",
+      "ordered_business_columns": ["return_key", "order_key", "order_line_number", "return_date", "return_date_key", "return_status", "return_reason_code", "return_quantity", "refund_amount", "currency_code"],
+      "grain": ["return_key", "order_key", "order_line_number", "mapped_product_key"]
+    }
+  ],
+  "isolation_preparation": {
+    "resolved_paths": null,
+    "provisioned_resources": [],
+    "permissions": "UNKNOWN",
+    "required_readiness_evidence": [
+      "All resolved catalog/storage/volume/checkpoint/schemaLocation/state/lock/audit/publication/import/feed paths isolated",
+      "No shared external volume bootstrap or grants changes",
+      "SALES-only source/entity/product allowlist and manual-only job",
+      "Separate original business artifact, bootstrap and harness manifests",
+      "Unique full contract hash and attempt binding; collision fails closed",
+      "Active Bronze coercion check in separate later-authorized attempt",
+      "Preserve evidence at each cutoff before exposing next delivery"
+    ],
+    "provisioning": false,
+    "compute": false,
+    "jobs": false
+  },
+  "open": ["Databricks full column/type/nullability matrix", "Runtime stored schema confirmation", "Concrete isolated paths and permissions", "Transport dates and reference_date", "Active DQ rulevector", "Executable comparator and event-version alignment"],
+  "execution_status": "HOLD"
+}

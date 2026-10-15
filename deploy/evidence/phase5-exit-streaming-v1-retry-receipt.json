@@ -1,0 +1,406 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "783d4f39-d323-4804-a7ab-dc33a961fff3",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/783d4f39-d323-4804-a7ab-dc33a961fff3/jobs/instances/7e0c31c7-86ca-45d0-8c11-a552a08e2fa7",
+  "status": "COMPLETED",
+  "job": {
+    "id": "7e0c31c7-86ca-45d0-8c11-a552a08e2fa7",
+    "itemId": "783d4f39-d323-4804-a7ab-dc33a961fff3",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "075fcb60-047e-4333-89cd-534239385e7f",
+    "startTimeUtc": "2026-10-12T04:51:35.7599044",
+    "endTimeUtc": "2026-10-12T05:01:26.4705369",
+    "exit_result": {
+      "business_data_written": false,
+      "cross_job_interrupted": false,
+      "cross_pending": null,
+      "deliveries": {
+        "bronze": {
+          "attempt": 2,
+          "audit_id": "1a07754c69351f3536f4ff158fd1a88d41f4f77f41a263bc6d3021310ec0e944",
+          "batch_id": "7b202219-5ccc-56c2-8f9a-4f001c129940",
+          "commit": {
+            "commit_id": "a6967fa7fdce07aca95574ee9c07ebb72062070be99aacdee0394b676e206335",
+            "status": "VERIFIED"
+          },
+          "delivery_status": "SUCCEEDED",
+          "files": [
+            {
+              "path": "json.json",
+              "sha256": "1df5777c202ab2fed2a765b9987cc2a53649e56083a1af9a64deeb5b3ee66577",
+              "size_bytes": 72
+            }
+          ],
+          "load_date_utc": "2026-10-11T16:48:22.487380+00:00",
+          "outputs": {
+            "EXIT.JSON": {
+              "inserted_count": 0,
+              "output_fingerprint": "492dad99c28b4eafac9ea2d1af433bbb532464247f730211ddf4730d46e08aac",
+              "record_count": 3,
+              "retry_count": 3,
+              "status": "SUCCEEDED",
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_stop_bronze_json`"
+            }
+          },
+          "work_status": "SUCCEEDED"
+        },
+        "commit": {
+          "attempt": 2,
+          "audit_id": "380eb9db63968c271fb1053760c4ad95b0cad1ccd952f9b5719b11f0e016ab7c",
+          "batch_id": "82566f83-ff53-56bf-a62e-92633189a84c",
+          "commit": {
+            "commit_id": "4dc415ffe05dc9880b3c1125a87f6845107cd7b5b79fe7e3cb15246db0ef7377",
+            "status": "VERIFIED"
+          },
+          "delivery_status": "SUCCEEDED",
+          "files": [
+            {
+              "path": "json.json",
+              "sha256": "1df5777c202ab2fed2a765b9987cc2a53649e56083a1af9a64deeb5b3ee66577",
+              "size_bytes": 72
+            }
+          ],
+          "load_date_utc": "2026-10-11T16:48:22.487381+00:00",
+          "outputs": {
+            "EXIT.JSON": {
+              "inserted_count": 0,
+              "output_fingerprint": "40f90aa74edbb2aaff9a35ef6d3c4346eb5741cf91460b90680505c97118fdf7",
+              "record_count": 3,
+              "retry_count": 3,
+              "status": "SUCCEEDED",
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_stop_commit_json`"
+            }
+          },
+          "work_status": "SUCCEEDED"
+        },
+        "cross_job": {
+          "attempt": 2,
+          "audit_id": "8e55334f433e62bf52d754dbe2bc440c10abdf69f8533924bc9475d101649b81",
+          "batch_id": "571b6865-4538-5be9-b1d8-83de90737d2b",
+          "commit": {
+            "commit_id": "41fb9f8810ff0492c433445a501fb629bb8e34873958ec149167f0c258e312e1",
+            "status": "COMMITTED"
+          },
+          "delivery_status": "SUCCEEDED",
+          "files": [
+            {
+              "path": "json.json",
+              "sha256": "1df5777c202ab2fed2a765b9987cc2a53649e56083a1af9a64deeb5b3ee66577",
+              "size_bytes": 72
+            }
+          ],
+          "load_date_utc": "2026-10-11T16:48:22.487384+00:00",
+          "outputs": {
+            "EXIT.JSON": {
+              "inserted_count": 0,
+              "output_fingerprint": "0ca992fd1f80277df634fab0a75224224ff66dff19a04f1a16b8c34a8ead0b1d",
+              "record_count": 3,
+              "retry_count": 3,
+              "status": "SUCCEEDED",
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_cross_job_json`"
+            }
+          },
+          "work_status": "SUCCEEDED"
+        },
+        "empty": {
+          "attempt": 1,
+          "audit_id": "fc23857d6395da2af5ea05b283ad37022b4824088f1698bf544a02af8890ac94",
+          "batch_id": "55287cda-5be4-5dcf-993c-6a1948b36a1b",
+          "commit": {
+            "commit_id": "f86ef4843f14e1fa4a60abeeebc87baafa1897ef956d6eee5ea32fa976e72465",
+            "status": "VERIFIED"
+          },
+          "delivery_status": "SUCCEEDED",
+          "files": [],
+          "load_date_utc": "2026-10-11T16:48:22.487383+00:00",
+          "outputs": {
+            "EXIT.JSON": {
+              "inserted_count": 0,
+              "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "record_count": 0,
+              "retry_count": 0,
+              "status": "SUCCEEDED",
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_empty_json`"
+            }
+          },
+          "work_status": "SUCCEEDED"
+        },
+        "formats": {
+          "attempt": 1,
+          "audit_id": "d3492dd5e241b394435e2d5a8d7befba7080cf679c3534523575d21f680392c4",
+          "batch_id": "423de3b3-fa62-57dc-9fc2-37b68798ad7e",
+          "commit": {
+            "commit_id": "de669c9e5c629e5448f556d174105eac64321af3aa970147a3390f4e6ef26d38",
+            "status": "VERIFIED"
+          },
+          "delivery_status": "SUCCEEDED",
+          "files": [
+            {
+              "path": "csv.csv",
+              "sha256": "97d2b0b99519a9dbfbba2c4766ad8b0cf953e3f21339728af99fafcb0d5b5d83",
+              "size_bytes": 22
+            },
+            {
+              "path": "json.json",
+              "sha256": "1df5777c202ab2fed2a765b9987cc2a53649e56083a1af9a64deeb5b3ee66577",
+              "size_bytes": 72
+            },
+            {
+              "path": "parquet.parquet",
+              "sha256": "e01e6b5b4c477666f7da534f99516b63469c064a551485c397b2f3a48fe0fad7",
+              "size_bytes": 928
+            }
+          ],
+          "load_date_utc": "2026-10-11T16:48:22.487376+00:00",
+          "outputs": {
+            "EXIT.CSV": {
+              "inserted_count": 0,
+              "output_fingerprint": "1607e2d3e7aa4de29be17ae26785a78575f1c09131e4eb627a0b77cf8458bfb0",
+              "record_count": 3,
+              "retry_count": 3,
+              "status": "SUCCEEDED",
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_formats_csv`"
+            },
+            "EXIT.JSON": {
+              "inserted_count": 0,
+              "output_fingerprint": "4d95f29b87f422f61296de46a4bca9af03ca2472f55ada84a8b23ce7b66e88e3",
+              "record_count": 3,
+              "retry_count": 3,
+              "status": "SUCCEEDED",
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_formats_json`"
+            },
+            "EXIT.PARQUET": {
+              "inserted_count": 0,
+              "output_fingerprint": "a5e99b22bbba11369af70be8614ad2e82c346da43cac1f4629d4dd93c23c8442",
+              "record_count": 3,
+              "retry_count": 3,
+              "status": "SUCCEEDED",
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_formats_parquet`"
+            }
+          },
+          "work_status": "SUCCEEDED"
+        },
+        "newer": {
+          "attempt": 1,
+          "audit_id": "d62ad497d788c95ed489838611566153121d099e63f4d0009d78861a407361b4",
+          "batch_id": "c37d0ac2-2feb-500f-9210-2bef48f9c6cc",
+          "commit": {
+            "commit_id": "39ff04bedc6ef7d1ab38fa051d5af8dc42b280f4dd80092e0ad0ce0ff4414443",
+            "status": "VERIFIED"
+          },
+          "delivery_status": "SUCCEEDED",
+          "files": [
+            {
+              "path": "json.json",
+              "sha256": "1df5777c202ab2fed2a765b9987cc2a53649e56083a1af9a64deeb5b3ee66577",
+              "size_bytes": 72
+            }
+          ],
+          "load_date_utc": "2026-10-11T16:48:22.487378+00:00",
+          "outputs": {
+            "EXIT.JSON": {
+              "inserted_count": 0,
+              "output_fingerprint": "a482c2b90f9a472f2e0d7b1f6091d60f5ad87767b296265180f42572e64c19db",
+              "record_count": 3,
+              "retry_count": 3,
+              "status": "SUCCEEDED",
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_newer_blocked_json`"
+            }
+          },
+          "work_status": "SUCCEEDED"
+        },
+        "raw": {
+          "attempt": 2,
+          "audit_id": "2e0e58da9836b3cc2fc1c4ddb6e60af6350a5504ed92737500b8dd40bb33be43",
+          "batch_id": "a872e76e-2c5c-5a7b-89c8-8b7560e5ce94",
+          "commit": {
+            "commit_id": "d2b6831b31144deaddced95b66309b811b9d2da1a4cf82a96933a9d696e1f7a3",
+            "status": "VERIFIED"
+          },
+          "delivery_status": "SUCCEEDED",
+          "files": [
+            {
+              "path": "json.json",
+              "sha256": "1df5777c202ab2fed2a765b9987cc2a53649e56083a1af9a64deeb5b3ee66577",
+              "size_bytes": 72
+            }
+          ],
+          "load_date_utc": "2026-10-11T16:48:22.487379+00:00",
+          "outputs": {
+            "EXIT.JSON": {
+              "inserted_count": 0,
+              "output_fingerprint": "1061a208609c860a19540804447cd6d0ad9a82a562893de588b787439f8b3a22",
+              "record_count": 3,
+              "retry_count": 3,
+              "status": "SUCCEEDED",
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_stop_raw_json`"
+            }
+          },
+          "work_status": "SUCCEEDED"
+        },
+        "registered": {
+          "attempt": 1,
+          "audit_id": "11c22e49e6694c8823c06bd76cf8d54db933bcd14a34c5a1a6c7ac66cd419878",
+          "batch_id": "875ed8c6-f94c-5148-9441-a43d74acd8db",
+          "commit": {
+            "commit_id": "973497a336daaa211ba354fd5a47c8bc79d36def94658cbd88ecdeceb942661e",
+            "status": "VERIFIED"
+          },
+          "delivery_status": "SUCCEEDED",
+          "files": [
+            {
+              "path": "json.json",
+              "sha256": "1df5777c202ab2fed2a765b9987cc2a53649e56083a1af9a64deeb5b3ee66577",
+              "size_bytes": 72
+            }
+          ],
+          "load_date_utc": "2026-10-11T16:48:22.487377+00:00",
+          "outputs": {
+            "EXIT.JSON": {
+              "inserted_count": 0,
+              "output_fingerprint": "de3ab6ce00cf61c6b1c0c307dbf86495b876ff0b90ad90932e93dff285744ebe",
+              "record_count": 3,
+              "retry_count": 3,
+              "status": "SUCCEEDED",
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_stop_registered_json`"
+            }
+          },
+          "work_status": "SUCCEEDED"
+        },
+        "status": {
+          "attempt": 1,
+          "audit_id": "399b8241823ef2fef39ff0939f5d1ec0095aebaa9e652042690c251f4b31a5b0",
+          "batch_id": "2b81b7be-a888-5181-94e5-45283c1d8d55",
+          "commit": {
+            "commit_id": "bb1a83f32a82e8c94b3d29163f3a4ecffe72e29d5cf8b6d3d39babeefd7481ad",
+            "status": "VERIFIED"
+          },
+          "delivery_status": "SUCCEEDED",
+          "files": [
+            {
+              "path": "json.json",
+              "sha256": "1df5777c202ab2fed2a765b9987cc2a53649e56083a1af9a64deeb5b3ee66577",
+              "size_bytes": 72
+            }
+          ],
+          "load_date_utc": "2026-10-11T16:48:22.487382+00:00",
+          "outputs": {
+            "EXIT.JSON": {
+              "inserted_count": 0,
+              "output_fingerprint": "8ed0f8a3b2411b986a120b398d4aa7d5b92d37f46eed5d7124f42ea3b45f65ae",
+              "record_count": 3,
+              "retry_count": 3,
+              "status": "SUCCEEDED",
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_stop_status_json`"
+            }
+          },
+          "work_status": "SUCCEEDED"
+        }
+      },
+      "formats": {
+        "CSV": {
+          "count": 3,
+          "exact_equal": true,
+          "identity_multiset": [
+            [
+              "4b96b1a615da0da9891c68fb3ba09e556e1160899576a22bf96f72c36a71855e",
+              "{\"key\":\"A\",\"value\":\"1\"}",
+              1
+            ],
+            [
+              "b4d7e91ad16fc1cb90219f15d629cb06d01c42cf22eaca200917210778a3203f",
+              "{\"key\":\"A\",\"value\":\"1\"}",
+              2
+            ],
+            [
+              "cbefa47b2aae3b130db56dbf4e873a6beb21c6536a4caaac186572989b0550ad",
+              "{\"key\":\"B\",\"value\":\"2\"}",
+              1
+            ]
+          ],
+          "partitions": [
+            1,
+            7
+          ]
+        },
+        "JSON": {
+          "count": 3,
+          "exact_equal": true,
+          "identity_multiset": [
+            [
+              "2edf0ba4093835b90b157e70e699f06d986d82ba26eef4c0589a2b968bcb9732",
+              "{\"key\":\"A\",\"value\":\"1\"}",
+              2
+            ],
+            [
+              "65b7e896b4a3e7ad11cb697e89a4dfbc5abe4303cd822c195f4d33f5a9f07171",
+              "{\"key\":\"A\",\"value\":\"1\"}",
+              1
+            ],
+            [
+              "67560d31cd21dcc4dd5eefae5055f7b75e6d2758fdf2d80a946e15b9f5c4079c",
+              "{\"key\":\"B\",\"value\":\"2\"}",
+              1
+            ]
+          ],
+          "partitions": [
+            1,
+            7
+          ]
+        },
+        "PARQUET": {
+          "count": 3,
+          "exact_equal": true,
+          "identity_multiset": [
+            [
+              "1c2e7296d1e2f9a02c7f181405a937becb572c831d34d20702f48ca4014fb995",
+              "{\"key\":\"A\",\"value\":\"1\"}",
+              1
+            ],
+            [
+              "3a55653907c4d67208dad596f655bd226fb424870a1e35273d727ebb0c345534",
+              "{\"key\":\"A\",\"value\":\"1\"}",
+              2
+            ],
+            [
+              "fe0bf15e3614ceaad25e0ac256187062f72ac854538245a971d2635d0c9a6535",
+              "{\"key\":\"B\",\"value\":\"2\"}",
+              1
+            ]
+          ],
+          "partitions": [
+            1,
+            7
+          ]
+        }
+      },
+      "interruptions": {
+        "bronze": "PREVIOUS_INTERRUPTION_RECOVERED",
+        "commit": "PREVIOUS_INTERRUPTION_RECOVERED",
+        "raw": "PREVIOUS_INTERRUPTION_RECOVERED",
+        "registered": "PREVIOUS_INTERRUPTION_RECOVERED",
+        "status": "PREVIOUS_INTERRUPTION_RECOVERED"
+      },
+      "negative_cases": {
+        "incomplete_object_scope": "Manifest object scope does not match the required source scope",
+        "missing_is_not_empty": "Missing files are valid only for an explicit complete empty snapshot",
+        "parquet_type": "Parquet datatypes differ from declared schema: EXIT.PARQUET",
+        "physical_file_bytes": "OneLake file bytes differ from manifest: json.json",
+        "physical_file_missing": "OneLake delivery inventory differs from the closed manifest",
+        "physical_manifest_conflict": "OneLake manifest differs from the registered document",
+        "registered_manifest_conflict": "Registered delivery manifest/sequence conflicts with immutable input",
+        "schema_CSV": "Raw schema differs from declared schema: EXIT.CSV",
+        "schema_JSON": "Raw schema differs from declared schema: EXIT.JSON",
+        "schema_PARQUET": "Raw schema differs from declared schema: EXIT.PARQUET"
+      },
+      "owner_released": true,
+      "phase5_version": "0.6.1",
+      "production_release_accepted": false,
+      "scope": "PHASE5_EXIT_INGESTION_CONTROL",
+      "status": "SUCCEEDED"
+    }
+  }
+}

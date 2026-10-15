@@ -1,0 +1,20 @@
+{
+  "contract_version": "1.0",
+  "bundle_id": "contoso_phase5_metadata_write_probe",
+  "scope": "PHASE5_METADATA_WRITE_PROBE",
+  "environment_binding": {
+    "path": "environments/contoso.dev.json",
+    "item_id": "7266a872-dd91-4aa6-a0b4-d4cc5b862643"
+  },
+  "library": {
+    "path": "dist/fabric_etl_phase5-0.5.0-py3-none-any.whl",
+    "name": "fabric-etl-phase5",
+    "version": "0.5.0",
+    "sha256": "a49d9a84594f12fa6411a876438f57fb75d433442bfa8e84c3443486c3709b66"
+  },
+  "notebooks": [{
+    "id": "phase5_metadata_write_probe",
+    "display_name": "{project_id}_phase5_metadata_write_probe_{environment}",
+    "source": "fabric/items/phase5_metadata_write_probe.Notebook/notebook-content.py"
+  }]
+}

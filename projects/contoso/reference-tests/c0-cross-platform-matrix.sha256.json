@@ -1,0 +1,7 @@
+{
+  "matrix_file": "c0-cross-platform-matrix.json",
+  "canonicalization": "fabric_etl.contracts.canonical_json-v1",
+  "full_sha256": "4e5f842048ed8586e707bf719fdeef5103fe6392cf51eae6757ac55779f5e01c",
+  "canonical_bytes": 9285,
+  "base_contract_full_sha256": "0893cf612d1fd9ca639c23bf8807013d8b2cac198e6dce4a1f7b39cfaba36ae5"
+}

@@ -1,0 +1,9 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "19b03dcd-9dbb-448a-83be-f66f20e8f70d",
+  "livy_id": "1ec332e3-cd75-472e-8d38-612514bf9431",
+  "job_instance_id": "9ea22527-7903-4e25-bda7-0b78380f37d2",
+  "livy_state": "Failed",
+  "job_status": "Failed",
+  "confirmed_at": "2026-10-10T14:16:08.746504+00:00"
+}

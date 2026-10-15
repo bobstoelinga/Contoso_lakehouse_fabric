@@ -1,0 +1,3884 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "0c31f59c-0bfd-4a14-8200-2a0e3fa58610",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/0c31f59c-0bfd-4a14-8200-2a0e3fa58610/jobs/instances/5a18b1e3-d23c-48a5-8b09-21e1a3da1f9c",
+  "status": "COMPLETED",
+  "job": {
+    "id": "5a18b1e3-d23c-48a5-8b09-21e1a3da1f9c",
+    "itemId": "0c31f59c-0bfd-4a14-8200-2a0e3fa58610",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "3900b0c4-ed85-456d-9d2c-41b6beebe074",
+    "startTimeUtc": "2026-10-12T06:21:21.868514",
+    "endTimeUtc": "2026-10-12T06:43:25.1784092",
+    "exit_result": {
+      "business_data_written": false,
+      "deliveries": [
+        {
+          "delivery_number": 1,
+          "fixture_fingerprint": "2da9e51b2ab772226c8c5b3571d9539c49e08c51bd7d9cb664c05596d71c3326",
+          "ingest": {
+            "attempt": 1,
+            "audit_id": "8fba30bdb86a0a57eea8670904071b2cc7fd527ea13b53a90d1027445efbbf3b",
+            "batch_id": "be2008c7-5d85-5692-ade3-3eb78a39d457",
+            "commit": {
+              "commit_id": "bc72b289467f518bc970fc23ddfe16930552976edac59311817d8caed5b7906b",
+              "status": "VERIFIED"
+            },
+            "delivery_status": "SUCCEEDED",
+            "files": [
+              {
+                "path": "customers.parquet",
+                "sha256": "7ce97d9a62810ab8737a9ab2fde3edcd280125b7d2e9c01697cfd72066bf7267",
+                "size_bytes": 4313
+              },
+              {
+                "path": "employees.parquet",
+                "sha256": "cd0dc8159b6329e74b845929baf75a8896525e5c910c7077cf7ec8743e36f037",
+                "size_bytes": 2659
+              },
+              {
+                "path": "orders.parquet",
+                "sha256": "087c5bdb985d2ff44af19aa76189dd4e20be47eb0aa5aa77e4ba9d99bbf7cd76",
+                "size_bytes": 4997
+              },
+              {
+                "path": "products.parquet",
+                "sha256": "c13b367edc85f1ef0c38674c41835c6663a34e4a5492c9e94b4c88583162a825",
+                "size_bytes": 3329
+              },
+              {
+                "path": "returns.parquet",
+                "sha256": "4add86fdfd76c81cb5ee101db614d40d82d422f05c6da3d12eedaaac13f4155d",
+                "size_bytes": 4028
+              }
+            ],
+            "load_date_utc": "2026-10-12T05:58:21.042199+00:00",
+            "outputs": {
+              "SALES.CUSTOMERS": {
+                "inserted_count": 0,
+                "output_fingerprint": "2a6114cd88642dde73b96572ebbebd40c5d22855bb168688570c9f4f98746253",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_customers`"
+              },
+              "SALES.EMPLOYEES": {
+                "inserted_count": 0,
+                "output_fingerprint": "38708c824af9cda2a117686449d4c48614fdf57bc0f851bb929053cabfe30ff5",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_employees`"
+              },
+              "SALES.ORDERS": {
+                "inserted_count": 0,
+                "output_fingerprint": "d4c007eee3769ecba6df4289a0e09298c27cadc95e258493060604b5b7dc51fb",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_orders`"
+              },
+              "SALES.PRODUCTS": {
+                "inserted_count": 0,
+                "output_fingerprint": "e9e82efe794d1fa12c31ddab86987b2488fa6ca94e3ac3a56d1653e4c3d06c89",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_products`"
+              },
+              "SALES.RETURNS": {
+                "inserted_count": 0,
+                "output_fingerprint": "8cd1b04a4e81c45ccf008241a6d961fc80e5fb41a3ba17f62e2d9d2270279481",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_returns`"
+              }
+            },
+            "work_status": "SUCCEEDED"
+          },
+          "quality": {
+            "SALES.CUSTOMERS": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-CUST-001",
+                  "DQ-CUST-002",
+                  "DQ-CUST-003",
+                  "DQ-CUST-004"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-CUST-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-11",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-12",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-CUST-12",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-CUST-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-CUST-002",
+                    "threshold_percent": 1.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-CUST-003",
+                    "threshold_percent": 10.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-CUST-004",
+                    "threshold_percent": 5.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.CUSTOMERS"
+              },
+              "batch_id": "be2008c7-5d85-5692-ade3-3eb78a39d457",
+              "commit": {
+                "commit_id": "879374f1ad3d08c586d4064712f6d40da6ec2f6fdda751da1cb9f86f56d38b46",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_customers_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "194f223005c5ae48b791815dd2da134182955932a39ca193bd1c8a8ae724b6f8",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_customers`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_customers`"
+                }
+              },
+              "reference_commit_ids": {},
+              "source_id": "SALES.CUSTOMERS",
+              "table": "phase6_sales_customers"
+            },
+            "SALES.EMPLOYEES": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-EMP-001",
+                  "DQ-EMP-002"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-EMP-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-EMP-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-EMP-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-EMP-002",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.EMPLOYEES"
+              },
+              "batch_id": "be2008c7-5d85-5692-ade3-3eb78a39d457",
+              "commit": {
+                "commit_id": "a4a78edd31b2c3ed6df1a29282cca3cbe4ca1bc280e4d0fc1e03a80eddfb393b",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_employees_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "439a3b382ef0039ae8c40f6e576417424de7b816853e0fdd7a9258c906c5b149",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_employees`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_employees`"
+                }
+              },
+              "reference_commit_ids": {},
+              "source_id": "SALES.EMPLOYEES",
+              "table": "phase6_sales_employees"
+            },
+            "SALES.ORDERS": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-ORD-001",
+                  "DQ-ORD-002",
+                  "DQ-ORD-003",
+                  "DQ-ORD-004",
+                  "DQ-ORD-005",
+                  "DQ-ORD-006",
+                  "DQ-ORD-007",
+                  "DQ-ORD-008",
+                  "DQ-ORD-009"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-11",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-11",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-12",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-13",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-13",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-04A",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-04A",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-002",
+                    "threshold_percent": 0.5,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-003",
+                    "threshold_percent": 1.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-004",
+                    "threshold_percent": 1.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-005",
+                    "threshold_percent": 2.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-006",
+                    "threshold_percent": 5.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-007",
+                    "threshold_percent": 1.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-008",
+                    "threshold_percent": 5.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-009",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.ORDERS"
+              },
+              "batch_id": "be2008c7-5d85-5692-ade3-3eb78a39d457",
+              "commit": {
+                "commit_id": "2c54692da603a4c47afadb0bdbd221c6eb62d6675d9c8dbfa6fe2dfb1d7fbd86",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_orders_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "9a952a4c9ece2880be863e5da737496e93c06af62fdfc369a77717c9043f79ba",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_orders`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_orders`"
+                }
+              },
+              "reference_commit_ids": {
+                "SALES.CUSTOMERS": "879374f1ad3d08c586d4064712f6d40da6ec2f6fdda751da1cb9f86f56d38b46",
+                "SALES.EMPLOYEES": "a4a78edd31b2c3ed6df1a29282cca3cbe4ca1bc280e4d0fc1e03a80eddfb393b",
+                "SALES.PRODUCTS": "fbe691214279919e38b1a7e41815434d915dc4ec6dc1dd91574e98ddfe0fee63"
+              },
+              "source_id": "SALES.ORDERS",
+              "table": "phase6_sales_orders"
+            },
+            "SALES.PRODUCTS": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-PROD-001",
+                  "DQ-PROD-002",
+                  "DQ-PROD-003"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-PROD-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-PROD-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-PROD-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-PROD-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-PROD-002",
+                    "threshold_percent": 2.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-PROD-003",
+                    "threshold_percent": 15.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.PRODUCTS"
+              },
+              "batch_id": "be2008c7-5d85-5692-ade3-3eb78a39d457",
+              "commit": {
+                "commit_id": "fbe691214279919e38b1a7e41815434d915dc4ec6dc1dd91574e98ddfe0fee63",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_products_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "627d78ecd9397d2e5858bef2c87828bdd9dbdc016c91b77f1c1a94ffdc09b7f9",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_products`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_products`"
+                }
+              },
+              "reference_commit_ids": {},
+              "source_id": "SALES.PRODUCTS",
+              "table": "phase6_sales_products"
+            },
+            "SALES.RETURNS": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-RET-001",
+                  "DQ-RET-002",
+                  "DQ-RET-003",
+                  "DQ-RET-004",
+                  "DQ-RET-005",
+                  "DQ-RET-006"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-04A",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-04A",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-002",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-003",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-004",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-005",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-006",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.RETURNS"
+              },
+              "batch_id": "be2008c7-5d85-5692-ade3-3eb78a39d457",
+              "commit": {
+                "commit_id": "8758229f476ce9e5b6444a0081c67498263140ca96c8a36fb8ab1239134518d7",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_returns_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "f648d49f7e04cfb27857387a92eee74f656138bddf3cb3f9ae3357dc9efdc0f6",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_returns`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_returns`"
+                }
+              },
+              "reference_commit_ids": {
+                "SALES.EMPLOYEES": "a4a78edd31b2c3ed6df1a29282cca3cbe4ca1bc280e4d0fc1e03a80eddfb393b",
+                "SALES.PRODUCTS": "fbe691214279919e38b1a7e41815434d915dc4ec6dc1dd91574e98ddfe0fee63"
+              },
+              "source_id": "SALES.RETURNS",
+              "table": "phase6_sales_returns"
+            }
+          }
+        },
+        {
+          "delivery_number": 2,
+          "fixture_fingerprint": "4629b3ea12c0a4eaa18a05e66d50763c2cc1a61441184465ad37e5737c5130bc",
+          "ingest": {
+            "attempt": 1,
+            "audit_id": "47bf848e5b524615948c938203a05ed7231e26d25f48b305b0f19a0986f1350c",
+            "batch_id": "035cffd2-9ee0-51db-9162-129bbc0a2ce7",
+            "commit": {
+              "commit_id": "3b251d11330ae0d2817d6a00cbadb0dae3639bc3f4eac6fd7f6b93027e2e5415",
+              "status": "VERIFIED"
+            },
+            "delivery_status": "SUCCEEDED",
+            "files": [
+              {
+                "path": "customers.parquet",
+                "sha256": "3e284d0553b8e9066d1ae335c4cb5d9017dbd8fed7a90b98f6fbfbf0e7aaf630",
+                "size_bytes": 4334
+              },
+              {
+                "path": "employees.parquet",
+                "sha256": "cd0dc8159b6329e74b845929baf75a8896525e5c910c7077cf7ec8743e36f037",
+                "size_bytes": 2659
+              },
+              {
+                "path": "orders.parquet",
+                "sha256": "087c5bdb985d2ff44af19aa76189dd4e20be47eb0aa5aa77e4ba9d99bbf7cd76",
+                "size_bytes": 4997
+              },
+              {
+                "path": "products.parquet",
+                "sha256": "73e7b6c5a96db5bd357ac2b05b49dd497b8e4eb77132133040f6a1156ff2076b",
+                "size_bytes": 3329
+              },
+              {
+                "path": "returns.parquet",
+                "sha256": "4add86fdfd76c81cb5ee101db614d40d82d422f05c6da3d12eedaaac13f4155d",
+                "size_bytes": 4028
+              }
+            ],
+            "load_date_utc": "2026-10-12T06:06:26.014796+00:00",
+            "outputs": {
+              "SALES.CUSTOMERS": {
+                "inserted_count": 0,
+                "output_fingerprint": "76181950a6b093640285b10398135211074794ba1dd9ec866684d9d9ca5b62ad",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_customers`"
+              },
+              "SALES.EMPLOYEES": {
+                "inserted_count": 0,
+                "output_fingerprint": "19da5d5170c3bf90ddeb0adf4d7c777b42b869f2c104affeadc3372798dd9517",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_employees`"
+              },
+              "SALES.ORDERS": {
+                "inserted_count": 0,
+                "output_fingerprint": "ca648a2894d10e52d64d96bcf57a03a2f0ce455806b2dadbc9aaf5168be27d6b",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_orders`"
+              },
+              "SALES.PRODUCTS": {
+                "inserted_count": 0,
+                "output_fingerprint": "3aaff3c2e15d0a6c09ff3b838f3f0346c0229cdc42957a0beb95c2dd37c8b7ce",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_products`"
+              },
+              "SALES.RETURNS": {
+                "inserted_count": 0,
+                "output_fingerprint": "59c0f7dd7a04c943ae3a6579af6c1c60ea9142cfe3db85d600ded6f7a0160f45",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_returns`"
+              }
+            },
+            "work_status": "SUCCEEDED"
+          },
+          "quality": {
+            "SALES.CUSTOMERS": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-CUST-001",
+                  "DQ-CUST-002",
+                  "DQ-CUST-003",
+                  "DQ-CUST-004"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-CUST-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-11",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-12",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-CUST-12",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-CUST-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-CUST-002",
+                    "threshold_percent": 1.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-CUST-003",
+                    "threshold_percent": 10.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-CUST-004",
+                    "threshold_percent": 5.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.CUSTOMERS"
+              },
+              "batch_id": "035cffd2-9ee0-51db-9162-129bbc0a2ce7",
+              "commit": {
+                "commit_id": "2a589c7068afffb145bd15d8b64da028ca3cfa398050837d536fd6c287ee2c96",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_customers_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "936d131dfe97b4e83d0792d15dc71ffb4994dd866ccb59c2b0d96cba5eba3f39",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_customers`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_customers`"
+                }
+              },
+              "reference_commit_ids": {},
+              "source_id": "SALES.CUSTOMERS",
+              "table": "phase6_sales_customers"
+            },
+            "SALES.EMPLOYEES": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-EMP-001",
+                  "DQ-EMP-002"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-EMP-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-EMP-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-EMP-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-EMP-002",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.EMPLOYEES"
+              },
+              "batch_id": "035cffd2-9ee0-51db-9162-129bbc0a2ce7",
+              "commit": {
+                "commit_id": "ce9c1826098c6ee9f054b649a9eb93d03eb84b2eb4b6f48af24a836e02179fec",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_employees_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "51f68f4631e2d4f5d73a11306f693755d8cc86581bd18cf6f0ca1aeb6f4c0a02",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_employees`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_employees`"
+                }
+              },
+              "reference_commit_ids": {},
+              "source_id": "SALES.EMPLOYEES",
+              "table": "phase6_sales_employees"
+            },
+            "SALES.ORDERS": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-ORD-001",
+                  "DQ-ORD-002",
+                  "DQ-ORD-003",
+                  "DQ-ORD-004",
+                  "DQ-ORD-005",
+                  "DQ-ORD-006",
+                  "DQ-ORD-007",
+                  "DQ-ORD-008",
+                  "DQ-ORD-009"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-11",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-11",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-12",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-13",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-13",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-04A",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-04A",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-002",
+                    "threshold_percent": 0.5,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-003",
+                    "threshold_percent": 1.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-004",
+                    "threshold_percent": 1.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-005",
+                    "threshold_percent": 2.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-006",
+                    "threshold_percent": 5.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-007",
+                    "threshold_percent": 1.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-008",
+                    "threshold_percent": 5.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-009",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.ORDERS"
+              },
+              "batch_id": "035cffd2-9ee0-51db-9162-129bbc0a2ce7",
+              "commit": {
+                "commit_id": "28b4922d73789f4692a710b8a4f7f8089ae796b706f201398a624ff2761c9475",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_orders_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "f0a29144d4314d9f80316f7f3d9ef578b46d8268894d61a17f5b6cbcaffdf3b3",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_orders`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_orders`"
+                }
+              },
+              "reference_commit_ids": {
+                "SALES.CUSTOMERS": "2a589c7068afffb145bd15d8b64da028ca3cfa398050837d536fd6c287ee2c96",
+                "SALES.EMPLOYEES": "ce9c1826098c6ee9f054b649a9eb93d03eb84b2eb4b6f48af24a836e02179fec",
+                "SALES.PRODUCTS": "7c5997ba509fde8d558742ebb76d699026d6b45a11009011351ac7572d2fe03e"
+              },
+              "source_id": "SALES.ORDERS",
+              "table": "phase6_sales_orders"
+            },
+            "SALES.PRODUCTS": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-PROD-001",
+                  "DQ-PROD-002",
+                  "DQ-PROD-003"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-PROD-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-PROD-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-PROD-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-PROD-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-PROD-002",
+                    "threshold_percent": 2.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-PROD-003",
+                    "threshold_percent": 15.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.PRODUCTS"
+              },
+              "batch_id": "035cffd2-9ee0-51db-9162-129bbc0a2ce7",
+              "commit": {
+                "commit_id": "7c5997ba509fde8d558742ebb76d699026d6b45a11009011351ac7572d2fe03e",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_products_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "c408c8ef452f27b822e6240c7bc7854fa3fc7efa89f2b1a78b915911bf2ce0d5",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_products`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_products`"
+                }
+              },
+              "reference_commit_ids": {},
+              "source_id": "SALES.PRODUCTS",
+              "table": "phase6_sales_products"
+            },
+            "SALES.RETURNS": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-RET-001",
+                  "DQ-RET-002",
+                  "DQ-RET-003",
+                  "DQ-RET-004",
+                  "DQ-RET-005",
+                  "DQ-RET-006"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-04A",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-04A",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-002",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-003",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-004",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-005",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-006",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.RETURNS"
+              },
+              "batch_id": "035cffd2-9ee0-51db-9162-129bbc0a2ce7",
+              "commit": {
+                "commit_id": "006e0af1b74ef412c3c2abed0ba14d1ad6e1183c810175b0e8b1367b5c57cf14",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_returns_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "aedcc23a439d7f2f0281c9b169c801de588f1bbc33de46002f5fefa9a32382d6",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_returns`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_returns`"
+                }
+              },
+              "reference_commit_ids": {
+                "SALES.EMPLOYEES": "ce9c1826098c6ee9f054b649a9eb93d03eb84b2eb4b6f48af24a836e02179fec",
+                "SALES.PRODUCTS": "7c5997ba509fde8d558742ebb76d699026d6b45a11009011351ac7572d2fe03e"
+              },
+              "source_id": "SALES.RETURNS",
+              "table": "phase6_sales_returns"
+            }
+          }
+        },
+        {
+          "delivery_number": 3,
+          "fixture_fingerprint": "0a7d64829cbdb18d09b54db985903247e91c2b3ff7e5c28bde95b922c8168023",
+          "ingest": {
+            "attempt": 1,
+            "audit_id": "511250ad9e120c0b29bd1824ef8be2b59109f7723f7c69ddb06fcec3e3381729",
+            "batch_id": "b8914406-23be-56d8-897e-c194a8ecefda",
+            "commit": {
+              "commit_id": "91b51e5921fe317c17b1f78a964e93bb11385e188559e61d61f70317c75595fe",
+              "status": "VERIFIED"
+            },
+            "delivery_status": "SUCCEEDED",
+            "files": [
+              {
+                "path": "customers.parquet",
+                "sha256": "e64bd8d57dc4e567023cef9b2a17e6dc66617d63fb1865b33921dbd937d66845",
+                "size_bytes": 4329
+              },
+              {
+                "path": "employees.parquet",
+                "sha256": "9be30c1dd84b7ab6f7f6513723bb07a80448822d60e606b2b95ae4841043c8a3",
+                "size_bytes": 2654
+              },
+              {
+                "path": "orders.parquet",
+                "sha256": "087c5bdb985d2ff44af19aa76189dd4e20be47eb0aa5aa77e4ba9d99bbf7cd76",
+                "size_bytes": 4997
+              },
+              {
+                "path": "products.parquet",
+                "sha256": "3150cb205db24dcca81959fb8cde7dec5e3aabd82f2433f33fa8214b82c2e22e",
+                "size_bytes": 3324
+              },
+              {
+                "path": "returns.parquet",
+                "sha256": "4add86fdfd76c81cb5ee101db614d40d82d422f05c6da3d12eedaaac13f4155d",
+                "size_bytes": 4028
+              }
+            ],
+            "load_date_utc": "2026-10-12T06:13:39.557082+00:00",
+            "outputs": {
+              "SALES.CUSTOMERS": {
+                "inserted_count": 0,
+                "output_fingerprint": "31b004699aa2360a1beb54dcdc4b6cd09506961e5a3d8083b869e46fedc9e262",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_customers`"
+              },
+              "SALES.EMPLOYEES": {
+                "inserted_count": 0,
+                "output_fingerprint": "41262bb789b5715e6d2e87d1b9d82596482072a8a8c13ea53eb449e832a568e5",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_employees`"
+              },
+              "SALES.ORDERS": {
+                "inserted_count": 0,
+                "output_fingerprint": "64628773611e88e52c02543f877416ebb18399cdd62fb8c793b0a2c898d2cf31",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_orders`"
+              },
+              "SALES.PRODUCTS": {
+                "inserted_count": 0,
+                "output_fingerprint": "ec2bc71f2b09699976798a85fe7dd08cff92e231721f6fb6c9ab20d93b1e3ac2",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_products`"
+              },
+              "SALES.RETURNS": {
+                "inserted_count": 0,
+                "output_fingerprint": "e9c95d5b3f98866a65d420ea588323081cabd7239bd5f4e7f9b57e6c0603668d",
+                "record_count": 1,
+                "retry_count": 1,
+                "status": "SUCCEEDED",
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_exit_phase6_sales_returns`"
+              }
+            },
+            "work_status": "SUCCEEDED"
+          },
+          "quality": {
+            "SALES.CUSTOMERS": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-CUST-001",
+                  "DQ-CUST-002",
+                  "DQ-CUST-003",
+                  "DQ-CUST-004"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-CUST-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-11",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-CUST-12",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-CUST-12",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-CUST-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-CUST-002",
+                    "threshold_percent": 1.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-CUST-003",
+                    "threshold_percent": 10.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-CUST-004",
+                    "threshold_percent": 5.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.CUSTOMERS"
+              },
+              "batch_id": "b8914406-23be-56d8-897e-c194a8ecefda",
+              "commit": {
+                "commit_id": "fb802c0778ca0710d04227f0d1ad964e2f360bf5abd6d6980074c67bbb847c89",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_customers_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "23bf9c7b5757aea0cbfef425a92cc76cedcebe6f094dc44a991d97d038efdb25",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_customers`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_customers`"
+                }
+              },
+              "reference_commit_ids": {},
+              "source_id": "SALES.CUSTOMERS",
+              "table": "phase6_sales_customers"
+            },
+            "SALES.EMPLOYEES": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-EMP-001",
+                  "DQ-EMP-002"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-EMP-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-EMP-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-EMP-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-EMP-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-EMP-002",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.EMPLOYEES"
+              },
+              "batch_id": "b8914406-23be-56d8-897e-c194a8ecefda",
+              "commit": {
+                "commit_id": "7ed8b315bd7a2f658a00ffe678028bf8bba9ec504b4a2f1d7bbbbf48e4def799",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_employees_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "69e661dae221becc2c363906a04df617d0a7ffd8344b47df55918e6ee0a382b4",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_employees`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_employees`"
+                }
+              },
+              "reference_commit_ids": {},
+              "source_id": "SALES.EMPLOYEES",
+              "table": "phase6_sales_employees"
+            },
+            "SALES.ORDERS": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-ORD-001",
+                  "DQ-ORD-002",
+                  "DQ-ORD-003",
+                  "DQ-ORD-004",
+                  "DQ-ORD-005",
+                  "DQ-ORD-006",
+                  "DQ-ORD-007",
+                  "DQ-ORD-008",
+                  "DQ-ORD-009"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-11",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-11",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-12",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-13",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-13",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-ORD-04A",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-ORD-04A",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-002",
+                    "threshold_percent": 0.5,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-003",
+                    "threshold_percent": 1.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-004",
+                    "threshold_percent": 1.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-005",
+                    "threshold_percent": 2.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-006",
+                    "threshold_percent": 5.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-007",
+                    "threshold_percent": 1.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-008",
+                    "threshold_percent": 5.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-ORD-009",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.ORDERS"
+              },
+              "batch_id": "b8914406-23be-56d8-897e-c194a8ecefda",
+              "commit": {
+                "commit_id": "bcdbee4d2759663cefb753edf6757aff779c485126953386b5353fde23d42a48",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_orders_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "fa91766693ad6a0f19de7a00b21bab6f786498c4960752176b0550d707d5fc51",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_orders`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_orders`"
+                }
+              },
+              "reference_commit_ids": {
+                "SALES.CUSTOMERS": "fb802c0778ca0710d04227f0d1ad964e2f360bf5abd6d6980074c67bbb847c89",
+                "SALES.EMPLOYEES": "7ed8b315bd7a2f658a00ffe678028bf8bba9ec504b4a2f1d7bbbbf48e4def799",
+                "SALES.PRODUCTS": "2efd83a4555d5a7c838685bbd6066148e225ae9350714de5e5cfacd71989fe51"
+              },
+              "source_id": "SALES.ORDERS",
+              "table": "phase6_sales_orders"
+            },
+            "SALES.PRODUCTS": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-PROD-001",
+                  "DQ-PROD-002",
+                  "DQ-PROD-003"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-PROD-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-PROD-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-PROD-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-PROD-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-PROD-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-PROD-002",
+                    "threshold_percent": 2.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-PROD-003",
+                    "threshold_percent": 15.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.PRODUCTS"
+              },
+              "batch_id": "b8914406-23be-56d8-897e-c194a8ecefda",
+              "commit": {
+                "commit_id": "2efd83a4555d5a7c838685bbd6066148e225ae9350714de5e5cfacd71989fe51",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_products_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "c630090c101cab300447cc6d314e83e987204fc7608d1883c64f30895d8ddd0a",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_products`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_products`"
+                }
+              },
+              "reference_commit_ids": {},
+              "source_id": "SALES.PRODUCTS",
+              "table": "phase6_sales_products"
+            },
+            "SALES.RETURNS": {
+              "accounting": {
+                "bronze_count": 1,
+                "counts": {
+                  "FILTERED": 0,
+                  "PASSED": 1,
+                  "REJECTED": 0
+                },
+                "metadata_rule_ids": [
+                  "DQ-RET-001",
+                  "DQ-RET-002",
+                  "DQ-RET-003",
+                  "DQ-RET-004",
+                  "DQ-RET-005",
+                  "DQ-RET-006"
+                ],
+                "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+                "rules": [
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-01",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-02",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-03",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-04",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-05",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-06",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-07",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-08",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-09",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-10",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "CAST-M-QA-RET-04A",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "CONTINUE",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "REQUIRED-M-QA-RET-04A",
+                    "threshold_percent": 100,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-001",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-002",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-003",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-004",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-005",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  },
+                  {
+                    "action": "FAIL_BATCH",
+                    "breached": false,
+                    "population": 1,
+                    "rule_id": "DQ-RET-006",
+                    "threshold_percent": 0.0,
+                    "violation_percent": 0.0,
+                    "violations": 0
+                  }
+                ],
+                "source_object_id": "SALES.RETURNS"
+              },
+              "batch_id": "b8914406-23be-56d8-897e-c194a8ecefda",
+              "commit": {
+                "commit_id": "d487b3e1ed33f13edc5aa0c5ce4dc58c8e503f5981e744dc56044ae059c86b65",
+                "status": "VERIFIED"
+              },
+              "expected_output_verified": true,
+              "outputs": {
+                "FILTERED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_returns_filtered`"
+                },
+                "PASSED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "8a0c6acdfc422e873264abef2fdb9019f43e7f520dd87134b9bae7ebff601cf0",
+                  "record_count": 1,
+                  "retry_count": 1,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase6_sales_returns`"
+                },
+                "REJECTED": {
+                  "inserted_count": 0,
+                  "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                  "record_count": 0,
+                  "retry_count": 0,
+                  "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase6_sales_returns`"
+                }
+              },
+              "reference_commit_ids": {
+                "SALES.EMPLOYEES": "7ed8b315bd7a2f658a00ffe678028bf8bba9ec504b4a2f1d7bbbbf48e4def799",
+                "SALES.PRODUCTS": "2efd83a4555d5a7c838685bbd6066148e225ae9350714de5e5cfacd71989fe51"
+              },
+              "source_id": "SALES.RETURNS",
+              "table": "phase6_sales_returns"
+            }
+          }
+        }
+      ],
+      "owner_released": true,
+      "phase6_complete": false,
+      "phase6_version": "0.1.0",
+      "production_release_accepted": false,
+      "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+      "scope": "PHASE6_SALES_COMMITTED_QUALITY",
+      "status": "SUCCEEDED"
+    }
+  }
+}

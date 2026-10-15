@@ -1,0 +1,39 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "19b03dcd-9dbb-448a-83be-f66f20e8f70d",
+  "plan_id": "314ef93edeff6a558608892950a42fe6b02880ec8479d1f7a99282d79e10c626",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/19b03dcd-9dbb-448a-83be-f66f20e8f70d/jobs/instances/0465da50-e4d8-4adc-a75d-e62367def5e0",
+  "parameters_fingerprint": "c42473cbab9c584cbf9ba85dd528f8fa7259d318b62425a295efdaa64642d692",
+  "status": "Completed",
+  "job": {
+    "id": "0465da50-e4d8-4adc-a75d-e62367def5e0",
+    "itemId": "19b03dcd-9dbb-448a-83be-f66f20e8f70d",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "2b30d67e-0766-42e0-885e-fcd9a3885cfa",
+    "startTimeUtc": "2026-10-10T14:16:11.8214534",
+    "endTimeUtc": "2026-10-10T14:19:36.2441978",
+    "exit_result": {
+      "audit_event_id": "5176ff74adf597c58e386ee9052206dcf86e59f04e8430d438b1ee0c92ca72e2",
+      "recovered_owner": {
+        "generation": 7,
+        "job_instance_id": "1ec332e3-cd75-472e-8d38-612514bf9431",
+        "owner_id": "3e1a7943-1dca-406e-af0f-0affd8395a41",
+        "project_id": "contoso"
+      },
+      "scope": "EXPLICIT_STOPPED_WRITER_RECOVERY",
+      "status": "SUCCEEDED",
+      "terminal_proof": {
+        "confirmed_at": "2026-10-10T14:16:08.746504+00:00",
+        "item_id": "19b03dcd-9dbb-448a-83be-f66f20e8f70d",
+        "job_instance_id": "9ea22527-7903-4e25-bda7-0b78380f37d2",
+        "job_status": "Failed",
+        "livy_id": "1ec332e3-cd75-472e-8d38-612514bf9431",
+        "livy_state": "Failed",
+        "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b"
+      }
+    }
+  }
+}

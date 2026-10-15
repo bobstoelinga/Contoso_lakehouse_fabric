@@ -1,0 +1,35 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "e828095e-9274-4098-aacf-557f0ea336d3",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/e828095e-9274-4098-aacf-557f0ea336d3/jobs/instances/c9397e71-b6c8-4081-9de2-2286fb243c1f",
+  "status": "COMPLETED",
+  "job": {
+    "id": "c9397e71-b6c8-4081-9de2-2286fb243c1f",
+    "itemId": "e828095e-9274-4098-aacf-557f0ea336d3",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "cd7cdd2c-9a83-4d29-9e25-fd8d2e059ef9",
+    "startTimeUtc": "2026-10-11T10:02:15.9668993",
+    "endTimeUtc": "2026-10-11T10:06:30.4565036",
+    "exit_result": {
+      "commit_unchanged": true,
+      "expected_failures": {
+        "commit_conflict": "Layer commit conflicts with an existing batch/entity",
+        "duplicate_key": "Immutable output key is duplicated",
+        "null_key": "Immutable output key cannot be NULL",
+        "out_of_scope": "Immutable input contains rows outside its declared scope",
+        "payload_conflict": "Stored immutable output conflicts with deterministic input",
+        "stale_owner": "OWNERSHIP_LOST: runtime writes prohibited"
+      },
+      "output_fingerprint": "0805bc92cd3f3d10d31e72bed448e3d9e4bfef848480491172c225cb6a450d7d",
+      "owner_released": true,
+      "platform_least_privilege_proven": false,
+      "record_count": 3,
+      "scope": "PHASE5_NEGATIVE_RECOVERY_CONTRACTS",
+      "status": "SUCCEEDED",
+      "target_unchanged": true
+    }
+  }
+}

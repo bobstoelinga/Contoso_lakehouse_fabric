@@ -1,0 +1,103 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "c60846b1-4d12-4ecc-9cde-518f98faa7da",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/c60846b1-4d12-4ecc-9cde-518f98faa7da/jobs/instances/e1c35265-c767-47bc-99c2-38c2c6932b17",
+  "status": "COMPLETED",
+  "job": {
+    "id": "e1c35265-c767-47bc-99c2-38c2c6932b17",
+    "itemId": "c60846b1-4d12-4ecc-9cde-518f98faa7da",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "900bfda6-356a-4cf0-9a91-8682805faea5",
+    "startTimeUtc": "2026-10-11T09:27:44.8579517",
+    "endTimeUtc": "2026-10-11T09:32:49.1204318",
+    "exit_result": {
+      "accounting": {
+        "bronze_count": 5,
+        "counts": {
+          "FILTERED": 1,
+          "PASSED": 3,
+          "REJECTED": 1
+        },
+        "rules": [
+          {
+            "action": "FAIL_BATCH",
+            "breached": false,
+            "population": 4,
+            "rule_id": "key_present",
+            "threshold_percent": 25,
+            "violation_percent": 25.0,
+            "violations": 1
+          },
+          {
+            "action": "FAIL_BATCH",
+            "breached": false,
+            "population": 4,
+            "rule_id": "key_nonblank",
+            "threshold_percent": 25,
+            "violation_percent": 25.0,
+            "violations": 1
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 4,
+            "rule_id": "name_nonblank",
+            "threshold_percent": 100,
+            "violation_percent": 25.0,
+            "violations": 1
+          }
+        ]
+      },
+      "batch_id": "40c5a8d2-e8ee-572b-9aeb-61b1b7f3ecab",
+      "bronze": {
+        "inserted_count": 5,
+        "output_fingerprint": "c4e6be1207f140d89bd8b4bff32c2a067a81649b36f4c656190a18d6276884ac",
+        "record_count": 5,
+        "retry_count": 0,
+        "status": "SUCCEEDED",
+        "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_quality_customers`"
+      },
+      "bronze_commit": {
+        "commit_id": "e085ca73f0d021bf58dcb3043402257d45aff233b9940efe5e87aaa2f32c6b55",
+        "status": "COMMITTED"
+      },
+      "delivery_id": "PHASE5_QUALITY_PROBE|V1",
+      "expected_threshold_failure": "Quality thresholds blocked: key_present:FAIL_BATCH",
+      "framework_version": "0.1.0",
+      "outputs": {
+        "FILTERED": {
+          "inserted_count": 1,
+          "output_fingerprint": "c8ec6b1cb8bfecbb318bcbdccc224c9b5d7194af3d227ef580915d974258fe27",
+          "record_count": 1,
+          "retry_count": 0,
+          "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase5_probe_filtered_customers`"
+        },
+        "PASSED": {
+          "inserted_count": 3,
+          "output_fingerprint": "0805bc92cd3f3d10d31e72bed448e3d9e4bfef848480491172c225cb6a450d7d",
+          "record_count": 3,
+          "retry_count": 0,
+          "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase5_probe_customers`"
+        },
+        "REJECTED": {
+          "inserted_count": 1,
+          "output_fingerprint": "37a68e86b86beeed4e680387df0111e54d450a2d9d05e58eec00fb641604310a",
+          "record_count": 1,
+          "retry_count": 0,
+          "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase5_probe_customers`"
+        }
+      },
+      "owner_released": true,
+      "phase5_version": "0.2.0",
+      "quality_commit": {
+        "commit_id": "539fae8c54e89b41275dea518f3100c85fd5f8372290df72a0a0883ed49d40a1",
+        "status": "COMMITTED"
+      },
+      "scope": "PHASE5_SYNTHETIC_QUALITY_REJECT",
+      "status": "SUCCEEDED"
+    }
+  }
+}

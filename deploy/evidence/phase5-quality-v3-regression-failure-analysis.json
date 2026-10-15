@@ -1,0 +1,18 @@
+{
+  "status": "FAILED_COMMIT_PROVENANCE_CHECK",
+  "job_id": "69748535-0ad8-438d-8fd5-cc6f8e62a59f",
+  "livy_id": "b413c3f6-8d18-42f0-ba05-359a864e36c6",
+  "start_time_utc": "2026-10-11T10:30:30.7653563",
+  "end_time_utc": "2026-10-11T10:34:49.9448896",
+  "error_type": "ContractError",
+  "error_message": "Layer commit conflicts with an existing batch/entity",
+  "observed_in": "Fabric execution snapshot, commit_layer input fingerprint validation",
+  "previous_runtime_pin": "0.2.0",
+  "requested_runtime_pin": "0.3.0",
+  "runtime_is_part_of_committed_input_fingerprint": true,
+  "commit_validation_weakened": false,
+  "replacement_validation": "Read-only output equivalence and original target/commit readback under the new runtime",
+  "replacement_validation_completed": true,
+  "replacement_validation_job_id": "f1b2c50a-c34f-4da1-b06f-f6176be61e72",
+  "replacement_validation_receipt": "phase5-quality-window-v3-receipt.json"
+}

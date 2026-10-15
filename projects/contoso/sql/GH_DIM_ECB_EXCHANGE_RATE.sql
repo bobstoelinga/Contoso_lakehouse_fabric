@@ -1,0 +1,1 @@
+SELECT currency_code, rate_date, rate_to_eur, source_series, valid_from AS version_valid_from, valid_to AS version_valid_to, is_current, _record_source AS record_source FROM {processing}.business_vault.ref_ecb_exchange_rate_h

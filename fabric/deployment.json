@@ -1,0 +1,89 @@
+{
+  "contract_version": "1.0",
+  "scope": "PHASE3_FOUNDATION_PREPARATION",
+  "framework_version": "0.1.0",
+  "items": [
+    {
+      "id": "etl_environment",
+      "type": "Environment",
+      "display_name": "{project_id}_etl_{environment}",
+      "format": null,
+      "parts": [
+        {
+          "path": "Setting/Sparkcompute.yml",
+          "source": "fabric/items/etl_environment.Environment/Setting/Sparkcompute.yml"
+        }
+      ],
+      "requires": []
+    },
+    {
+      "id": "verify_foundation",
+      "type": "Notebook",
+      "display_name": "{project_id}_verify_foundation_{environment}",
+      "format": "fabricGitSource",
+      "parts": [
+        {
+          "path": "notebook-content.py",
+          "source": "fabric/items/verify_foundation.Notebook/notebook-content.py"
+        }
+      ],
+      "requires": ["etl_environment"]
+    },
+    {
+      "id": "setup_control",
+      "type": "Notebook",
+      "display_name": "{project_id}_setup_control_{environment}",
+      "format": "fabricGitSource",
+      "parts": [
+        {
+          "path": "notebook-content.py",
+          "source": "fabric/items/setup_control.Notebook/notebook-content.py"
+        }
+      ],
+      "requires": ["etl_environment", "verify_foundation"]
+    },
+    {
+      "id": "owner_probe",
+      "type": "Notebook",
+      "display_name": "{project_id}_owner_probe_{environment}",
+      "format": "fabricGitSource",
+      "parts": [
+        {
+          "path": "notebook-content.py",
+          "source": "fabric/items/owner_probe.Notebook/notebook-content.py"
+        }
+      ],
+      "requires": ["etl_environment", "setup_control"]
+    }
+  ],
+  "migrations": [
+    {
+      "id": "001_namespaces",
+      "engine": "SPARK_SQL",
+      "source": "sql/migrations/fabric/001_namespaces.sql",
+      "requires": [],
+      "recovery": "Rerun idempotent CREATE SCHEMA statements under exclusive foundation setup; do not drop schemas."
+    },
+    {
+      "id": "002_control_contract",
+      "engine": "SPARK_SQL",
+      "source": "sql/migrations/fabric/002_control_contract.sql",
+      "requires": ["001_namespaces"],
+      "recovery": "Reconcile existing table schemas before rerun. CREATE IF NOT EXISTS does not upgrade incompatible tables. No runtime owner initialization, data deletion or automatic takeover."
+    },
+    {
+      "id": "003_schema_journal",
+      "engine": "SPARK_SQL",
+      "source": "sql/migrations/fabric/003_schema_journal.sql",
+      "requires": ["001_namespaces"],
+      "recovery": "Bootstrap the empty migration journal under exclusive setup before control-contract execution; compare existing schema and immutable checksums, never drop or replace it."
+    }
+  ],
+  "pending_runtime_stages": [
+    "CONTROL_DDL_EXECUTION_SCHEMA_RECONCILIATION_AND_EXCLUSIVE_OWNER",
+    "METADATA_CANDIDATE_ACTIVATION",
+    "ETL_NOTEBOOKS_AND_PIPELINES",
+    "GOLD_RELEASE_AND_DIRECTQUERY_CONSUMERS",
+    "FULL_REDEPLOY_ACCEPTANCE"
+  ]
+}

@@ -1,0 +1,11 @@
+CREATE SCHEMA IF NOT EXISTS {control}.metadata;
+CREATE SCHEMA IF NOT EXISTS {control}.audit;
+CREATE SCHEMA IF NOT EXISTS {control}.control;
+CREATE SCHEMA IF NOT EXISTS {processing}.bronze;
+CREATE SCHEMA IF NOT EXISTS {processing}.quality;
+CREATE SCHEMA IF NOT EXISTS {processing}.reject;
+CREATE SCHEMA IF NOT EXISTS {processing}.raw_vault;
+CREATE SCHEMA IF NOT EXISTS {processing}.business_vault;
+CREATE SCHEMA IF NOT EXISTS {gold}.historical;
+CREATE SCHEMA IF NOT EXISTS {gold}.release_data;
+CREATE SCHEMA IF NOT EXISTS {gold}.publication;

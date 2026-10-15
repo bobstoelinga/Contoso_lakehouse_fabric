@@ -1,0 +1,13 @@
+# Preserve bytes used by immutable evidence, release and source checksums.
+deploy/** -text
+environments/** -text
+fabric/** -text
+packaging/** -text
+projects/** -text
+sql/migrations/** -text
+src/fabric_etl/** -text
+src/fabric_etl_phase5/** -text
+src/fabric_etl_phase6/** -text
+tests/test_fabric_*.py -text
+metadata/seed/** -text
+sql/05_gold/** -text

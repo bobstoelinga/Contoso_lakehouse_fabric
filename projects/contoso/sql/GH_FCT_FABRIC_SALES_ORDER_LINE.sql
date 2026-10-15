@@ -1,0 +1,1 @@
+SELECT sales_order_detail_id, order_quantity, unit_price, unit_price_discount, total_due_amount, order_status_code, source_last_modified_at, is_deleted, valid_from AS version_valid_from, valid_to AS version_valid_to, is_current, _record_source AS record_source FROM {processing}.business_vault.ref_fabric_sales_order_lines_h

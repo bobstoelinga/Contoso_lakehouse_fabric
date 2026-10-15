@@ -1,0 +1,1 @@
+SELECT h.hk_employee AS employee_hk, h.employee_key, s.first_name, s.last_name, s.job_title, s.office_city, s.hire_date, s.is_deleted, s.load_date AS valid_from, coalesce(s.load_end_date, timestamp'9999-12-31 23:59:59') AS valid_to, s.is_current, s.record_source FROM {processing}.raw_vault.hub_employee h JOIN {processing}.raw_vault.sat_employee s ON s.hk_employee = h.hk_employee

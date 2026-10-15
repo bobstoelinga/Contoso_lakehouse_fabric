@@ -1,0 +1,275 @@
+{
+  "contract": {
+    "design_id": "C0-DESIGN-v0.1",
+    "status": "DESIGN_PINNED_EXECUTION_HOLD",
+    "purpose": "Comparable correct business semantics, not automatic acceptance of either platform",
+    "canonicalization": {
+      "id": "fabric_etl.contracts.canonical_json-v1",
+      "encoding": "UTF-8",
+      "object_keys": "Python json.dumps sort_keys=True, recursively",
+      "separators": [",", ":"],
+      "ensure_ascii": false,
+      "allow_nan": false,
+      "array_order": "preserved and significant",
+      "unicode_normalization": "none",
+      "hashed_newline": "none",
+      "digest": "SHA-256 of canonical_json of this entire parsed document",
+      "digest_location": "c0-design-v0.1.sha256.json, outside hashed content",
+      "display_hash12": "first 12 hexadecimal characters; not authoritative identity"
+    }
+  },
+  "authorization": {
+    "source": "Human instruction 2026-10-12 12:35:40 CEST: contract pinning, reference confirmation and isolated test preparation, step by step",
+    "contract_pinning": true,
+    "reference_confirmation": "REQUESTED_NOT_DESIGNATED",
+    "local_readiness_preparation": true,
+    "provisioning": false,
+    "compute": false,
+    "jobs": false,
+    "fixture_transfer": false,
+    "upload": false,
+    "auth_changes": false,
+    "business_code_corrections": false,
+    "writers": {
+      "fabric": "Own Fabric project only; contract and documentation",
+      "databricks": "Read-only in current round; own project for any later explicitly authorized writes"
+    }
+  },
+  "reference": {
+    "candidate_workspace_id": "7405617094653375",
+    "documented_workspace_id": "7405619535862062",
+    "designated_workspace_id": null,
+    "artifact_binding_status": "ARTIFACT_PROJECT_BINDING_PARTIALLY_VERIFIED",
+    "reference_gate": "BLOCKED_UNVERIFIED_IDENTITY",
+    "designation_status": "DESIGNATED_REFERENCE_IDENTITY_NOT_VERIFIED",
+    "documented_host_observation": "DNS_NO_SUCH_HOST_NOT_TOKEN_EXPIRY_PROOF",
+    "bundle": {"name": "contoso_lakehouse", "target": "dev", "mode": "development"},
+    "git_reported_commit": "bd8936dc727808ec6d1ba2eaba551f647a3b10ee",
+    "git_reported_origin": "https://github.com/bobstoelinga/Contoso_lakehouse_v2.git",
+    "clean_at_deploy": "UNVERIFIED",
+    "full_release": "UNVERIFIED",
+    "active_metadata": "UNVERIFIED",
+    "runtime_imports": "UNVERIFIED",
+    "original_as_deployed": "Selected candidate artifacts only, not designated reference or full release attestation",
+    "corrected_reference_release": null,
+    "import_binding": {
+      "status": "CONFIG_EVIDENCE_PEER_REPORTED",
+      "repo_root": "Same deployed bundlefiles root in inspected taskconfigs",
+      "notebook_import": "Inspected Quality/Vault/GH notebooks prepend repo_root/src",
+      "runtime_module_file_cache_dependencies": "UNVERIFIED"
+    }
+  },
+  "artifacts": [
+    {"logical_path": "gold.py", "sha256": "9d9f5cb99aa75772c675ab07425ceedf804b3448c1ac92ff3c59bc1d3caf8cd6"},
+    {"logical_path": "datavault.py", "sha256": "bb8d535af6793977b35c78384d8fb5f8db527be3edbb4f8079fe1d932c9cbefd"},
+    {"logical_path": "metadata.py", "sha256": "ea5dc932845384f0d6f7fde9d5dc4034390a8f92d6fef6a4eefe970687927add"},
+    {"logical_path": "meta_gold_entity.json", "sha256": "f1d27ec5abee4eb655ee7b42a39baefff5fe647334a3cd6ad1f6d145755de137"},
+    {"logical_path": "context.py", "sha256": "c3a1108ce1f6431cdcde050845709205d2e5c61a0555bb3d43de36e0a340cc1f"},
+    {"logical_path": "bronze.py", "sha256": "fc059f1b9eb639f2da2be5ef91d2df397c1a1be0c3f041d8f8802aa0bb323ef5"},
+    {"logical_path": "quality.py", "sha256": "13897ddb13db1eb2c0be7e7a9dcd6664784f6baefdebaaa46872f8d75cac832a"},
+    {"logical_path": "20_quality notebook", "sha256": "346b5677493c4b286d7810127ec392f6111e2782948b87e2c97fbe88a3b27afb"},
+    {"logical_path": "30_data_vault notebook", "sha256": "3cc28dbd9a71ba5d6b7ffffa58b2d06f2732d7bbdf784c3de607632c3f6c5540"},
+    {"logical_path": "40_gold_historical notebook", "sha256": "eba24c7bdac95f0b253977c21df63eedad650bb02c7445dab38a0e11356b0b05"},
+    {"logical_path": "hashing helper", "sha256": "198e3edd89179f445094127013768877cba293533b031e9011d1124ad3cae4c0"},
+    {"logical_path": "orchestration helper", "sha256": "bac04cf14bf32d5a70c45da6f5513d35095cc1252ead69749713dd8dacb9c9ac"},
+    {"logical_path": "sqlutil helper", "sha256": "829926ad9d8fbe56dfbad8a4f4beb69e62fb08b2a2d4d8a859e8396d51523b74"},
+    {"logical_path": "audit helper", "sha256": "e0b13d97d67a1143948b8dc851957735e1603a0a66c4a59518f9b07b604ce5ab"}
+  ],
+  "artifact_evidence_defaults": {
+    "evidence_kind": "API_INSPECTED",
+    "reported_by": "Databricks reference session; not independently fetched by Fabric session",
+    "comparison": "BYTE_EQUAL_HEAD",
+    "coverage": "SELECTED_FILE",
+    "observed_at": null,
+    "observed_at_reason": "Exact API call timestamps not pinned",
+    "logical_path_reason": "Peer logical artifact names, not asserted full deployed paths",
+    "six_other_seeds": {
+      "comparison": "PEER_REPORTED_BYTE_EQUAL_HEAD",
+      "sha256": null,
+      "reason": "Individual digests not supplied; not fabricated"
+    }
+  },
+  "evidence": {
+    "source_observations": [
+      {"resource": "pipeline_job", "id": "952714285929685", "status": "PAUSED_AT_INSPECTION"},
+      {"resource": "operational_run", "id": "960091284575444", "status": "SUCCESS_NOT_C0"},
+      {"resource": "warehouse", "id": "3175f890ee47d266", "status": "STOPPED_AT_INSPECTION"}
+    ],
+    "observation_provenance": "PEER_REPORTED_API_INSPECTED, exact observation timestamps unknown, no permanent safety guarantee",
+    "local_pins": [
+      {"path": "src/fabric_etl/contracts.py", "sha256": "970fecff69d27a5990721521a9d77f8aa849aa03ff3464ba2755ad155e9d23fe"},
+      {"path": "src/fabric_etl_phase6/fixtures.py", "sha256": "0ff222eda0c691c3866a413ecb2142f92b2d6ee2508aa0cbca9116e8bf86e551"},
+      {"path": "src/fabric_etl_phase6/proof.py", "sha256": "b2379d75a91ba7c7acc9ce04f14548fc4b1d403803fc22f3f892e03b6e335a4f"},
+      {"path": "deploy/evidence/phase6-sales-quality-v1-receipt.json", "sha256": "b1bef512f05540cbf5fa41d9ffa0e0804b80a988e86754352f3e1cf6102b673d"},
+      {"path": "deploy/evidence/phase6-sales-gold-v3-verification.json", "sha256": "5ec8e07d48da50ed948bacb24386791fab53b5427f9470085d8fcf67b8da8854"}
+    ],
+    "pin_path_base": "Project root",
+    "fabric_observation_status": "Verified in Fabric project, PEER_REPORTED to Databricks, not cross-platform independently repeated",
+    "databricks_business_observation_status": "NOT_MEASURED",
+    "code_findings_are_not_observed_outputs": true
+  },
+  "input": {
+    "origin": "Explicit synthetic SALES fixture, not original Contoso export",
+    "record_definition": "Pinned fixtures.py BASE insertion order; sales_fixture(1), sales_fixture(2), sales_fixture(3)",
+    "raw_schema": {"type": "STRING", "nullable": true, "field_order": "BASE per-object insertion order"},
+    "shared_schema_fingerprint": {"value": null, "status": "OPEN", "reason": "Shared schema hash algorithm not pinned"},
+    "existing_fixture_fingerprint": "Fabric fingerprint, not a substitute for shared schema/file identity",
+    "files": [
+      {"delivery": "D1", "path": "customers.parquet", "sha256": "7ce97d9a62810ab8737a9ab2fde3edcd280125b7d2e9c01697cfd72066bf7267", "size_bytes": 4313},
+      {"delivery": "D1", "path": "employees.parquet", "sha256": "cd0dc8159b6329e74b845929baf75a8896525e5c910c7077cf7ec8743e36f037", "size_bytes": 2659},
+      {"delivery": "D1", "path": "orders.parquet", "sha256": "087c5bdb985d2ff44af19aa76189dd4e20be47eb0aa5aa77e4ba9d99bbf7cd76", "size_bytes": 4997},
+      {"delivery": "D1", "path": "products.parquet", "sha256": "c13b367edc85f1ef0c38674c41835c6663a34e4a5492c9e94b4c88583162a825", "size_bytes": 3329},
+      {"delivery": "D1", "path": "returns.parquet", "sha256": "4add86fdfd76c81cb5ee101db614d40d82d422f05c6da3d12eedaaac13f4155d", "size_bytes": 4028},
+      {"delivery": "D2", "path": "customers.parquet", "sha256": "3e284d0553b8e9066d1ae335c4cb5d9017dbd8fed7a90b98f6fbfbf0e7aaf630", "size_bytes": 4334},
+      {"delivery": "D2", "path": "employees.parquet", "sha256": "cd0dc8159b6329e74b845929baf75a8896525e5c910c7077cf7ec8743e36f037", "size_bytes": 2659},
+      {"delivery": "D2", "path": "orders.parquet", "sha256": "087c5bdb985d2ff44af19aa76189dd4e20be47eb0aa5aa77e4ba9d99bbf7cd76", "size_bytes": 4997},
+      {"delivery": "D2", "path": "products.parquet", "sha256": "73e7b6c5a96db5bd357ac2b05b49dd497b8e4eb77132133040f6a1156ff2076b", "size_bytes": 3329},
+      {"delivery": "D2", "path": "returns.parquet", "sha256": "4add86fdfd76c81cb5ee101db614d40d82d422f05c6da3d12eedaaac13f4155d", "size_bytes": 4028},
+      {"delivery": "D3", "path": "customers.parquet", "sha256": "e64bd8d57dc4e567023cef9b2a17e6dc66617d63fb1865b33921dbd937d66845", "size_bytes": 4329},
+      {"delivery": "D3", "path": "employees.parquet", "sha256": "9be30c1dd84b7ab6f7f6513723bb07a80448822d60e606b2b95ae4841043c8a3", "size_bytes": 2654},
+      {"delivery": "D3", "path": "orders.parquet", "sha256": "087c5bdb985d2ff44af19aa76189dd4e20be47eb0aa5aa77e4ba9d99bbf7cd76", "size_bytes": 4997},
+      {"delivery": "D3", "path": "products.parquet", "sha256": "3150cb205db24dcca81959fb8cde7dec5e3aabd82f2433f33fa8214b82c2e22e", "size_bytes": 3324},
+      {"delivery": "D3", "path": "returns.parquet", "sha256": "4add86fdfd76c81cb5ee101db614d40d82d422f05c6da3d12eedaaac13f4155d", "size_bytes": 4028}
+    ],
+    "layout": "One file per object per delivery, one record per file",
+    "complete_snapshots": ["CUSTOMERS", "PRODUCTS", "EMPLOYEES"],
+    "incremental_objects": ["ORDERS", "RETURNS"],
+    "absence_delete_proven": false,
+    "transfer": {"status": "OPEN", "preference": "Existing fifteen immutable bytes", "performed": false},
+    "schema_adapter": {"version": null, "status": "OPEN", "scope_rule": "Adapted Bronze input scope must be distinct from original raw-byte identity"}
+  },
+  "scenarios": [
+    {"id": "C0-A", "purpose": "Original baseline regression, NOT_ACCEPTANCE", "status": "EXECUTION_HOLD"},
+    {"id": "C0-B", "purpose": "PIT capability", "status": "CAPABILITY_BLOCKED"},
+    {"id": "C1-samebatch-retry", "purpose": "Same batch replay including purge/current_state integrity", "status": "NOT_AUTHORIZED"},
+    {"id": "C1-newbatch-nochange", "purpose": "New batch with unchanged business input", "status": "NOT_AUTHORIZED"}
+  ],
+  "expectations": {
+    "raw_events": [16, 2, 3],
+    "bv_events": [2, 0, 0],
+    "combined_events": [18, 2, 3],
+    "dq_per_object_per_delivery": {"passed": 1, "rejected": 0, "filtered": 0},
+    "dq_rulevector": {"status": "OPEN", "rules": null, "reason": "Active metadata rule definitions and threshold values not read"},
+    "gh_dim_final": {"customer": 3, "product": 3, "employee": 2},
+    "gc_dim_each": [1, 1, 0],
+    "gh_gc_fct_sales_each_cutoff": 1,
+    "gh_gc_fct_returns_each_cutoff": 1,
+    "calendar": {"from": "2020-01-01", "to": "2030-12-31", "rows": 4018},
+    "business_values": "Pinned proof.py expected_vault_rows and expected_gold_rows; business oracle, not Databricks observed",
+    "databricks_observed": "NOT_MEASURED",
+    "pit_absence_result": "NOT_IMPLEMENTED, not empty equals pass",
+    "baseline_failures_allowed": true,
+    "operational_fail_batch_is_business_diff": false,
+    "incomplete_followup": "Explicit diagnostic only; no silent skip, success-shaped recovery or acceptance"
+  },
+  "layer_grains": {
+    "source": {
+      "CUSTOMERS": ["customer_key"],
+      "PRODUCTS": ["product_key"],
+      "EMPLOYEES": ["employee_key"],
+      "ORDERS": ["order_key", "order_line_number"],
+      "RETURNS": ["return_key"]
+    },
+    "vault_sales_line": ["order_key", "order_line_number", "product_key"],
+    "vault_return_line": ["return_key", "order_key", "order_line_number", "product_key"],
+    "historical_version": "Natural entity grain plus attribute version and logical event delivery; retain actual valid_from/valid_to",
+    "hub_link_key_mapping": "Bijective PER namespace/type using unique committed as-of maps; preserve FK consistency"
+  },
+  "time": {
+    "delivery_order": ["D1", "D2", "D3"],
+    "platform_mapping": {
+      "fabric": [
+        {"delivery": "D1", "delivery_id": "PHASE6_SALES_QUALITY|1", "batch_id": "be2008c7-5d85-5692-ade3-3eb78a39d457", "cutoff": "2026-10-12T05:58:21.042199Z", "fixture_fingerprint": "2da9e51b2ab772226c8c5b3571d9539c49e08c51bd7d9cb664c05596d71c3326"},
+        {"delivery": "D2", "delivery_id": "PHASE6_SALES_QUALITY|2", "batch_id": "035cffd2-9ee0-51db-9162-129bbc0a2ce7", "cutoff": "2026-10-12T06:06:26.014796Z", "fixture_fingerprint": "4629b3ea12c0a4eaa18a05e66d50763c2cc1a61441184465ad37e5737c5130bc"},
+        {"delivery": "D3", "delivery_id": "PHASE6_SALES_QUALITY|3", "batch_id": "b8914406-23be-56d8-897e-c194a8ecefda", "cutoff": "2026-10-12T06:13:39.557082Z", "fixture_fingerprint": "0a7d64829cbdb18d09b54db985903247e91c2b3ff7e5c28bde95b922c8168023"}
+      ],
+      "databricks": [
+        {"delivery": "D1", "date_folder": null, "delivery_id": null, "sequence": null},
+        {"delivery": "D2", "date_folder": null, "delivery_id": null, "sequence": null},
+        {"delivery": "D3", "date_folder": null, "delivery_id": null, "sequence": null}
+      ]
+    },
+    "transport_dates_status": "OPEN, unique ordered dates required; earlier suggestions not agreed",
+    "business_reference_date": null,
+    "business_reference_date_status": "OPEN",
+    "timezone_target": "UTC",
+    "actual_session_timezone": "UNVERIFIED",
+    "execute_day": "UNVERIFIED",
+    "retain_layer_eventtimes": ["RAW", "BV", "GH"],
+    "clock_spoof": false,
+    "future_bv_into_raw_asof": false,
+    "fabric_cutoff_as_databricks_runtime_load_date": false,
+    "time_adapter": null,
+    "infinity_nominal": "9999-12-31T23:59:59",
+    "intervals": "Half-open; original type/timezone/precision retained",
+    "cutoff_evidence_before_next_delivery": true
+  },
+  "comparator": {
+    "mode": "EXACT_MULTISET",
+    "maximum_missing": 0,
+    "maximum_extra": 0,
+    "maximum_attribute_differences": 0,
+    "null_equals_empty": false,
+    "date_equals_timestamp": false,
+    "floats": false,
+    "tolerance": "0",
+    "rate": {"databricks_type": "DECIMAL(9,6)", "fabric_type": "DECIMAL(18,6)", "schema_status": "SCHEMA_MISMATCH", "numerical_scale": 6, "baseline_value": "0.000000", "out_of_overlap": "Separate explicit boundary scenario; no rounding or overflow"},
+    "canonical_ordered_columns": {"status": "OPEN_REQUIRED_PER_PRODUCT", "products": ["GH_DIM_CUSTOMER", "GH_DIM_PRODUCT", "GH_DIM_EMPLOYEE", "GH_FCT_SALES", "GH_FCT_RETURNS", "GC_DIM_CUSTOMER", "GC_DIM_PRODUCT", "GC_DIM_EMPLOYEE", "GC_DIM_DATE", "GC_FCT_SALES", "GC_FCT_RETURNS"], "columns": null},
+    "schema_matrix": {"status": "OPEN_REQUIRED_PER_LAYER", "matrix": null, "reason": "REST type inventory available, full agreed field mappings not yet pinned"},
+    "hash_quickcheck": "Not sufficient; full row diff on mismatch",
+    "dedupe_or_winner_selection": false,
+    "many_to_many_rescue": false,
+    "technical_fields": "Separate explicit lineage/time/key evidence, no broad exclusion",
+    "databricks_key_hash": {"id": "DB-v1", "algorithm": "SHA-256", "string": "upper(trim(cast as string))", "null_empty": "^^", "separator": "||", "collision_prefix": "SALES", "business_normalization": false},
+    "future_duplicate_scenarios": {
+      "cases": ["Exact duplicates", "Conflicting same-file duplicates", "Cross-file duplicates", "Same key across deliveries"],
+      "reconcile": ["File layout", "Input multiset", "Pre-Bronze", "Post-Bronze", "Pre-Quality", "Post-Quality"],
+      "bronze_dedup_finding": "Code-derived possible record loss, not runtime measured"
+    }
+  },
+  "isolation": {
+    "status": "PROPOSAL_ONLY",
+    "environment_label": "p6c0_<contracthash12>_<attemptid>",
+    "authoritative_identity": "Full contract SHA-256 plus attempt plus original/corrected artifact binding",
+    "attempt_id": null,
+    "provisioned_namespace": null,
+    "resolved_paths": null,
+    "required_isolated_surfaces": ["raw", "control", "meta", "bronze", "quality", "reject", "vault", "gold", "managed landing volumes", "checkpoints", "schemaLocation", "quarantine", "__current_state", "locks", "audit", "publication pointers", "slots", "PIT", "direct and hardcoded storage/catalog/import/metadata/feed paths"],
+    "namespace_reuse_on_collision": false,
+    "reset_or_delete": false,
+    "existing_dev_tst_prd_reuse": false,
+    "sales_only": true,
+    "manual_only": true,
+    "file_arrival": false,
+    "schedules": false,
+    "external_feeds": false,
+    "shared_external_storage_setup_reuse": false,
+    "grants_or_capacity_changes": false,
+    "bootstrap_manifest": null,
+    "harness_manifest": null,
+    "original_business_code_unchanged": true,
+    "provisioning_permissions": "UNKNOWN",
+    "trial_write": false,
+    "active_coercion_preflight": "Only later authorized separate new attempt; never consume baseline checkpoints",
+    "unproven_isolation_action": "FAIL_CLOSED"
+  },
+  "readiness": {
+    "execution_status": "HOLD",
+    "gates": [
+      {"id": "G1", "meaning": "Reference identity, full release and active metadata", "status": "PARTIAL_ARTIFACT_BINDING_DESIGNATION_BLOCKED"},
+      {"id": "G2", "meaning": "Permissions/storage/landing/checkpoint/schema/state isolation", "status": "OPEN"},
+      {"id": "G3", "meaning": "Immutable transfer and explicit adapter scope", "status": "OPEN"},
+      {"id": "G4", "meaning": "Delivery, evaluation date and layer time", "status": "OPEN"},
+      {"id": "G5", "meaning": "Exact comparator/schema/grain/key bijection", "status": "DESIGN_OPEN_SCHEMA_MISMATCH_CONFIRMED"},
+      {"id": "G6", "meaning": "Measured Gold enddating/current/cancellation", "status": "NOT_MEASURED"},
+      {"id": "G7", "meaning": "PIT capability", "status": "UNSUPPORTED_IN_INSPECTED_PATH"},
+      {"id": "G8", "meaning": "Same/new batch retry and purge", "status": "CODE_RISK_NOT_MEASURED"},
+      {"id": "G9", "meaning": "Execution authorization", "status": "NOT_AUTHORIZED_WITHIN_CURRENT_BOUNDARY"}
+    ],
+    "baseline_measurement_goals": ["G6", "G7", "G8"],
+    "baseline_must_pass_before_measurement": false,
+    "next_human_gates": ["Explicit workspace designation", "Transport dates and business reference date", "Isolation scope and provisioning authorization", "Compute/jobs/transfer authorization"],
+    "full_acceptance": false,
+    "output_equivalence": "NOT_TESTED"
+  }
+}

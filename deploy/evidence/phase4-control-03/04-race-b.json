@@ -1,0 +1,26 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "19b03dcd-9dbb-448a-83be-f66f20e8f70d",
+  "plan_id": "314ef93edeff6a558608892950a42fe6b02880ec8479d1f7a99282d79e10c626",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/19b03dcd-9dbb-448a-83be-f66f20e8f70d/jobs/instances/54ac4375-154e-435d-923f-ad07af1bf43f",
+  "parameters_fingerprint": "8ad7f56ef24d2e3f5ccab91fb5fed38db4f71a50d983ff068afad6ad722b89b5",
+  "status": "Completed",
+  "job": {
+    "id": "54ac4375-154e-435d-923f-ad07af1bf43f",
+    "itemId": "19b03dcd-9dbb-448a-83be-f66f20e8f70d",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "b96251d6-5885-4bab-af9d-b7cc4053ff71",
+    "startTimeUtc": "2026-10-10T13:57:55.5247016",
+    "endTimeUtc": "2026-10-10T14:04:10.2034837",
+    "exit_result": {
+      "activity_id": "f48594f2-675c-4446-8756-c02bafbe7597",
+      "ready_generation": 5,
+      "reason": "io.delta.exceptions.ConcurrentAppendException",
+      "scope": "OWNER_RACE",
+      "status": "BLOCKED"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "items": {
+    "phase6_sales_vault": {
+      "item_id": "37424361-d6b3-430a-8d51-c5a09087a32c",
+      "type": "Notebook",
+      "display_name": "contoso_phase6_sales_vault_dev",
+      "definition_fingerprint": "7e55beac48e7e4073a55dcace12589834cacd652bc2c5ecd3da58a75946d81f3",
+      "action": "created",
+      "verified": true,
+      "exported_part_sha256": {
+        "notebook-content.ipynb": "4a4242b9111bf928f111c42a16ff6f99c0b3589537e57f62deecf260e9391206",
+        ".platform": "d4b08dca691f25d43dc3cfd9da4be146fae50e384b10741ae7a42c6a538e2ccf"
+      }
+    }
+  },
+  "plan_id": "66e5f4fc795786135221910d99fcdb5ee39c944ed9ca5f664184cb87a1b9aab5"
+}

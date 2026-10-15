@@ -1,0 +1,251 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "9df60181-44b6-4863-b2e6-d4041a13091b",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/9df60181-44b6-4863-b2e6-d4041a13091b/jobs/instances/ab0409c9-aa69-453e-8b46-292e48cb9dcd",
+  "status": "COMPLETED",
+  "job": {
+    "id": "ab0409c9-aa69-453e-8b46-292e48cb9dcd",
+    "itemId": "9df60181-44b6-4863-b2e6-d4041a13091b",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "1b809299-4785-4006-9da7-3cb622d2994e",
+    "startTimeUtc": "2026-10-11T15:41:55.7149822",
+    "endTimeUtc": "2026-10-11T15:47:08.8332833",
+    "exit_result": {
+      "accounting": {
+        "bronze_count": 2,
+        "counts": {
+          "FILTERED": 0,
+          "PASSED": 1,
+          "REJECTED": 1
+        },
+        "metadata_rule_ids": [
+          "DQ-CUST-001",
+          "DQ-CUST-002",
+          "DQ-CUST-003",
+          "DQ-CUST-004"
+        ],
+        "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+        "rules": [
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "CAST-M-QA-CUST-01",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "REQUIRED-M-QA-CUST-01",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "CAST-M-QA-CUST-02",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "CAST-M-QA-CUST-03",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "CAST-M-QA-CUST-04",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "CAST-M-QA-CUST-05",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "CAST-M-QA-CUST-06",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "CAST-M-QA-CUST-07",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "CAST-M-QA-CUST-08",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "CAST-M-QA-CUST-09",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "CAST-M-QA-CUST-10",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "CAST-M-QA-CUST-11",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "CAST-M-QA-CUST-12",
+            "threshold_percent": 100,
+            "violation_percent": 50.0,
+            "violations": 1
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "REQUIRED-M-QA-CUST-12",
+            "threshold_percent": 100,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "FAIL_BATCH",
+            "breached": false,
+            "population": 2,
+            "rule_id": "DQ-CUST-001",
+            "threshold_percent": 0.0,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "FAIL_BATCH",
+            "breached": false,
+            "population": 2,
+            "rule_id": "DQ-CUST-002",
+            "threshold_percent": 1.0,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "DQ-CUST-003",
+            "threshold_percent": 10.0,
+            "violation_percent": 0.0,
+            "violations": 0
+          },
+          {
+            "action": "CONTINUE",
+            "breached": false,
+            "population": 2,
+            "rule_id": "DQ-CUST-004",
+            "threshold_percent": 5.0,
+            "violation_percent": 0.0,
+            "violations": 0
+          }
+        ],
+        "source_object_id": "SALES.CUSTOMERS"
+      },
+      "batch_id": "2387b849-3b44-5f62-ae6a-67fec0902f7d",
+      "bronze": {
+        "inserted_count": 2,
+        "output_fingerprint": "76a7c2d31fc59676adcee453ed15fba523fc7b69706f3a538d2afa8c865f20dc",
+        "record_count": 2,
+        "retry_count": 0,
+        "status": "SUCCEEDED",
+        "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_metadata_customers_v1`"
+      },
+      "bronze_commit": {
+        "commit_id": "b724a0d5b6fc850f1f96da846b894e14ac2bd62f35e45faef18029b54e50d317",
+        "status": "COMMITTED"
+      },
+      "business_data_written": false,
+      "load_date_utc": "2026-10-11T15:44:28.448883+00:00",
+      "outputs": {
+        "FILTERED": {
+          "inserted_count": 0,
+          "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "record_count": 0,
+          "retry_count": 0,
+          "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase5_metadata_customers_v1_filtered`"
+        },
+        "PASSED": {
+          "inserted_count": 1,
+          "output_fingerprint": "528694d241ba986e65da82c075920c9b02c67309b39b6f02f2530aa94aa741f0",
+          "record_count": 1,
+          "retry_count": 0,
+          "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase5_metadata_customers_v1`"
+        },
+        "REJECTED": {
+          "inserted_count": 1,
+          "output_fingerprint": "acd7e83957e7d42d8459b18be4253d28975c90732b8be00ddc50929fccfdfd55",
+          "record_count": 1,
+          "retry_count": 0,
+          "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`reject`.`phase5_metadata_customers_v1`"
+        }
+      },
+      "owner_released": true,
+      "phase5_version": "0.5.0",
+      "production_release_accepted": false,
+      "quality_commit": {
+        "commit_id": "9eeccf55c978f7a679e04519cb79f1437a490b0846a7e29baa2166b6aea1c0b1",
+        "status": "COMMITTED"
+      },
+      "reject_error_codes": [
+        "INVALID_CAST_11"
+      ],
+      "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+      "scope": "PHASE5_METADATA_DURABLE_CUSTOMERS",
+      "source_id": "SALES.CUSTOMERS",
+      "status": "SUCCEEDED"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "FAILED_PROBE_FINGERPRINT_COMPARISON",
+  "job_id": "4d0d0b55-6920-4192-9e91-fe7e050be5e1",
+  "livy_id": "64b47c4b-ab50-4ba0-9747-23844f68bdbe",
+  "start_time_utc": "2026-10-11T10:45:08.9782974",
+  "end_time_utc": "2026-10-11T10:48:11.6165290",
+  "observed_error": "RuntimeError: Original committed scalar Bronze fixture changed",
+  "root_cause": "Probe compared a Bronze-writer fingerprint with the differently bucketed Quality frame_fingerprint algorithm",
+  "bronze_fingerprint_helper": "fabric_etl_phase5.ingestion._output_fingerprint",
+  "quality_fingerprint_helper": "fabric_etl_phase5.quality.frame_fingerprint",
+  "fix": "Reuse the original Bronze fingerprint implementation for Bronze readback; retain Quality helper for Quality outputs",
+  "data_corruption_proven": false,
+  "business_data_written_by_probe": false
+}

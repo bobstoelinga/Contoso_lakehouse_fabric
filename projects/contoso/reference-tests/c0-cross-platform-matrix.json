@@ -1,0 +1,159 @@
+{
+  "matrix_id": "C0-CROSS-PLATFORM-MATRIX-01",
+  "status": "DESIGN_PREPARATION_NOT_EXECUTABLE",
+  "base_contract_full_sha256": "0893cf612d1fd9ca639c23bf8807013d8b2cac198e6dce4a1f7b39cfaba36ae5",
+  "fabric_preparation_full_sha256": "7d63676f435fc107132bee97bc5ea33ddf9aeca7e1bffca6f8c92877ab8ea717",
+  "canonicalization": "fabric_etl.contracts.canonical_json-v1",
+  "digest_location": "c0-cross-platform-matrix.sha256.json",
+  "evidence": {
+    "databricks": "Peer-reported local pinned repo and previously cached UC REST; no new remote inspection",
+    "gh_physical_types_nullability": "PEER_REPORTED_CACHED_API_INSPECTED",
+    "gc_business_types_nullability": "REPO_DECLARED; full actual GC schema/nullability UNKNOWN after CTAS",
+    "gc_selected_audit_timestamp_types": "PEER_REPORTED_CACHED_API_INSPECTED",
+    "derived_key_nullability": "Derived from FK/hub declarations; actual committed as-of mapping UNVERIFIED",
+    "fabric": "Pinned project schemas in c0-fabric-schema-preparation.json; stored schema not freshly inspected",
+    "databricks_observed_business_outputs": "NOT_MEASURED"
+  },
+  "column_notation": {
+    "format": "name:type:nullable, arrays in exact comparator order",
+    "types": {"S": "STRING", "I": "INT", "D": "DATE", "B": "BOOLEAN", "M": "DECIMAL(18,4)", "R": "DECIMAL(9,6)", "T": "TIMESTAMP"},
+    "nullable": {"?": true, "!": false},
+    "derived_columns": ["product_key in facts", "customer_key in facts", "employee_key in facts"],
+    "declaration_is_not_runtime_assertion": true
+  },
+  "business_bases": {
+    "CUSTOMER": [
+      "customer_key:S:!", "customer_name:S:?", "email:S:?", "phone:S:?",
+      "full_address:S:?", "city:S:?", "state_province:S:?", "postal_code:S:?",
+      "country_code:S:?", "customer_segment:S:?", "customer_type:S:?",
+      "tenure_band:S:?", "is_contactable:B:?", "customer_since:D:?"
+    ],
+    "PRODUCT": [
+      "product_key:S:!", "product_name:S:?", "product_category:S:?",
+      "product_subcategory:S:?", "brand:S:?", "unit_cost:M:?",
+      "unit_price:M:?", "unit_margin:M:?", "is_discontinued:B:?"
+    ],
+    "EMPLOYEE": [
+      "employee_key:S:!", "first_name:S:?", "last_name:S:?",
+      "job_title:S:?", "office_city:S:?", "hire_date:D:?"
+    ],
+    "SALES": [
+      "order_key:S:!", "order_line_number:I:!", "product_key:S:!",
+      "customer_key:S:?", "employee_key:S:?", "order_date:D:?",
+      "order_date_key:I:?", "order_status:S:?", "currency_code:S:?",
+      "quantity:I:?", "unit_price:M:?", "discount_amount:M:?",
+      "gross_amount:M:?", "net_amount:M:?", "discount_rate:R:?",
+      "lead_time_days:I:?", "is_cancelled:B:?", "ship_date:D:?",
+      "delivery_date:D:?", "ship_date_key:I:?", "delivery_date_key:I:?"
+    ],
+    "RETURNS": [
+      "return_key:S:!", "order_key:S:!", "order_line_number:I:!",
+      "product_key:S:!", "customer_key:S:?", "employee_key:S:?",
+      "return_date:D:?", "return_date_key:I:?", "return_status:S:?",
+      "return_reason_code:S:?", "return_quantity:I:?", "refund_amount:M:?",
+      "currency_code:S:?"
+    ],
+    "DATE": [
+      "date_key:I:!", "calendar_date:D:!", "calendar_year:I:?",
+      "calendar_quarter:I:?", "month_number:I:?", "month_name:S:?",
+      "week_number:I:?", "day_of_month:I:?", "day_of_week:I:?",
+      "day_name:S:?", "is_weekend:B:?"
+    ]
+  },
+  "technical_bases": {
+    "CUSTOMER": ["customer_hk:S:!"],
+    "PRODUCT": ["product_hk:S:!"],
+    "EMPLOYEE": ["employee_hk:S:!"],
+    "SALES": ["sales_line_hk:S:!", "order_hk:S:!", "product_hk:S:!", "customer_hk:S:?", "employee_hk:S:?"],
+    "RETURNS": ["return_line_hk:S:!", "return_hk:S:!", "order_hk:S:!", "product_hk:S:!", "customer_hk:S:?", "employee_hk:S:?"],
+    "DATE": []
+  },
+  "temporal_bases": {
+    "GH": ["valid_from:T:!", "valid_to:T:!", "is_current:B:!"],
+    "GC_DIM": ["last_changed_at:T:?"],
+    "GC_OTHER": []
+  },
+  "audit_bases": {
+    "GH": ["record_source:S:!", "_batch_id:S:!", "_loaded_at:T:!"],
+    "GC": ["_as_of_delivery_id:S:!", "_as_of_timestamp:T:!", "_batch_id:S:!"]
+  },
+  "expansion_rule": "For each product, business = business_bases[business_base] followed by business_append; technical = technical_bases[technical_base] followed by audit_bases[audit_base]; temporal = temporal_bases[temporal_base]. Array order is significant. Derived fact keys are added to both platform comparator projections, never asserted as physical columns.",
+  "products": [
+    {"id": "GH_DIM_CUSTOMER", "business_base": "CUSTOMER", "business_append": ["is_deleted:B:?"], "technical_base": "CUSTOMER", "audit_base": "GH", "temporal_base": "GH", "natural_grain": ["customer_key"], "historical": true},
+    {"id": "GH_DIM_PRODUCT", "business_base": "PRODUCT", "business_append": ["is_deleted:B:?"], "technical_base": "PRODUCT", "audit_base": "GH", "temporal_base": "GH", "natural_grain": ["product_key"], "historical": true},
+    {"id": "GH_DIM_EMPLOYEE", "business_base": "EMPLOYEE", "business_append": ["is_deleted:B:?"], "technical_base": "EMPLOYEE", "audit_base": "GH", "temporal_base": "GH", "natural_grain": ["employee_key"], "historical": true},
+    {"id": "GH_FCT_SALES", "business_base": "SALES", "business_append": [], "technical_base": "SALES", "audit_base": "GH", "temporal_base": "GH", "natural_grain": ["order_key", "order_line_number", "product_key"], "historical": true},
+    {"id": "GH_FCT_RETURNS", "business_base": "RETURNS", "business_append": [], "technical_base": "RETURNS", "audit_base": "GH", "temporal_base": "GH", "natural_grain": ["return_key", "order_key", "order_line_number", "product_key"], "historical": true},
+    {"id": "GC_DIM_CUSTOMER", "business_base": "CUSTOMER", "business_append": [], "technical_base": "CUSTOMER", "audit_base": "GC", "temporal_base": "GC_DIM", "natural_grain": ["customer_key"], "historical": false},
+    {"id": "GC_DIM_PRODUCT", "business_base": "PRODUCT", "business_append": [], "technical_base": "PRODUCT", "audit_base": "GC", "temporal_base": "GC_DIM", "natural_grain": ["product_key"], "historical": false},
+    {"id": "GC_DIM_EMPLOYEE", "business_base": "EMPLOYEE", "business_append": [], "technical_base": "EMPLOYEE", "audit_base": "GC", "temporal_base": "GC_DIM", "natural_grain": ["employee_key"], "historical": false},
+    {"id": "GC_DIM_DATE", "business_base": "DATE", "business_append": [], "technical_base": "DATE", "audit_base": "GC", "temporal_base": "GC_OTHER", "natural_grain": ["date_key"], "historical": false},
+    {"id": "GC_FCT_SALES", "business_base": "SALES", "business_append": [], "technical_base": "SALES", "audit_base": "GC", "temporal_base": "GC_OTHER", "natural_grain": ["order_key", "order_line_number", "product_key"], "historical": false},
+    {"id": "GC_FCT_RETURNS", "business_base": "RETURNS", "business_append": [], "technical_base": "RETURNS", "audit_base": "GC", "temporal_base": "GC_OTHER", "natural_grain": ["return_key", "order_key", "order_line_number", "product_key"], "historical": false}
+  ],
+  "fact_key_projection": {
+    "both_platforms": [
+      {"physical_fk": "product_hk", "hub": "HUB_PRODUCT", "hub_hash": "hk_product", "natural_key": "product_key"},
+      {"physical_fk": "customer_hk", "hub": "HUB_CUSTOMER", "hub_hash": "hk_customer", "natural_key": "customer_key"},
+      {"physical_fk": "employee_hk", "hub": "HUB_EMPLOYEE", "hub_hash": "hk_employee", "natural_key": "employee_key"}
+    ],
+    "consistency_checks": [
+      {"physical_fk": "order_hk", "hub": "HUB_ORDER", "hub_hash": "hk_order", "physical_natural_key": "order_key"},
+      {"physical_fk": "return_hk", "hub": "HUB_RETURN", "hub_hash": "hk_return", "physical_natural_key": "return_key", "products": ["GH_FCT_RETURNS", "GC_FCT_RETURNS"]}
+    ],
+    "source": "Unique committed as-of hub/link maps per namespace/type",
+    "maps_from_filtered_gc_dimensions": false,
+    "maps_verified": false,
+    "missing_or_duplicate_map": "Report integrity failure, never select winner or multiply rows",
+    "nullable_fk": "Preserve NULL; non-NULL unresolved FK is failure, not a NULL fallback",
+    "physical_fact_keys_are_not_derived_columns": true,
+    "hash_field_order_is_not_comparator_order": true
+  },
+  "temporal_checks": {
+    "historical_matching": "Natural grain plus logical event delivery and event/attribute version",
+    "retain_return_to_previous_value_events": "A -> B -> A must remain three versions, not attribute-only deduplication",
+    "bounds": "Half-open, ordered, retain actual timestamps; nominal infinity 9999-12-31T23:59:59",
+    "gc_dimension_changed_at": "Must correspond to selected GH valid_from; do not demand raw cross-platform timestamp equality",
+    "current_dimensions": "is_current AND NOT is_deleted",
+    "current_sales": "is_current AND NOT coalesce(is_cancelled,false)",
+    "current_returns": "is_current",
+    "future_bv_into_raw_asof": false,
+    "actual_eventdelivery_lineage": "UNVERIFIED"
+  },
+  "calendar_checks": {
+    "range": ["2020-01-01", "2030-12-31"],
+    "rows": 4018,
+    "date_key": "yyyyMMdd",
+    "week_number": "Spark weekofyear; Fabric oracle ISO week",
+    "day_of_week": "Sunday=1, Saturday=7",
+    "weekend_days": [1, 7],
+    "month_day_text": "Exact date_format MMMM/EEEE text versus Fabric English oracle; no locale/titlecase normalization",
+    "runtime_locale": "UNVERIFIED"
+  },
+  "mapping_notes": [
+    "Quality country becomes country_code",
+    "Product unit_margin recomputed as unit_price-unit_cost in GH",
+    "BV net_amount_calc becomes Gold net_amount",
+    "BV gross_amount/discount_rate/lead_time_days/is_cancelled become Gold fact attributes"
+  ],
+  "rate_evidence_correction": {
+    "fabric_declared": "DECIMAL(9,6)",
+    "databricks": "DECIMAL(9,6)",
+    "status": "NOMINAL_DECLARED_TYPES_MATCH_9_6",
+    "supersedes": "Previous DB/Fabric messages and immutable base claimed Fabric DECIMAL(18,6)",
+    "numerical_comparison": "Exact scale 6, no float/tolerance",
+    "full_schema_equivalence": "NOT_TESTED",
+    "fabric_stored_schema": "NOT_FRESHLY_INSPECTED"
+  },
+  "unknown": [
+    "Actual full GC schema/nullability after CTAS",
+    "Active SQL/metadata rows and approval values",
+    "Unique committed as-of hub/link maps and FK payload integrity",
+    "Actual eventdelivery lineage, timestamps, runtime timezone and locale",
+    "Business reference_date and concrete transport dates",
+    "Ingest adapter/coercion and runtime dependencies",
+    "Provisioning permissions and resolved isolated paths"
+  ],
+  "execution_status": "HOLD",
+  "output_equivalence": "NOT_TESTED"
+}

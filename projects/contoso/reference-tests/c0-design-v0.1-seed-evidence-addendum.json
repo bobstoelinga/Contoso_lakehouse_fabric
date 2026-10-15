@@ -1,0 +1,33 @@
+{
+  "addendum_id": "C0-DESIGN-v0.1-SEED-EVIDENCE-01",
+  "base_contract_full_sha256": "0893cf612d1fd9ca639c23bf8807013d8b2cac198e6dce4a1f7b39cfaba36ae5",
+  "base_contract_unchanged": true,
+  "canonicalization": "fabric_etl.contracts.canonical_json-v1",
+  "digest_location": "c0-design-v0.1-seed-evidence-addendum.sha256.json",
+  "correction": "The six seed digests were supplied in peer inventory message 9519a456-fabe-4763-baae-09329f850cae and repeated on 2026-10-12 at 12:40:05 CEST. The base contract incorrectly described them as not supplied. This addendum corrects that statement without rewriting the immutable base pin.",
+  "report_received_at": "2026-10-12T12:40:05.809+02:00",
+  "original_inventory_message_id": "9519a456-fabe-4763-baae-09329f850cae",
+  "evidence_defaults": {
+    "evidence_kind": "API_INSPECTED",
+    "reported_by": "Databricks reference session",
+    "fabric_evidence_class": "PEER_REPORTED_API_INSPECTION",
+    "comparison": "BYTE_EQUAL_HEAD",
+    "coverage": "SELECTED_FILE",
+    "observed_at": null,
+    "observed_at_reason": "Exact API call timestamps not pinned",
+    "active_metadata_row_hashes": false,
+    "independently_fetched_by_fabric": false
+  },
+  "artifacts": [
+    {"logical_path": "meta_source_system.json", "sha256": "5325544dc63fb92d657d56c68370b69f921de4c94cec602235eb9a7af262461a"},
+    {"logical_path": "meta_source_object.json", "sha256": "22985386eea50c8341cff329e461712e40ee86e2c7decfb667da0a5d96d460af"},
+    {"logical_path": "meta_mapping.json", "sha256": "90388cf070fc48a2779d16359614ffdb9be203afcc0d056864232f6e4373c8dc"},
+    {"logical_path": "meta_quality_rule.json", "sha256": "375dc8d0e800cd6384ef34a12ad49af3717f1b70e0de6054989f22bb09ed2d79"},
+    {"logical_path": "meta_dv_entity.json", "sha256": "e3c99d827e4d13241f40ad9131ec196b4cc68ed1790837a04e860428b06b59d4"},
+    {"logical_path": "meta_dv_mapping.json", "sha256": "ccff3094db8bea3d7b43e33f8900d79afce7379a5e333fc37729abd5c0dbffdc"}
+  ],
+  "contract_independently_validated_by_databricks_session": false,
+  "execution_status": "HOLD",
+  "reference_designation": "NOT_VERIFIED",
+  "new_remote_inspection": false
+}

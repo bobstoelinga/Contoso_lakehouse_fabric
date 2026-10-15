@@ -1,0 +1,7 @@
+{
+  "preparation_file": "c0-fabric-schema-preparation.json",
+  "canonicalization": "fabric_etl.contracts.canonical_json-v1",
+  "full_sha256": "7d63676f435fc107132bee97bc5ea33ddf9aeca7e1bffca6f8c92877ab8ea717",
+  "canonical_bytes": 6668,
+  "base_contract_full_sha256": "0893cf612d1fd9ca639c23bf8807013d8b2cac198e6dce4a1f7b39cfaba36ae5"
+}

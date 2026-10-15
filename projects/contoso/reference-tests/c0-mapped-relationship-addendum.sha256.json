@@ -1,0 +1,6 @@
+{
+  "addendum_file": "c0-mapped-relationship-addendum.json",
+  "canonicalization": "fabric_etl.contracts.canonical_json-v1",
+  "full_sha256": "504f25f4a0f137c09b5094ccdcf9752651ccb27f8bbd724a78cc53328e1c9e8d",
+  "canonical_bytes": 4935
+}

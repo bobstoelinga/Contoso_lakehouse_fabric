@@ -1,0 +1,25 @@
+{
+  "decision_id": "C0-REFERENCE-DESIGNATION-01",
+  "base_contract_full_sha256": "0893cf612d1fd9ca639c23bf8807013d8b2cac198e6dce4a1f7b39cfaba36ae5",
+  "base_contract_unchanged": true,
+  "authority": "Explicit human selection in ask_user: Ja, wijs workspace 7405617094653375 aan als testreferentie (Aanbevolen)",
+  "designated_workspace_id": "7405617094653375",
+  "documented_workspace_id": "7405619535862062",
+  "designation_status": "HUMAN_DESIGNATED_TEST_REFERENCE",
+  "supersedes_base_fields": [
+    "reference.designated_workspace_id",
+    "reference.designation_status",
+    "authorization.reference_confirmation"
+  ],
+  "reference_gate": "DESIGNATION_RESOLVED_RELEASE_AND_METADATA_UNVERIFIED",
+  "reference_gate_reason": "Human designation does not attest full release, clean-at-deploy, active metadata, runtime imports or measured outputs",
+  "documented_host_drift": "Retained historical evidence; original repository configuration not rewritten",
+  "provisioning": false,
+  "compute": false,
+  "jobs": false,
+  "fixture_transfer": false,
+  "upload": false,
+  "auth_changes": false,
+  "business_code_corrections": false,
+  "execution_status": "HOLD"
+}

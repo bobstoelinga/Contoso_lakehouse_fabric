@@ -1,0 +1,1276 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "37424361-d6b3-430a-8d51-c5a09087a32c",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/37424361-d6b3-430a-8d51-c5a09087a32c/jobs/instances/915bc15a-e7bf-4d85-8fa6-13c22357ae36",
+  "status": "COMPLETED",
+  "job": {
+    "id": "915bc15a-e7bf-4d85-8fa6-13c22357ae36",
+    "itemId": "37424361-d6b3-430a-8d51-c5a09087a32c",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "865ed39d-390f-4a93-977d-13221d7e3a60",
+    "startTimeUtc": "2026-10-12T07:05:34.532271",
+    "endTimeUtc": "2026-10-12T07:44:49.8858943",
+    "exit_result": {
+      "business_data_written": false,
+      "deliveries": [
+        {
+          "batch_id": "be2008c7-5d85-5692-ade3-3eb78a39d457",
+          "delivery_number": 1,
+          "entities": {
+            "HUB_CUSTOMER": {
+              "commit": {
+                "commit_id": "0a92b9fdff7f500a32e47c7d6266e6b6c1c9494238b1b0920528c81c78f044b3",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_CUSTOMER",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "879374f1ad3d08c586d4064712f6d40da6ec2f6fdda751da1cb9f86f56d38b46"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "4fba99018b8b9331d500403a23090e14801b23689eb1100e5b7793d896f555a0",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_customer`"
+              }
+            },
+            "HUB_EMPLOYEE": {
+              "commit": {
+                "commit_id": "aa045ba9da078a0c699eb344ba36626f198980096e319c54a31a7e7ecedc9119",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_EMPLOYEE",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "a4a78edd31b2c3ed6df1a29282cca3cbe4ca1bc280e4d0fc1e03a80eddfb393b"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "ba5a24bc5e413ed9f118718ac530a873e54c31e71fc145635233d852d9fe0eae",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_employee`"
+              }
+            },
+            "HUB_ORDER": {
+              "commit": {
+                "commit_id": "da4e8cd8aaddfe6040b9910582d7a7f3f2bec71b822bc676611ac45d04ca4861",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_ORDER",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "2c54692da603a4c47afadb0bdbd221c6eb62d6675d9c8dbfa6fe2dfb1d7fbd86"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "10bfb4214f31288eb9bfc428c372faed2a9a4f5653410fcbca78c677fc82f6d0",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_order`"
+              }
+            },
+            "HUB_PRODUCT": {
+              "commit": {
+                "commit_id": "623e8a55ddecb31ca0699bf03965a2a056649f83835b54c71efdd3d86f4da630",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_PRODUCT",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "fbe691214279919e38b1a7e41815434d915dc4ec6dc1dd91574e98ddfe0fee63"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "15711b5bd8f18e3a491ad63c1601e924221a554fb67634087d9c4a53eeb5fc65",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_product`"
+              }
+            },
+            "HUB_RETURN": {
+              "commit": {
+                "commit_id": "87bba0142a06ac843cd0cb4a9b2dfab2556c083db0a5f52e840222c113e36bf1",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_RETURN",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "8758229f476ce9e5b6444a0081c67498263140ca96c8a36fb8ab1239134518d7"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "7c910a4a38e932bf47759116c6e39b90b604861e95fc433002def2ab1131e58c",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_return`"
+              }
+            },
+            "LNK_ORDER_CUSTOMER": {
+              "commit": {
+                "commit_id": "a2e6c6e15a6086a68828b7fbc16161c2da14d84258fc516b28f76d053ab5d478",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_ORDER_CUSTOMER",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "2c54692da603a4c47afadb0bdbd221c6eb62d6675d9c8dbfa6fe2dfb1d7fbd86",
+                "da4e8cd8aaddfe6040b9910582d7a7f3f2bec71b822bc676611ac45d04ca4861",
+                "0a92b9fdff7f500a32e47c7d6266e6b6c1c9494238b1b0920528c81c78f044b3"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "6b45896a6fe133f384069f3f966e08566209fcd55f650ba8f762f682a0c78ece",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_order_customer`"
+              }
+            },
+            "LNK_ORDER_EMPLOYEE": {
+              "commit": {
+                "commit_id": "7dbdd43c9cb103cdb5b9ab411766b9c1e1393377c7047f3c5ae494fd86432206",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_ORDER_EMPLOYEE",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "2c54692da603a4c47afadb0bdbd221c6eb62d6675d9c8dbfa6fe2dfb1d7fbd86",
+                "da4e8cd8aaddfe6040b9910582d7a7f3f2bec71b822bc676611ac45d04ca4861",
+                "aa045ba9da078a0c699eb344ba36626f198980096e319c54a31a7e7ecedc9119"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "5710ea0d18aee4acf651776e23488f188316fc0dc0848ca1748a227b935b7cdc",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_order_employee`"
+              }
+            },
+            "LNK_ORDER_PRODUCT": {
+              "commit": {
+                "commit_id": "3c7e552879f1b3336a1b67f3e14c18a3b1261247332d6cc513128619634727c8",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_ORDER_PRODUCT",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "2c54692da603a4c47afadb0bdbd221c6eb62d6675d9c8dbfa6fe2dfb1d7fbd86",
+                "da4e8cd8aaddfe6040b9910582d7a7f3f2bec71b822bc676611ac45d04ca4861",
+                "623e8a55ddecb31ca0699bf03965a2a056649f83835b54c71efdd3d86f4da630"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "8229ad8e642eee74ef9503e105035e48c865b0183c466427d547d136c8b6986c",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_order_product`"
+              }
+            },
+            "LNK_RETURN_EMPLOYEE": {
+              "commit": {
+                "commit_id": "2503b43092231856bcb23bedfd7d8ab91fd93b3c8abb0460dfe4173f92abe6ee",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_RETURN_EMPLOYEE",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "8758229f476ce9e5b6444a0081c67498263140ca96c8a36fb8ab1239134518d7",
+                "87bba0142a06ac843cd0cb4a9b2dfab2556c083db0a5f52e840222c113e36bf1",
+                "aa045ba9da078a0c699eb344ba36626f198980096e319c54a31a7e7ecedc9119"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "151d20a6d1866aa16e2458ce5d9dc74f7e66fdaffb09771118a9d55da10fae0e",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_return_employee`"
+              }
+            },
+            "LNK_RETURN_ORDER_PRODUCT": {
+              "commit": {
+                "commit_id": "589da4468e8aa1c3ade76cf442019ef31eb59540c732c14b141f023ba99ec39e",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_RETURN_ORDER_PRODUCT",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "8758229f476ce9e5b6444a0081c67498263140ca96c8a36fb8ab1239134518d7",
+                "87bba0142a06ac843cd0cb4a9b2dfab2556c083db0a5f52e840222c113e36bf1",
+                "da4e8cd8aaddfe6040b9910582d7a7f3f2bec71b822bc676611ac45d04ca4861",
+                "623e8a55ddecb31ca0699bf03965a2a056649f83835b54c71efdd3d86f4da630"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "80d1cf3bfd1b1eba140d765df37c3d25b1967e0b5c5a6c0e3afcadd2ec0be297",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_return_order_product`"
+              }
+            },
+            "SAT_CUSTOMER": {
+              "commit": {
+                "commit_id": "7498b34ebdff21899284bca2228f1224543a0df02a02e4ac0411e07fb03a1757",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_CUSTOMER",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "879374f1ad3d08c586d4064712f6d40da6ec2f6fdda751da1cb9f86f56d38b46",
+                "0a92b9fdff7f500a32e47c7d6266e6b6c1c9494238b1b0920528c81c78f044b3"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "755d429e0f199b2961e9f8b79c152b03130254cfaa2c81c77a809a1b7fcaf1c8",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_customer`"
+              }
+            },
+            "SAT_CUSTOMER_BV": {
+              "commit": {
+                "commit_id": "e820864098e9feb53837b486120e818b6ee18764a3b96ac2608bc303c2ecd868",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_CUSTOMER_BV",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "879374f1ad3d08c586d4064712f6d40da6ec2f6fdda751da1cb9f86f56d38b46",
+                "0a92b9fdff7f500a32e47c7d6266e6b6c1c9494238b1b0920528c81c78f044b3"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "bc17a17cc0dce6d12c02b60075ed7dab46533b6babbed1078f97ed95c9f3c368",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase6_sat_customer_bv`"
+              }
+            },
+            "SAT_EMPLOYEE": {
+              "commit": {
+                "commit_id": "86fe53b8144272d5a984cbc425ce43d13b9541d0f43082317b9c5c84f65aa097",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_EMPLOYEE",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "a4a78edd31b2c3ed6df1a29282cca3cbe4ca1bc280e4d0fc1e03a80eddfb393b",
+                "aa045ba9da078a0c699eb344ba36626f198980096e319c54a31a7e7ecedc9119"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "81b8c280e20cc6db3efc4741f6eafb8733205da91531e5cdc6114e40ff88f1ff",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_employee`"
+              }
+            },
+            "SAT_ORDER": {
+              "commit": {
+                "commit_id": "5d5513c3b5abab4ba6f25e36516ed82fb94a9d42986e27dc039cee56fbbdbe5e",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_ORDER",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "2c54692da603a4c47afadb0bdbd221c6eb62d6675d9c8dbfa6fe2dfb1d7fbd86",
+                "da4e8cd8aaddfe6040b9910582d7a7f3f2bec71b822bc676611ac45d04ca4861"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "b7f48aca3afb043181becca9209b95fd142b81dd876217bc1166721b359fd62f",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_order`"
+              }
+            },
+            "SAT_ORDER_LINE": {
+              "commit": {
+                "commit_id": "be7f5a81a00f52f73437555aa620d62783495d81a222757ed5cbaf3d8d21358b",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_ORDER_LINE",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "2c54692da603a4c47afadb0bdbd221c6eb62d6675d9c8dbfa6fe2dfb1d7fbd86",
+                "3c7e552879f1b3336a1b67f3e14c18a3b1261247332d6cc513128619634727c8"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "97db5700d891b4def9f3bf3887f007bb497d5bc0a2c73c50ece7a70e804f4145",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_order_line`"
+              }
+            },
+            "SAT_ORDER_LINE_BV": {
+              "commit": {
+                "commit_id": "e1c90e4c67d90a26d3ebf6e315b2d56bee9c1c92353a24a7bef5a30a9cc22384",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_ORDER_LINE_BV",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "2c54692da603a4c47afadb0bdbd221c6eb62d6675d9c8dbfa6fe2dfb1d7fbd86",
+                "3c7e552879f1b3336a1b67f3e14c18a3b1261247332d6cc513128619634727c8"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "e0dd35ed7ae143183caf332f87f88a423ac5e5a43fa6e8c58e5f26fe5b83b681",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase6_sat_order_line_bv`"
+              }
+            },
+            "SAT_PRODUCT": {
+              "commit": {
+                "commit_id": "adc406c26ffda5561a0c20b5d1fe7d6dd7267c26500e91454ab57404ef850133",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_PRODUCT",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "fbe691214279919e38b1a7e41815434d915dc4ec6dc1dd91574e98ddfe0fee63",
+                "623e8a55ddecb31ca0699bf03965a2a056649f83835b54c71efdd3d86f4da630"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "92ffd8d988c8d6c12e6530858ebe19826195edcf13d2f670e148d871b053734d",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_product`"
+              }
+            },
+            "SAT_RETURN": {
+              "commit": {
+                "commit_id": "438e1b936bc21b452670c9e166e23437d65def3df616f79661d90abcd6f3bbd7",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_RETURN",
+              "expected_output_verified": true,
+              "history_commit_ids": [],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "8758229f476ce9e5b6444a0081c67498263140ca96c8a36fb8ab1239134518d7",
+                "589da4468e8aa1c3ade76cf442019ef31eb59540c732c14b141f023ba99ec39e"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "dd6e24c01674e5436a41ba6f61b357a310652df620d8191decb8b84e9b3d5d82",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_return`"
+              }
+            }
+          }
+        },
+        {
+          "batch_id": "035cffd2-9ee0-51db-9162-129bbc0a2ce7",
+          "delivery_number": 2,
+          "entities": {
+            "HUB_CUSTOMER": {
+              "commit": {
+                "commit_id": "fb976cc72e8223dfdc43a956cc6c733cfee0e8ca641265d72a3c678a11d10af8",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_CUSTOMER",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "0a92b9fdff7f500a32e47c7d6266e6b6c1c9494238b1b0920528c81c78f044b3"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "2a589c7068afffb145bd15d8b64da028ca3cfa398050837d536fd6c287ee2c96"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_customer`"
+              }
+            },
+            "HUB_EMPLOYEE": {
+              "commit": {
+                "commit_id": "ddb9a54df965d1d84b9009a623563aa7f86b6595a59171fedeea31310f63b4e1",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_EMPLOYEE",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "aa045ba9da078a0c699eb344ba36626f198980096e319c54a31a7e7ecedc9119"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "ce9c1826098c6ee9f054b649a9eb93d03eb84b2eb4b6f48af24a836e02179fec"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_employee`"
+              }
+            },
+            "HUB_ORDER": {
+              "commit": {
+                "commit_id": "7b1553e1560ad8ae96b94cdb648f988eab8a5bad3540c19a67c3fa5d8fc356c9",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_ORDER",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "da4e8cd8aaddfe6040b9910582d7a7f3f2bec71b822bc676611ac45d04ca4861"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "28b4922d73789f4692a710b8a4f7f8089ae796b706f201398a624ff2761c9475"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_order`"
+              }
+            },
+            "HUB_PRODUCT": {
+              "commit": {
+                "commit_id": "c30970b4412031788607542b2a4c3055bae3a32501a7ff9c9fd0a15015cddf27",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_PRODUCT",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "623e8a55ddecb31ca0699bf03965a2a056649f83835b54c71efdd3d86f4da630"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "7c5997ba509fde8d558742ebb76d699026d6b45a11009011351ac7572d2fe03e"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_product`"
+              }
+            },
+            "HUB_RETURN": {
+              "commit": {
+                "commit_id": "703462d2a58fcb50b45526c74ab8f2295047ae55cdd9251cabc080cf1d2bbc87",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_RETURN",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "87bba0142a06ac843cd0cb4a9b2dfab2556c083db0a5f52e840222c113e36bf1"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "006e0af1b74ef412c3c2abed0ba14d1ad6e1183c810175b0e8b1367b5c57cf14"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_return`"
+              }
+            },
+            "LNK_ORDER_CUSTOMER": {
+              "commit": {
+                "commit_id": "96305bab416399c40054ca48b2868e08818eecbafa62607b44d2d789d6580d97",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_ORDER_CUSTOMER",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "a2e6c6e15a6086a68828b7fbc16161c2da14d84258fc516b28f76d053ab5d478"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "28b4922d73789f4692a710b8a4f7f8089ae796b706f201398a624ff2761c9475",
+                "7b1553e1560ad8ae96b94cdb648f988eab8a5bad3540c19a67c3fa5d8fc356c9",
+                "fb976cc72e8223dfdc43a956cc6c733cfee0e8ca641265d72a3c678a11d10af8"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_order_customer`"
+              }
+            },
+            "LNK_ORDER_EMPLOYEE": {
+              "commit": {
+                "commit_id": "9b1ad1722619e0b04dea2912f6a5b2a3f0bb77a3b099d360a91d726ad7b803db",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_ORDER_EMPLOYEE",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "7dbdd43c9cb103cdb5b9ab411766b9c1e1393377c7047f3c5ae494fd86432206"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "28b4922d73789f4692a710b8a4f7f8089ae796b706f201398a624ff2761c9475",
+                "7b1553e1560ad8ae96b94cdb648f988eab8a5bad3540c19a67c3fa5d8fc356c9",
+                "ddb9a54df965d1d84b9009a623563aa7f86b6595a59171fedeea31310f63b4e1"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_order_employee`"
+              }
+            },
+            "LNK_ORDER_PRODUCT": {
+              "commit": {
+                "commit_id": "e59c51bc4fa8093285900382b73a5fcebe574773cdf17e15103e3cb3ba2fbb6d",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_ORDER_PRODUCT",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "3c7e552879f1b3336a1b67f3e14c18a3b1261247332d6cc513128619634727c8"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "28b4922d73789f4692a710b8a4f7f8089ae796b706f201398a624ff2761c9475",
+                "7b1553e1560ad8ae96b94cdb648f988eab8a5bad3540c19a67c3fa5d8fc356c9",
+                "c30970b4412031788607542b2a4c3055bae3a32501a7ff9c9fd0a15015cddf27"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_order_product`"
+              }
+            },
+            "LNK_RETURN_EMPLOYEE": {
+              "commit": {
+                "commit_id": "7d3edbf690a69bc3b222f2a7b3add30d7a98e40e048bbded50aa21d2c501fed7",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_RETURN_EMPLOYEE",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "2503b43092231856bcb23bedfd7d8ab91fd93b3c8abb0460dfe4173f92abe6ee"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "006e0af1b74ef412c3c2abed0ba14d1ad6e1183c810175b0e8b1367b5c57cf14",
+                "703462d2a58fcb50b45526c74ab8f2295047ae55cdd9251cabc080cf1d2bbc87",
+                "ddb9a54df965d1d84b9009a623563aa7f86b6595a59171fedeea31310f63b4e1"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_return_employee`"
+              }
+            },
+            "LNK_RETURN_ORDER_PRODUCT": {
+              "commit": {
+                "commit_id": "87a1a2ab018ab5e7ef7d719662a8548a02e0194b3e13c2ca58315ece64df797a",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_RETURN_ORDER_PRODUCT",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "589da4468e8aa1c3ade76cf442019ef31eb59540c732c14b141f023ba99ec39e"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "006e0af1b74ef412c3c2abed0ba14d1ad6e1183c810175b0e8b1367b5c57cf14",
+                "703462d2a58fcb50b45526c74ab8f2295047ae55cdd9251cabc080cf1d2bbc87",
+                "7b1553e1560ad8ae96b94cdb648f988eab8a5bad3540c19a67c3fa5d8fc356c9",
+                "c30970b4412031788607542b2a4c3055bae3a32501a7ff9c9fd0a15015cddf27"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_return_order_product`"
+              }
+            },
+            "SAT_CUSTOMER": {
+              "commit": {
+                "commit_id": "81d338951b8b2a4fbcb8459b2bdf379ebc6a3ba6943e59cb72ec86fbcc761437",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_CUSTOMER",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "7498b34ebdff21899284bca2228f1224543a0df02a02e4ac0411e07fb03a1757"
+              ],
+              "history_record_count": 2,
+              "input_commit_ids": [
+                "2a589c7068afffb145bd15d8b64da028ca3cfa398050837d536fd6c287ee2c96",
+                "fb976cc72e8223dfdc43a956cc6c733cfee0e8ca641265d72a3c678a11d10af8"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "096f0ba3ca274cb9da6c10255f990057823a21741917b8650a58fb0b7ea351d3",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_customer`"
+              }
+            },
+            "SAT_CUSTOMER_BV": {
+              "commit": {
+                "commit_id": "ba7f2fdc7cc2a03778bcd314e57af96a002ea7f79c5524ebaa411fd2ecb36bc8",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_CUSTOMER_BV",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "e820864098e9feb53837b486120e818b6ee18764a3b96ac2608bc303c2ecd868"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "2a589c7068afffb145bd15d8b64da028ca3cfa398050837d536fd6c287ee2c96",
+                "fb976cc72e8223dfdc43a956cc6c733cfee0e8ca641265d72a3c678a11d10af8"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase6_sat_customer_bv`"
+              }
+            },
+            "SAT_EMPLOYEE": {
+              "commit": {
+                "commit_id": "71555a0c85bd9a0cf70b0ceba05e83c835afef725a3ff18ba95751e13dae5693",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_EMPLOYEE",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "86fe53b8144272d5a984cbc425ce43d13b9541d0f43082317b9c5c84f65aa097"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "ce9c1826098c6ee9f054b649a9eb93d03eb84b2eb4b6f48af24a836e02179fec",
+                "ddb9a54df965d1d84b9009a623563aa7f86b6595a59171fedeea31310f63b4e1"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_employee`"
+              }
+            },
+            "SAT_ORDER": {
+              "commit": {
+                "commit_id": "480f83f17be324c947c65b2efdd435255da7d934cbb765bcdbb238642bb179ff",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_ORDER",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "5d5513c3b5abab4ba6f25e36516ed82fb94a9d42986e27dc039cee56fbbdbe5e"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "28b4922d73789f4692a710b8a4f7f8089ae796b706f201398a624ff2761c9475",
+                "7b1553e1560ad8ae96b94cdb648f988eab8a5bad3540c19a67c3fa5d8fc356c9"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_order`"
+              }
+            },
+            "SAT_ORDER_LINE": {
+              "commit": {
+                "commit_id": "d368ec62cb504a41280143d57bd18be76433983c239f5448a55a82928d506ebb",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_ORDER_LINE",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "be7f5a81a00f52f73437555aa620d62783495d81a222757ed5cbaf3d8d21358b"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "28b4922d73789f4692a710b8a4f7f8089ae796b706f201398a624ff2761c9475",
+                "e59c51bc4fa8093285900382b73a5fcebe574773cdf17e15103e3cb3ba2fbb6d"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_order_line`"
+              }
+            },
+            "SAT_ORDER_LINE_BV": {
+              "commit": {
+                "commit_id": "cb326250f08d78c42758a7ff47d24a653530e889f5030a31fa52589faac4d394",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_ORDER_LINE_BV",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "e1c90e4c67d90a26d3ebf6e315b2d56bee9c1c92353a24a7bef5a30a9cc22384"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "28b4922d73789f4692a710b8a4f7f8089ae796b706f201398a624ff2761c9475",
+                "e59c51bc4fa8093285900382b73a5fcebe574773cdf17e15103e3cb3ba2fbb6d"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase6_sat_order_line_bv`"
+              }
+            },
+            "SAT_PRODUCT": {
+              "commit": {
+                "commit_id": "3032f90f98b219a40e30cee70554be6c22bf8f4b5a6eaa6dfd00d6fdf15d2fae",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_PRODUCT",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "adc406c26ffda5561a0c20b5d1fe7d6dd7267c26500e91454ab57404ef850133"
+              ],
+              "history_record_count": 2,
+              "input_commit_ids": [
+                "7c5997ba509fde8d558742ebb76d699026d6b45a11009011351ac7572d2fe03e",
+                "c30970b4412031788607542b2a4c3055bae3a32501a7ff9c9fd0a15015cddf27"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "29dab8e491bd84630713850a38e2c73bf72007cab60ac542bf84ee1d14256a20",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_product`"
+              }
+            },
+            "SAT_RETURN": {
+              "commit": {
+                "commit_id": "288973b82d03d2e175e110f886f8653e4103889e4c38dafbeb05b6f1227f0ae9",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_RETURN",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "438e1b936bc21b452670c9e166e23437d65def3df616f79661d90abcd6f3bbd7"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "006e0af1b74ef412c3c2abed0ba14d1ad6e1183c810175b0e8b1367b5c57cf14",
+                "87a1a2ab018ab5e7ef7d719662a8548a02e0194b3e13c2ca58315ece64df797a"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_return`"
+              }
+            }
+          }
+        },
+        {
+          "batch_id": "b8914406-23be-56d8-897e-c194a8ecefda",
+          "delivery_number": 3,
+          "entities": {
+            "HUB_CUSTOMER": {
+              "commit": {
+                "commit_id": "d1fb405370d3ac7cc423dc44735e37b63aeffa81dc8abca2087d074abe9b8fa7",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_CUSTOMER",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "0a92b9fdff7f500a32e47c7d6266e6b6c1c9494238b1b0920528c81c78f044b3",
+                "fb976cc72e8223dfdc43a956cc6c733cfee0e8ca641265d72a3c678a11d10af8"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "fb802c0778ca0710d04227f0d1ad964e2f360bf5abd6d6980074c67bbb847c89"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_customer`"
+              }
+            },
+            "HUB_EMPLOYEE": {
+              "commit": {
+                "commit_id": "a85b79c7dce9268398afb2ea0a2a18b4536ccd7290d083cd09cb93e825173cce",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_EMPLOYEE",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "aa045ba9da078a0c699eb344ba36626f198980096e319c54a31a7e7ecedc9119",
+                "ddb9a54df965d1d84b9009a623563aa7f86b6595a59171fedeea31310f63b4e1"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "7ed8b315bd7a2f658a00ffe678028bf8bba9ec504b4a2f1d7bbbbf48e4def799"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_employee`"
+              }
+            },
+            "HUB_ORDER": {
+              "commit": {
+                "commit_id": "ec0ffaf5155118aec4d4a05b9a699d93c28fc3769c10400028a7f0207cd58d1d",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_ORDER",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "da4e8cd8aaddfe6040b9910582d7a7f3f2bec71b822bc676611ac45d04ca4861",
+                "7b1553e1560ad8ae96b94cdb648f988eab8a5bad3540c19a67c3fa5d8fc356c9"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "bcdbee4d2759663cefb753edf6757aff779c485126953386b5353fde23d42a48"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_order`"
+              }
+            },
+            "HUB_PRODUCT": {
+              "commit": {
+                "commit_id": "98f4b52e6abd2b3c8a3d6e5793c61f00e5d3a3572519e603442e207fc027b3b7",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_PRODUCT",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "623e8a55ddecb31ca0699bf03965a2a056649f83835b54c71efdd3d86f4da630",
+                "c30970b4412031788607542b2a4c3055bae3a32501a7ff9c9fd0a15015cddf27"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "2efd83a4555d5a7c838685bbd6066148e225ae9350714de5e5cfacd71989fe51"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_product`"
+              }
+            },
+            "HUB_RETURN": {
+              "commit": {
+                "commit_id": "060d4cedf4a7242f906c5f647d6a89afb9b0e75c2ed2b3dcd912145ca0f7bf8a",
+                "status": "COMMITTED"
+              },
+              "entity_id": "HUB_RETURN",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "87bba0142a06ac843cd0cb4a9b2dfab2556c083db0a5f52e840222c113e36bf1",
+                "703462d2a58fcb50b45526c74ab8f2295047ae55cdd9251cabc080cf1d2bbc87"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "d487b3e1ed33f13edc5aa0c5ce4dc58c8e503f5981e744dc56044ae059c86b65"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_hub_return`"
+              }
+            },
+            "LNK_ORDER_CUSTOMER": {
+              "commit": {
+                "commit_id": "9033d335e682392c89fd0e07a15300360dc6b46c3dc89c716aec6e05e9131eec",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_ORDER_CUSTOMER",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "a2e6c6e15a6086a68828b7fbc16161c2da14d84258fc516b28f76d053ab5d478",
+                "96305bab416399c40054ca48b2868e08818eecbafa62607b44d2d789d6580d97"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "bcdbee4d2759663cefb753edf6757aff779c485126953386b5353fde23d42a48",
+                "ec0ffaf5155118aec4d4a05b9a699d93c28fc3769c10400028a7f0207cd58d1d",
+                "d1fb405370d3ac7cc423dc44735e37b63aeffa81dc8abca2087d074abe9b8fa7"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_order_customer`"
+              }
+            },
+            "LNK_ORDER_EMPLOYEE": {
+              "commit": {
+                "commit_id": "53bcf790b671326f00d453a3ba7bfdf9f8c34029e3d34bd3ca0bdd11099b7bbd",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_ORDER_EMPLOYEE",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "7dbdd43c9cb103cdb5b9ab411766b9c1e1393377c7047f3c5ae494fd86432206",
+                "9b1ad1722619e0b04dea2912f6a5b2a3f0bb77a3b099d360a91d726ad7b803db"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "bcdbee4d2759663cefb753edf6757aff779c485126953386b5353fde23d42a48",
+                "ec0ffaf5155118aec4d4a05b9a699d93c28fc3769c10400028a7f0207cd58d1d",
+                "a85b79c7dce9268398afb2ea0a2a18b4536ccd7290d083cd09cb93e825173cce"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_order_employee`"
+              }
+            },
+            "LNK_ORDER_PRODUCT": {
+              "commit": {
+                "commit_id": "2f872c2f2ec03b59e542efe3a38f8ef70f3419dd1593a6665a5328404ddd44c6",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_ORDER_PRODUCT",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "3c7e552879f1b3336a1b67f3e14c18a3b1261247332d6cc513128619634727c8",
+                "e59c51bc4fa8093285900382b73a5fcebe574773cdf17e15103e3cb3ba2fbb6d"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "bcdbee4d2759663cefb753edf6757aff779c485126953386b5353fde23d42a48",
+                "ec0ffaf5155118aec4d4a05b9a699d93c28fc3769c10400028a7f0207cd58d1d",
+                "98f4b52e6abd2b3c8a3d6e5793c61f00e5d3a3572519e603442e207fc027b3b7"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_order_product`"
+              }
+            },
+            "LNK_RETURN_EMPLOYEE": {
+              "commit": {
+                "commit_id": "1597786ce78cfee74e6d53949ad3b6bc2cd41a8dab3695bc9620e09504355cc1",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_RETURN_EMPLOYEE",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "2503b43092231856bcb23bedfd7d8ab91fd93b3c8abb0460dfe4173f92abe6ee",
+                "7d3edbf690a69bc3b222f2a7b3add30d7a98e40e048bbded50aa21d2c501fed7"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "d487b3e1ed33f13edc5aa0c5ce4dc58c8e503f5981e744dc56044ae059c86b65",
+                "060d4cedf4a7242f906c5f647d6a89afb9b0e75c2ed2b3dcd912145ca0f7bf8a",
+                "a85b79c7dce9268398afb2ea0a2a18b4536ccd7290d083cd09cb93e825173cce"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_return_employee`"
+              }
+            },
+            "LNK_RETURN_ORDER_PRODUCT": {
+              "commit": {
+                "commit_id": "b720bcccc19628f84675411fc3b159545b4e62670782cdd4257a967518fe762d",
+                "status": "COMMITTED"
+              },
+              "entity_id": "LNK_RETURN_ORDER_PRODUCT",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "589da4468e8aa1c3ade76cf442019ef31eb59540c732c14b141f023ba99ec39e",
+                "87a1a2ab018ab5e7ef7d719662a8548a02e0194b3e13c2ca58315ece64df797a"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "d487b3e1ed33f13edc5aa0c5ce4dc58c8e503f5981e744dc56044ae059c86b65",
+                "060d4cedf4a7242f906c5f647d6a89afb9b0e75c2ed2b3dcd912145ca0f7bf8a",
+                "ec0ffaf5155118aec4d4a05b9a699d93c28fc3769c10400028a7f0207cd58d1d",
+                "98f4b52e6abd2b3c8a3d6e5793c61f00e5d3a3572519e603442e207fc027b3b7"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_lnk_return_order_product`"
+              }
+            },
+            "SAT_CUSTOMER": {
+              "commit": {
+                "commit_id": "33d57ef40877eadcf94ea0d2a1d3c8570b236b0380363495dde15a3b4aca6416",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_CUSTOMER",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "7498b34ebdff21899284bca2228f1224543a0df02a02e4ac0411e07fb03a1757",
+                "81d338951b8b2a4fbcb8459b2bdf379ebc6a3ba6943e59cb72ec86fbcc761437"
+              ],
+              "history_record_count": 3,
+              "input_commit_ids": [
+                "fb802c0778ca0710d04227f0d1ad964e2f360bf5abd6d6980074c67bbb847c89",
+                "d1fb405370d3ac7cc423dc44735e37b63aeffa81dc8abca2087d074abe9b8fa7"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "c37988bdf098f8daac77837c4f04b9a9365e4246934f9974a43f6f6fd7b84eb8",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_customer`"
+              }
+            },
+            "SAT_CUSTOMER_BV": {
+              "commit": {
+                "commit_id": "bb4977d202796581cd61abe2c12bb24fe582333d88c002e445fda10792f67435",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_CUSTOMER_BV",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "e820864098e9feb53837b486120e818b6ee18764a3b96ac2608bc303c2ecd868",
+                "ba7f2fdc7cc2a03778bcd314e57af96a002ea7f79c5524ebaa411fd2ecb36bc8"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "fb802c0778ca0710d04227f0d1ad964e2f360bf5abd6d6980074c67bbb847c89",
+                "d1fb405370d3ac7cc423dc44735e37b63aeffa81dc8abca2087d074abe9b8fa7"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase6_sat_customer_bv`"
+              }
+            },
+            "SAT_EMPLOYEE": {
+              "commit": {
+                "commit_id": "bbf9461b2d0272daf2e122fa8f4fea2d6e43b0d8759a70fad85f41c70b804a8b",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_EMPLOYEE",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "86fe53b8144272d5a984cbc425ce43d13b9541d0f43082317b9c5c84f65aa097",
+                "71555a0c85bd9a0cf70b0ceba05e83c835afef725a3ff18ba95751e13dae5693"
+              ],
+              "history_record_count": 2,
+              "input_commit_ids": [
+                "7ed8b315bd7a2f658a00ffe678028bf8bba9ec504b4a2f1d7bbbbf48e4def799",
+                "a85b79c7dce9268398afb2ea0a2a18b4536ccd7290d083cd09cb93e825173cce"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "1c80c9c7a64a3229c6db934df1d44996e1d26cfa33020de654e45fc7719cc39b",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_employee`"
+              }
+            },
+            "SAT_ORDER": {
+              "commit": {
+                "commit_id": "40d2fa31bf32d8ade7ce28486af6352749962e67ce63a2c52793d5db0e85b1ef",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_ORDER",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "5d5513c3b5abab4ba6f25e36516ed82fb94a9d42986e27dc039cee56fbbdbe5e",
+                "480f83f17be324c947c65b2efdd435255da7d934cbb765bcdbb238642bb179ff"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "bcdbee4d2759663cefb753edf6757aff779c485126953386b5353fde23d42a48",
+                "ec0ffaf5155118aec4d4a05b9a699d93c28fc3769c10400028a7f0207cd58d1d"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_order`"
+              }
+            },
+            "SAT_ORDER_LINE": {
+              "commit": {
+                "commit_id": "c739b2d9b5171c8a0b1c3c7a0d125f1875abdef22879d4568536b09cfec631b2",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_ORDER_LINE",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "be7f5a81a00f52f73437555aa620d62783495d81a222757ed5cbaf3d8d21358b",
+                "d368ec62cb504a41280143d57bd18be76433983c239f5448a55a82928d506ebb"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "bcdbee4d2759663cefb753edf6757aff779c485126953386b5353fde23d42a48",
+                "2f872c2f2ec03b59e542efe3a38f8ef70f3419dd1593a6665a5328404ddd44c6"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_order_line`"
+              }
+            },
+            "SAT_ORDER_LINE_BV": {
+              "commit": {
+                "commit_id": "5c6c666cdcfd8e355bcdb5768977f7b4bb9dc4a70dc121c24f8a4d255d8b8bf6",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_ORDER_LINE_BV",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "e1c90e4c67d90a26d3ebf6e315b2d56bee9c1c92353a24a7bef5a30a9cc22384",
+                "cb326250f08d78c42758a7ff47d24a653530e889f5030a31fa52589faac4d394"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "bcdbee4d2759663cefb753edf6757aff779c485126953386b5353fde23d42a48",
+                "2f872c2f2ec03b59e542efe3a38f8ef70f3419dd1593a6665a5328404ddd44c6"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase6_sat_order_line_bv`"
+              }
+            },
+            "SAT_PRODUCT": {
+              "commit": {
+                "commit_id": "738535087e9ef0248572f5bb0d56c48a0c37b80634ba4faa39f9c6b81b9d5b2e",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_PRODUCT",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "adc406c26ffda5561a0c20b5d1fe7d6dd7267c26500e91454ab57404ef850133",
+                "3032f90f98b219a40e30cee70554be6c22bf8f4b5a6eaa6dfd00d6fdf15d2fae"
+              ],
+              "history_record_count": 3,
+              "input_commit_ids": [
+                "2efd83a4555d5a7c838685bbd6066148e225ae9350714de5e5cfacd71989fe51",
+                "98f4b52e6abd2b3c8a3d6e5793c61f00e5d3a3572519e603442e207fc027b3b7"
+              ],
+              "output": {
+                "inserted_count": 1,
+                "output_fingerprint": "1856e88d4513870fabf9d46fe00215a8d72ec8ec18e4de05b9195dfebb44c029",
+                "record_count": 1,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_product`"
+              }
+            },
+            "SAT_RETURN": {
+              "commit": {
+                "commit_id": "f44b5f9dccaedefb7e5c4464133ee24f79528aad9ea618198f7349ec1a6cb681",
+                "status": "COMMITTED"
+              },
+              "entity_id": "SAT_RETURN",
+              "expected_output_verified": true,
+              "history_commit_ids": [
+                "438e1b936bc21b452670c9e166e23437d65def3df616f79661d90abcd6f3bbd7",
+                "288973b82d03d2e175e110f886f8653e4103889e4c38dafbeb05b6f1227f0ae9"
+              ],
+              "history_record_count": 1,
+              "input_commit_ids": [
+                "d487b3e1ed33f13edc5aa0c5ce4dc58c8e503f5981e744dc56044ae059c86b65",
+                "b720bcccc19628f84675411fc3b159545b4e62670782cdd4257a967518fe762d"
+              ],
+              "output": {
+                "inserted_count": 0,
+                "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "record_count": 0,
+                "retry_count": 0,
+                "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase6_sat_return`"
+              }
+            }
+          }
+        }
+      ],
+      "owner_released": true,
+      "phase6_complete": false,
+      "phase6_version": "0.2.0",
+      "production_release_accepted": false,
+      "projection_contract": "sales-vault-events-v1-persisted-business-date",
+      "quality_input_fingerprint": "935d9d0d364b92c6042c7cfcff1c2193b6556c62c342c3b70e83e867755e9edf",
+      "release_id": "c9beb08ca216ac512739c00a6dde127190bd7e53713327080abe59a10b5406f4",
+      "scope": "PHASE6_SALES_COMMITTED_VAULT",
+      "status": "SUCCEEDED"
+    }
+  }
+}

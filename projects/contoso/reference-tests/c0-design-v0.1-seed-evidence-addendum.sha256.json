@@ -1,0 +1,7 @@
+{
+  "addendum_file": "c0-design-v0.1-seed-evidence-addendum.json",
+  "canonicalization": "fabric_etl.contracts.canonical_json-v1",
+  "full_sha256": "ca65dc18a498c486671da36fe3f75c512356ce93746a9c820ede0aa3202accb5",
+  "canonical_bytes": 1967,
+  "base_contract_full_sha256": "0893cf612d1fd9ca639c23bf8807013d8b2cac198e6dce4a1f7b39cfaba36ae5"
+}

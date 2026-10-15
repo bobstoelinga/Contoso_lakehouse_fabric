@@ -1,0 +1,22 @@
+{
+  "contract_version": "1.0",
+  "bundle_id": "contoso_phase5_chain_probe",
+  "scope": "PHASE5_CHAIN_PROBE",
+  "environment_binding": {
+    "path": "environments/contoso.dev.json",
+    "item_id": "7266a872-dd91-4aa6-a0b4-d4cc5b862643"
+  },
+  "library": {
+    "path": "dist/fabric_etl_phase5-0.2.0-py3-none-any.whl",
+    "name": "fabric-etl-phase5",
+    "version": "0.2.0",
+    "sha256": "5b98ea1092fb580cb925fb2d0ba771b89b878cdcb4e101e2a9d85d9bff2dddc4"
+  },
+  "notebooks": [
+    {
+      "id": "phase5_chain_probe",
+      "display_name": "{project_id}_phase5_chain_probe_{environment}",
+      "source": "fabric/items/phase5_chain_probe.Notebook/notebook-content.py"
+    }
+  ]
+}

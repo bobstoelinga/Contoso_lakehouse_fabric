@@ -1,0 +1,103 @@
+﻿{
+    "verified_at_utc":  "2026-10-10T17:23:28.5254366Z",
+    "retention":  {
+                      "deleteRetentionPolicy":  {
+                                                    "allowPermanentDelete":  false,
+                                                    "enabled":  true,
+                                                    "days":  7
+                                                },
+                      "containerDeleteRetentionPolicy":  {
+                                                             "enabled":  true,
+                                                             "days":  7
+                                                         }
+                  },
+    "data_role_scope":  "/subscriptions/9fe6cc02-a83b-4130-8d57-5e8247ce2565/resourceGroups/rg-contoso-raw-dev-neu/providers/Microsoft.Storage/storageAccounts/stcontosorawdev9fe6cc02",
+    "subscription_id":  "9fe6cc02-a83b-4130-8d57-5e8247ce2565",
+    "data_file_count":  0,
+    "allow_shared_key_access":  false,
+    "location":  "northeurope",
+    "containers":  [
+                       {
+                           "name":  "raw",
+                           "public_access":  "None"
+                       },
+                       {
+                           "name":  "test-fixtures",
+                           "public_access":  "None"
+                       }
+                   ],
+    "public_network_access":  "Enabled",
+    "storage_account_id":  "/subscriptions/9fe6cc02-a83b-4130-8d57-5e8247ce2565/resourceGroups/rg-contoso-raw-dev-neu/providers/Microsoft.Storage/storageAccounts/stcontosorawdev9fe6cc02",
+    "allow_blob_public_access":  false,
+    "is_hns_enabled":  true,
+    "locked_worm_retention":  "not_configured",
+    "data_role_assignment_id":  "18a8cc3d-abe0-4aaa-87a8-54eb7c540ce9",
+    "minimum_tls_version":  "TLS1_2",
+    "provisioning_state":  "Succeeded",
+    "deployment_principal_id":  "03667848-cd1f-48b4-bf68-cba53d7eeafc",
+    "https_only":  true,
+    "fabric_capacity_region":  "North Europe",
+    "verified_directory_paths":  {
+                                     "raw":  [
+                                                 {
+                                                     "name":  "CBS",
+                                                     "isDirectory":  "true",
+                                                     "contentLength":  "0"
+                                                 },
+                                                 {
+                                                     "name":  "ECB",
+                                                     "isDirectory":  "true",
+                                                     "contentLength":  "0"
+                                                 },
+                                                 {
+                                                     "name":  "FABRIC_SALES",
+                                                     "isDirectory":  "true",
+                                                     "contentLength":  "0"
+                                                 },
+                                                 {
+                                                     "name":  "NAGER",
+                                                     "isDirectory":  "true",
+                                                     "contentLength":  "0"
+                                                 },
+                                                 {
+                                                     "name":  "SALES",
+                                                     "isDirectory":  "true",
+                                                     "contentLength":  "0"
+                                                 }
+                                             ],
+                                     "test-fixtures":  [
+                                                           {
+                                                               "name":  "CBS",
+                                                               "isDirectory":  "true",
+                                                               "contentLength":  "0"
+                                                           },
+                                                           {
+                                                               "name":  "ECB",
+                                                               "isDirectory":  "true",
+                                                               "contentLength":  "0"
+                                                           },
+                                                           {
+                                                               "name":  "FABRIC_SALES",
+                                                               "isDirectory":  "true",
+                                                               "contentLength":  "0"
+                                                           },
+                                                           {
+                                                               "name":  "NAGER",
+                                                               "isDirectory":  "true",
+                                                               "contentLength":  "0"
+                                                           },
+                                                           {
+                                                               "name":  "SALES",
+                                                               "isDirectory":  "true",
+                                                               "contentLength":  "0"
+                                                           }
+                                                       ]
+                                 },
+    "data_generation":  "not_started",
+    "fabric_capacity_id":  "103e56d3-ccdb-42d8-a56d-ff3d5a6c92f8",
+    "azure_tenant_id":  "5e17ad2f-962c-4bf3-bdd5-a1972e4c73ad",
+    "resource_group":  "rg-contoso-raw-dev-neu",
+    "sku":  "Standard_LRS",
+    "cross_tenant_fabric_access":  "not_configured",
+    "deployment_user":  "stoelingabob@gmail.com"
+}

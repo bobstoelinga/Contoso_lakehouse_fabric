@@ -1,0 +1,126 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "items": {
+    "phase5_runtime_probe": {
+      "item_id": "13355c3f-c59a-471e-b96e-754460df1c53",
+      "type": "Notebook",
+      "display_name": "contoso_phase5_runtime_probe_dev",
+      "definition_fingerprint": "b46299c3a95ffea96c63c22374e5fb9d5a4b49a6877ab1bf19ea4722964b52a5",
+      "action": "updated",
+      "verified": true,
+      "exported_part_sha256": {
+        "notebook-content.ipynb": "b7d6a74309f56e8946e77e4d61d50f5482a49e5f4217bfbeb84cdb0093c18fb1",
+        ".platform": "e0d692799f18b6f46b6793f2959eb270b4a77116441c7cdacc26f61fa1799556"
+      }
+    },
+    "phase5_bronze_probe": {
+      "item_id": "83b67667-6a42-4108-ac1b-ee5f911a8248",
+      "type": "Notebook",
+      "display_name": "contoso_phase5_bronze_probe_dev",
+      "definition_fingerprint": "4a519e0077bd741dccbe5731d189f6f090c96a3d263d06411e7b70b37237d44e",
+      "action": "created",
+      "verified": true,
+      "exported_part_sha256": {
+        "notebook-content.ipynb": "f35ac65be4adb6e1e14bd0a474c6042eb8a40feb489639860562fdeb2d04913a",
+        ".platform": "823a2feb42a534625108edb242d6e4810f493d553bc90886fe294bcc7200ad41"
+      }
+    },
+    "phase5_quality_probe": {
+      "item_id": "c60846b1-4d12-4ecc-9cde-518f98faa7da",
+      "type": "Notebook",
+      "display_name": "contoso_phase5_quality_probe_dev",
+      "definition_fingerprint": "72e58ba71dbc7b4f5956a15e092beb9a1456528bcf5969a77bd7cf01a4d61d80",
+      "action": "created",
+      "verified": true,
+      "exported_part_sha256": {
+        "notebook-content.ipynb": "54bc0ca42e8aaf2272e2a674a26eff9bfd574e7bd0cdcc5c6e0a0a2d2bba4c1f",
+        ".platform": "9d72c978bab581131b594241c941f4cf013709206f4ab7f5f01bbe9603ed5be2"
+      }
+    },
+    "phase5_chain_probe": {
+      "item_id": "0c46a801-39f3-4d28-aafe-570e88649f24",
+      "type": "Notebook",
+      "display_name": "contoso_phase5_chain_probe_dev",
+      "definition_fingerprint": "a386d120c60c9c1c25769135a8535361f4534dd14fbfe327cafce0262518f2ca",
+      "action": "created",
+      "verified": true,
+      "exported_part_sha256": {
+        "notebook-content.ipynb": "eef69d9a0adb2a53eaab209ad10a5ed2faf54753468c2310a2492f9d53b97b15",
+        ".platform": "e23aae63c18549a71eea1377e501051563087ed56f21b30856b906d4be9df07e"
+      }
+    },
+    "phase5_recovery_probe": {
+      "item_id": "e828095e-9274-4098-aacf-557f0ea336d3",
+      "type": "Notebook",
+      "display_name": "contoso_phase5_recovery_probe_dev",
+      "definition_fingerprint": "fb4b1b557f088170c277f21f1d84d0def09ca288c7684bd8b139225f734a11f6",
+      "action": "created",
+      "verified": true,
+      "exported_part_sha256": {
+        "notebook-content.ipynb": "a0778e9ef2481652473ea0d7e69b7599054092ba60a3d15232fb4ec0e2940327",
+        ".platform": "b570305540fef4625e439962be5e186e3a4ae9981b0794ae5626102947ecaa48"
+      }
+    },
+    "phase5_quality_window_probe": {
+      "item_id": "3da778b8-2774-4f54-9632-b71d66d02ab4",
+      "type": "Notebook",
+      "display_name": "contoso_phase5_quality_window_probe_dev",
+      "definition_fingerprint": "5f74c0d8467c516b7e606822c542fb4a245ccdcceb5d21af6fc158e1922bd75c",
+      "action": "updated",
+      "verified": true,
+      "exported_part_sha256": {
+        "notebook-content.ipynb": "3f4907c117cbedd25367b4330774509ab56858bedf13b49f5824820accab89dc",
+        ".platform": "151ead1020848352e8634bec725834708f87aa98dfe75b1764f54a9fcfb3056d"
+      }
+    },
+    "phase5_sales_source_probe": {
+      "item_id": "44b6ef5a-f8d4-46e8-ba35-34876c8a9851",
+      "type": "Notebook",
+      "display_name": "contoso_phase5_sales_source_probe_dev",
+      "definition_fingerprint": "45ac50ecbe542b431412771b7e0143022a58670b96e55881aa2664897cf83216",
+      "action": "created",
+      "verified": true,
+      "exported_part_sha256": {
+        "notebook-content.ipynb": "2250bd3bd686d8e6aea0ae9e8829483058c8f83c96520d143a24832091d49707",
+        ".platform": "8fa3e7e88aa2a1db1431b6c40812626990adca94da5b8ea700f750d620c3dad9"
+      }
+    },
+    "phase5_metadata_quality_probe": {
+      "item_id": "861b9c7f-115c-40eb-b135-e50195620674",
+      "type": "Notebook",
+      "display_name": "contoso_phase5_metadata_quality_probe_dev",
+      "definition_fingerprint": "e2d83360fceaea2eaf025faa055dfd4a5c1d216082bbf7ee37b89cb90e36e9b3",
+      "action": "created",
+      "verified": true,
+      "exported_part_sha256": {
+        "notebook-content.ipynb": "ef588654c2a31ec6e4c3a597aa645f0dace8e7b354274babfb35b3cda2098a35",
+        ".platform": "efd960da4c29b3789751a7d1d891624e8ea047c7d37adcbe9155ca853962aa48"
+      }
+    },
+    "phase5_metadata_write_probe": {
+      "item_id": "9df60181-44b6-4863-b2e6-d4041a13091b",
+      "type": "Notebook",
+      "display_name": "contoso_phase5_metadata_write_probe_dev",
+      "definition_fingerprint": "46f2845abc61d1f3d11feb986076fb247ac1549f8d99a8b417a9472d0c5dca42",
+      "action": "created",
+      "verified": true,
+      "exported_part_sha256": {
+        "notebook-content.ipynb": "7c35b4cfe189baca322e20cc04176340e1d3753020c3c2e45cb36090e9f97c5a",
+        ".platform": "bccfb1f49d7197197a2640087b3e3cee8b7a156dd8e519faaffa989d2e0064e3"
+      }
+    },
+    "phase5_exit_probe": {
+      "item_id": "783d4f39-d323-4804-a7ab-dc33a961fff3",
+      "type": "Notebook",
+      "display_name": "contoso_phase5_exit_probe_dev",
+      "definition_fingerprint": "f132bfad8c979353fd4bcabc4d181f62b01cafb89bad2357c0ace3ab517e9b9f",
+      "action": "updated",
+      "verified": true,
+      "exported_part_sha256": {
+        "notebook-content.ipynb": "7e8de21802f2f59d46aec4183e631c244fd9ccc336d9bbf933455113a208bec0",
+        ".platform": "d41910874013d104537a2d7830a763b74b9ace7b5b89eccc80764ec7b8431809"
+      }
+    }
+  },
+  "plan_id": "5b7fed9e38daa48320a25e9d7fff48893e96dafc1852450d0bf1a729db94b5d2"
+}

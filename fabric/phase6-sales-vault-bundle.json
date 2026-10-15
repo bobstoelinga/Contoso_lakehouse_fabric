@@ -1,0 +1,20 @@
+{
+  "contract_version": "1.0",
+  "bundle_id": "contoso_phase6_sales_vault",
+  "scope": "PHASE6_SALES_VAULT_PROOF",
+  "environment_binding": {
+    "path": "environments/contoso.dev.json",
+    "item_id": "7266a872-dd91-4aa6-a0b4-d4cc5b862643"
+  },
+  "library": {
+    "path": "dist/fabric_etl_phase6-0.2.0-py3-none-any.whl",
+    "name": "fabric-etl-phase6",
+    "version": "0.2.0",
+    "sha256": "9010fd01a37b3864ae65f0984aeceee283a7544425d604247d25c24568b18934"
+  },
+  "notebooks": [{
+    "id": "phase6_sales_vault",
+    "display_name": "{project_id}_phase6_sales_vault_{environment}",
+    "source": "fabric/items/phase6_sales_vault.Notebook/notebook-content.py"
+  }]
+}

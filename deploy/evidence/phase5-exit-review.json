@@ -1,0 +1,112 @@
+{
+  "contract_version": "1.0",
+  "review_date": "2026-10-12",
+  "review_status": "COMPLETED",
+  "phase": 5,
+  "phase_status": "COMPLETED",
+  "phase6_released": false,
+  "production_release_accepted": false,
+  "scope": "GENERIC_INGESTION_AND_CONTROL_PLANE",
+  "authority": [
+    "docs/09_fabric_migratieverslag.md:ten-phase-plan",
+    "docs/13_fabric_ontwerpcontract_fase2.md:sections-3-5-9",
+    "docs/15_fabric_fase4_platformbewijs.md"
+  ],
+  "runtime_version": "0.6.1",
+  "wheel_sha256": "7211506d031508eb7942f2b6a95a10bc7679fea5f90513604ce809bf792097a9",
+  "tests": {
+    "runner": "pytest -q tests/test_fabric_exit_receipts.py tests/test_fabric_delivery_runtime.py",
+    "passed": 34,
+    "failed": 0,
+    "duration_seconds": 1.91,
+    "scope": "TARGETED_EXIT_RECEIPT_AND_DELIVERY_REGRESSIONS"
+  },
+  "reverified_receipt_contracts": [
+    "quality_retry", "chain_retry", "recovery", "window",
+    "scalar_regression", "sales_schema", "metadata_retry", "durable_metadata_retry",
+    "exit_first_and_separate_job_retry"
+  ],
+  "evidence_mode": "LIVE_FABRIC_EXIT_PROBE_AND_SEPARATE_JOB_RECOVERY_PLUS_LOCAL_RECEIPT_VERIFICATION_AND_TARGETED_TESTS",
+  "new_fabric_jobs_submitted": 1,
+  "criteria": [
+    {
+      "id": "P5-EXIT-01",
+      "criterion": "Version-pinned deployment, library and definition readback",
+      "status": "PASS_SCOPED",
+      "evidence": [
+        "deploy/evidence/phase5-metadata-write-runtime-upgrade.json",
+        "deploy/evidence/phase5-metadata-write-v2.plan.json",
+        "deploy/evidence/phase5-bundle-journal.json"
+      ],
+      "limit": "Owned probe bundles only; complete pipeline/release redeploy remains a later phase."
+    },
+    {
+      "id": "P5-EXIT-02",
+      "criterion": "Owner fencing, persisted context and separate-job Bronze retry",
+      "status": "PASS_SCOPED",
+      "evidence": [
+        "docs/15_fabric_fase4_platformbewijs.md",
+        "deploy/evidence/phase5-metadata-write-v1-receipt.json",
+        "deploy/evidence/phase5-metadata-write-v1-retry-receipt.json",
+        "deploy/evidence/phase5-metadata-write-retry-verification.json"
+      ],
+      "limit": "Explicit PHASE4_PROOF fixture context; not an activated business delivery."
+    },
+    {
+      "id": "P5-EXIT-03",
+      "criterion": "JSON/CSV/Parquet stable Raw identity multiset across partition changes (T-03)",
+      "status": "PASS_SCOPED",
+      "evidence": [
+        "deploy/evidence/phase5-exit-streaming-v1-receipt.json",
+        "deploy/evidence/phase5-exit-streaming-v1-retry-receipt.json",
+        "deploy/evidence/phase5-exit-streaming-v1-verification.json",
+        "tests/test_fabric_exit_receipts.py"
+      ],
+      "limit": "Live PHASE4_PROOF fixtures; JSON, CSV and Parquet identity multisets and fail-closed schema cases are verified, not business-source acceptance."
+    },
+    {
+      "id": "P5-EXIT-04",
+      "criterion": "Closed delivery gate, persistent chronology and per-file integrity registration",
+      "status": "PASS_SCOPED",
+      "evidence": [
+        "deploy/evidence/phase5-exit-streaming-v1-receipt.json",
+        "deploy/evidence/phase5-exit-streaming-v1-retry-receipt.json",
+        "deploy/evidence/phase5-exit-streaming-v1-verification.json",
+        "tests/test_fabric_delivery_runtime.py"
+      ],
+      "limit": "Durable registration, sequence gate, OneLake inventory and byte/hash checks are live-proven for the isolated proof scope; production source onboarding remains out of scope."
+    },
+    {
+      "id": "P5-EXIT-05",
+      "criterion": "Explicit complete empty snapshot versus missing delivery",
+      "status": "PASS_SCOPED",
+      "evidence": [
+        "deploy/evidence/phase5-exit-streaming-v1-receipt.json",
+        "deploy/evidence/phase5-exit-streaming-v1-retry-receipt.json",
+        "deploy/evidence/phase5-exit-streaming-v1-verification.json",
+        "tests/test_fabric_exit_receipts.py"
+      ],
+      "limit": "Explicit empty-snapshot zero-count commit, audit and separate-job retry are proven with PHASE4_PROOF; no absence-delete or business snapshot is inferred."
+    },
+    {
+      "id": "P5-EXIT-06",
+      "criterion": "Crash boundaries, durable work status and audit repair (phase-5 portion of T-06)",
+      "status": "PASS_SCOPED",
+      "evidence": [
+        "deploy/evidence/phase5-exit-streaming-v1-receipt.json",
+        "deploy/evidence/phase5-exit-streaming-v1-retry-receipt.json",
+        "deploy/evidence/phase5-exit-streaming-v1-verification.json",
+        "tests/test_fabric_exit_receipts.py",
+        "tests/test_fabric_delivery_runtime.py"
+      ],
+      "limit": "Registered, Raw, Bronze, commit and status interruption/recovery plus durable work/audit evidence are live-proven; later Vault/Gold crash boundaries belong to subsequent phases."
+    }
+  ],
+  "not_phase5_blockers": [
+    "Complete Sales Quality references, Vault/BV/PIT and Gold: phase 6",
+    "Real CBS/ECB/Nager/Fabric Sales downstream acceptance: phase 7",
+    "Production SLA/retention and consumer hardening: phases 8-10",
+    "Full release deployment/upgrade acceptance: phase 9"
+  ],
+  "next_action": "Phase 5 exit criteria are verified within the generic ingestion/control-plane scope. Phase 6 has not started, production release remains unaccepted, and the remaining business/runtime gates stay explicit."
+}

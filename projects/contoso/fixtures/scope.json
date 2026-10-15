@@ -1,0 +1,24 @@
+{
+  "source_systems": [
+    "CBS",
+    "ECB",
+    "FABRIC_SALES",
+    "NAGER",
+    "SALES"
+  ],
+  "source_objects": [
+    "CBS.JEUGDZORG_WIJK_2025",
+    "ECB.EXCHANGE_RATE",
+    "FABRIC_SALES.ORDER_LINES",
+    "NAGER.HOLIDAYS_NL",
+    "SALES.CUSTOMERS",
+    "SALES.EMPLOYEES",
+    "SALES.ORDERS",
+    "SALES.PRODUCTS",
+    "SALES.RETURNS"
+  ],
+  "excluded_sources": [
+    "SHAREPOINT"
+  ],
+  "evidence_kind": "CONTRACT_FIXTURE_NOT_SOURCE_DATA"
+}

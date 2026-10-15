@@ -1,0 +1,71 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "items": {
+    "etl_environment": {
+      "item_id": "7266a872-dd91-4aa6-a0b4-d4cc5b862643",
+      "type": "Environment",
+      "display_name": "contoso_etl_dev",
+      "definition_fingerprint": "efbe637aba9aeb8f34dd1817e07552c49317400874b4e2f8ef6bb3855e95eada",
+      "action": "verified",
+      "publication_requested": true,
+      "verified": true,
+      "publish": {
+        "state": "Success",
+        "targetVersion": "d5bc4a93-2cae-454b-b036-ed5e51584118",
+        "startTime": "2026-10-10T13:42:57.4102763Z",
+        "endTime": "2026-10-10T13:46:49.7725016Z",
+        "componentPublishInfo": {
+          "sparkLibraries": {
+            "state": "Success"
+          },
+          "sparkSettings": {
+            "state": "Success"
+          }
+        }
+      },
+      "exported_part_sha256": {
+        "Setting/Sparkcompute.yml": "878607076a0add4ac6d6ee77aa6a30e104b39ddb2103c6950c7db2eea7560593",
+        "Libraries/CustomLibraries/fabric_etl-0.1.0-py3-none-any.whl": "b9da29e98d1d06440b3a04515c32d71a60913ce108d50a705033156b2bab0dbb",
+        ".platform": "0bec1e0f27a715d3a9bb9880f324c2d1bc983a9d1a5b9c11671b0becc711c46a"
+      }
+    },
+    "verify_foundation": {
+      "item_id": "91ec449c-1462-4a48-8fbe-7b146a8a5381",
+      "type": "Notebook",
+      "display_name": "contoso_verify_foundation_dev",
+      "definition_fingerprint": "ea10bfd7adc6e01fdb273f602db22e8974bf742e30a7c5b20b1d794a21cee4b2",
+      "action": "verified",
+      "verified": true,
+      "exported_part_sha256": {
+        "notebook-content.ipynb": "743b0c97a844b24a86fc23e5f2f26c1095b14191be9aa632535180ed3e281e2b",
+        ".platform": "8fd0d966d3eda44a2737418b8ffa01d35348460c375014adf991b094ffab7b18"
+      }
+    },
+    "setup_control": {
+      "item_id": "c3a033d1-850e-49c6-92b6-f076b0e269ca",
+      "type": "Notebook",
+      "display_name": "contoso_setup_control_dev",
+      "definition_fingerprint": "7f6d7087f664a083463b948acf44075f939265a55ed4df1dec6edf532cd7bb4e",
+      "action": "verified",
+      "verified": true,
+      "exported_part_sha256": {
+        "notebook-content.ipynb": "0ebb3439fa7f7dd485e947bf3ab49947deecd3a1a2156202e5e300923b884fcc",
+        ".platform": "283024ed7b72a6b77dd26814a20e8924663e3fb036f04d78e90ef3b6e042bb5b"
+      }
+    },
+    "owner_probe": {
+      "item_id": "19b03dcd-9dbb-448a-83be-f66f20e8f70d",
+      "type": "Notebook",
+      "display_name": "contoso_owner_probe_dev",
+      "definition_fingerprint": "a62dcab8e5ef7a3466d97608e09a8ef28a7d1a84acfc06dc3eb6b9acbd23cd2c",
+      "action": "verified",
+      "verified": true,
+      "exported_part_sha256": {
+        "notebook-content.ipynb": "90250762d8aebc39c91bafd3db3feedd615ff1736b9f2cfdd10000b8fba71db2",
+        ".platform": "54f1ed186953527f82f3c4d8e8e23465dbd2c36a88798712c5909a53c30f822a"
+      }
+    }
+  },
+  "recovery_evidence": "Environment created by phase-four create command; returned regional LRO location was refused. Reconciled public API item identity and export operation eef11de0-8333-434f-84a9-4cba34931200 without create retry.",
+  "plan_id": "314ef93edeff6a558608892950a42fe6b02880ec8479d1f7a99282d79e10c626"
+}

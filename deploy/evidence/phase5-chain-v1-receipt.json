@@ -1,0 +1,449 @@
+{
+  "workspace_id": "4be37544-10b9-450d-80f0-f9b3d793b83b",
+  "item_id": "0c46a801-39f3-4d28-aafe-570e88649f24",
+  "job_url": "https://api.fabric.microsoft.com/v1/workspaces/4be37544-10b9-450d-80f0-f9b3d793b83b/items/0c46a801-39f3-4d28-aafe-570e88649f24/jobs/instances/28b53341-4468-4f15-94b9-020f023968c3",
+  "status": "COMPLETED",
+  "job": {
+    "id": "28b53341-4468-4f15-94b9-020f023968c3",
+    "itemId": "0c46a801-39f3-4d28-aafe-570e88649f24",
+    "jobType": "RunNotebook",
+    "invokeType": "Manual",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "6766312e-e275-45bd-a0c1-3a75c527d394",
+    "startTimeUtc": "2026-10-11T09:37:50.1237387",
+    "endTimeUtc": "2026-10-11T09:50:39.2455319",
+    "exit_result": {
+      "deliveries": [
+        {
+          "accounting": {
+            "bronze_count": 3,
+            "counts": {
+              "FILTERED": 0,
+              "PASSED": 3,
+              "REJECTED": 0
+            },
+            "rules": [
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 3,
+                "rule_id": "customer_key",
+                "threshold_percent": 0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 3,
+                "rule_id": "segment_key",
+                "threshold_percent": 0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 3,
+                "rule_id": "delete_flag",
+                "threshold_percent": 0,
+                "violation_percent": 0.0,
+                "violations": 0
+              }
+            ]
+          },
+          "batch_id": "a011f88f-a8f2-5102-9b94-d517424bdd8e",
+          "bronze": {
+            "inserted_count": 3,
+            "output_fingerprint": "13784bcd1e915f6feba4cabe78cd06e54b211705041072ff475cba6d01c6901d",
+            "record_count": 3,
+            "retry_count": 0,
+            "status": "SUCCEEDED",
+            "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_chain_customers`"
+          },
+          "business_vault": {
+            "pit": {
+              "inserted_count": 2,
+              "output_fingerprint": "90e2238dc05cdcedfed4ff240421ee4fbc662483a1e88028f97dae7ca57b20d3",
+              "record_count": 2,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase5_chain_pit_customer`"
+            },
+            "satellite": {
+              "inserted_count": 2,
+              "output_fingerprint": "a44628edf7965d29850daf4fb54bfce399e5e10f797c13ca7c89310aead20314",
+              "record_count": 2,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase5_chain_sat_customer_bv`"
+            }
+          },
+          "commits": {
+            "bronze": {
+              "commit_id": "7e52bb7699d0493ddfc23a00194388dde6631ea9569a9189ecc916ca42108ced",
+              "status": "COMMITTED"
+            },
+            "business_vault": {
+              "commit_id": "1a7b591a6c067bf716b18e92bb01c59e78bdc34a7b5ebb44580e5fdc0aa6399c",
+              "status": "COMMITTED"
+            },
+            "gold": {
+              "commit_id": "9ace0a243773cefe61cb08179ab036ac9e2d927ddd4337fa6a8346065596463c",
+              "status": "COMMITTED"
+            },
+            "quality": {
+              "commit_id": "7761597b3b72fb3a5c3d21c739776b7c2b8c3989f656e292ae19faf489f63905",
+              "status": "COMMITTED"
+            },
+            "vault": {
+              "commit_id": "399e971f6609092f27e451a3989ba3342a104807eb3193dc9c880ee26936f52a",
+              "status": "COMMITTED"
+            }
+          },
+          "delivery_id": "PHASE5_CHAIN_PROBE|01",
+          "gold": {
+            "current": {
+              "inserted_count": 2,
+              "output_fingerprint": "06ada372e57ecdc0a2457cb1fbf2330908a957195183088b1035ae6033473248",
+              "record_count": 2,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase5_chain_customer_releases`"
+            },
+            "historical": {
+              "inserted_count": 2,
+              "output_fingerprint": "06ada372e57ecdc0a2457cb1fbf2330908a957195183088b1035ae6033473248",
+              "record_count": 2,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase5_chain_customer_releases`"
+            }
+          },
+          "load_date_utc": "2026-10-11T09:40:39.062308+00:00",
+          "quality": {
+            "inserted_count": 3,
+            "output_fingerprint": "4377cf9f15a049f9980a9124e737e07ee79331b1ffd3cfb028002d45ec7bcd15",
+            "record_count": 3,
+            "retry_count": 0,
+            "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase5_chain_customers`"
+          },
+          "raw_vault": {
+            "customer_hub": {
+              "inserted_count": 2,
+              "output_fingerprint": "6e83f46b817acc5e001b9cbebcdc6f1224c6e04722709b49e773e4f14edc3357",
+              "record_count": 2,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase5_chain_hub_customer`"
+            },
+            "link": {
+              "inserted_count": 2,
+              "output_fingerprint": "8923cc0f483243117f521613be827bb8423e48e01bf5742af325e944de939c34",
+              "record_count": 2,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase5_chain_link_customer_segment`"
+            },
+            "satellite": {
+              "inserted_count": 2,
+              "output_fingerprint": "92660ea086560677a74a76c30c02156140316e4d1544190371b26fc8699bb185",
+              "record_count": 2,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase5_chain_sat_customer`"
+            },
+            "segment_hub": {
+              "inserted_count": 2,
+              "output_fingerprint": "6b676db628fcd3fe239fca61fe3cc58c2029630aef3e612dde77860b4387380f",
+              "record_count": 2,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase5_chain_hub_segment`"
+            }
+          }
+        },
+        {
+          "accounting": {
+            "bronze_count": 2,
+            "counts": {
+              "FILTERED": 0,
+              "PASSED": 2,
+              "REJECTED": 0
+            },
+            "rules": [
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 2,
+                "rule_id": "customer_key",
+                "threshold_percent": 0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 2,
+                "rule_id": "segment_key",
+                "threshold_percent": 0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 2,
+                "rule_id": "delete_flag",
+                "threshold_percent": 0,
+                "violation_percent": 0.0,
+                "violations": 0
+              }
+            ]
+          },
+          "batch_id": "90304ee8-5690-57f2-95fb-16c964bd7648",
+          "bronze": {
+            "inserted_count": 2,
+            "output_fingerprint": "41314a4b8c7e1c5c2a6dbd7018a488c2b81cd0aa3d5f06d06580614068bf2b60",
+            "record_count": 2,
+            "retry_count": 0,
+            "status": "SUCCEEDED",
+            "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_chain_customers`"
+          },
+          "business_vault": {
+            "pit": {
+              "inserted_count": 2,
+              "output_fingerprint": "d699891503a04bd703adfef7800a56197aeef89e5a13dffd4c44d3f708ecb8ba",
+              "record_count": 2,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase5_chain_pit_customer`"
+            },
+            "satellite": {
+              "inserted_count": 1,
+              "output_fingerprint": "c55ef8697d6dfbd5a3d6b7a153e403fcd2d12972597d5a375e83615f1189d7b7",
+              "record_count": 1,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase5_chain_sat_customer_bv`"
+            }
+          },
+          "commits": {
+            "bronze": {
+              "commit_id": "d96a8b7e1cab364c718bec787e541c7a15ccfbfaea0cfe43054573faaf4d61f4",
+              "status": "COMMITTED"
+            },
+            "business_vault": {
+              "commit_id": "5ef54a44840cda9531ced1f1bc7ef97f20620104faac66a29aa0c1d1254006fb",
+              "status": "COMMITTED"
+            },
+            "gold": {
+              "commit_id": "456d75b5d53af9ea3a93503fefcd2e68e792cb909c9b2e4ce5003a6018c1a282",
+              "status": "COMMITTED"
+            },
+            "quality": {
+              "commit_id": "6c453ef0e35a3f3a8f881e6c76cee34ff8d4fabf8f6247a3497fb068a2f5cec0",
+              "status": "COMMITTED"
+            },
+            "vault": {
+              "commit_id": "cb0415672f3914cc78234eb88480021ce4eff4383e7c67d9549edd45dedb39af",
+              "status": "COMMITTED"
+            }
+          },
+          "delivery_id": "PHASE5_CHAIN_PROBE|02",
+          "gold": {
+            "current": {
+              "inserted_count": 2,
+              "output_fingerprint": "a234bfc287d88933ec756a8bdc87be3f69b20d4b697d717bef143d36035139fd",
+              "record_count": 2,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase5_chain_customer_releases`"
+            },
+            "historical": {
+              "inserted_count": 3,
+              "output_fingerprint": "03860a34005b1c6ba250137708e8922db668e555fb56508a335ea584cae653e1",
+              "record_count": 3,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase5_chain_customer_releases`"
+            }
+          },
+          "load_date_utc": "2026-10-11T09:43:55.815568+00:00",
+          "quality": {
+            "inserted_count": 2,
+            "output_fingerprint": "89ab823393ab3aeeb65844477798c79590b9f177f78f13aaea43cb20fbb12e9d",
+            "record_count": 2,
+            "retry_count": 0,
+            "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase5_chain_customers`"
+          },
+          "raw_vault": {
+            "customer_hub": {
+              "inserted_count": 0,
+              "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "record_count": 0,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase5_chain_hub_customer`"
+            },
+            "link": {
+              "inserted_count": 1,
+              "output_fingerprint": "f1170a79117984e75aaeabd5e8c95fa2332daa1ed419f3322ff3fcb09b1e4ad8",
+              "record_count": 1,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase5_chain_link_customer_segment`"
+            },
+            "satellite": {
+              "inserted_count": 1,
+              "output_fingerprint": "27f7553c9530064e026b8def62daa9cab84c0f1f00b23885b65ab8afb0891b5a",
+              "record_count": 1,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase5_chain_sat_customer`"
+            },
+            "segment_hub": {
+              "inserted_count": 0,
+              "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "record_count": 0,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase5_chain_hub_segment`"
+            }
+          }
+        },
+        {
+          "accounting": {
+            "bronze_count": 2,
+            "counts": {
+              "FILTERED": 0,
+              "PASSED": 2,
+              "REJECTED": 0
+            },
+            "rules": [
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 2,
+                "rule_id": "customer_key",
+                "threshold_percent": 0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 2,
+                "rule_id": "segment_key",
+                "threshold_percent": 0,
+                "violation_percent": 0.0,
+                "violations": 0
+              },
+              {
+                "action": "FAIL_BATCH",
+                "breached": false,
+                "population": 2,
+                "rule_id": "delete_flag",
+                "threshold_percent": 0,
+                "violation_percent": 0.0,
+                "violations": 0
+              }
+            ]
+          },
+          "batch_id": "6f77e3c9-c967-53ab-ab01-be4986a095b1",
+          "bronze": {
+            "inserted_count": 2,
+            "output_fingerprint": "a7ec76ef0801649edd033c2aaad403874f9fadb421c363dd6767a41d42b1ee27",
+            "record_count": 2,
+            "retry_count": 0,
+            "status": "SUCCEEDED",
+            "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`bronze`.`phase5_chain_customers`"
+          },
+          "business_vault": {
+            "pit": {
+              "inserted_count": 2,
+              "output_fingerprint": "24db39e3ff4592b718ebcc0f9f36bd4e6d429c95723072dfa7cd93bb5b228b37",
+              "record_count": 2,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase5_chain_pit_customer`"
+            },
+            "satellite": {
+              "inserted_count": 1,
+              "output_fingerprint": "3bdbf566dcefdeb4aaa3686c603919b4750270071843e0b830e6fb50c6d4884d",
+              "record_count": 1,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`business_vault`.`phase5_chain_sat_customer_bv`"
+            }
+          },
+          "commits": {
+            "bronze": {
+              "commit_id": "a3b016614f0f43bf023767aa10cbb855cfa61c4024d9ca747563f6e4b03e6478",
+              "status": "COMMITTED"
+            },
+            "business_vault": {
+              "commit_id": "e659b7c9cb587772da76b5db026a4faf1696a1e8a7a43b022689c8a512947cff",
+              "status": "COMMITTED"
+            },
+            "gold": {
+              "commit_id": "c813d73fce78b1ad8d94a68676b1e552cd753b39f2fc6bd8b2ae3988822e16fd",
+              "status": "COMMITTED"
+            },
+            "quality": {
+              "commit_id": "5b1f189cb3ab00490399ddfb4b52046fb8bc2cf35902f5482c866453acdffefc",
+              "status": "COMMITTED"
+            },
+            "vault": {
+              "commit_id": "7c759fa1a586fa391adad687efcc8bafa0208497f4b156e1355d3309c1facdee",
+              "status": "COMMITTED"
+            }
+          },
+          "delivery_id": "PHASE5_CHAIN_PROBE|03",
+          "gold": {
+            "current": {
+              "inserted_count": 1,
+              "output_fingerprint": "b4b13769179de97c06380445809d66235c4a9659000c4431c0ce6f0526cfc7df",
+              "record_count": 1,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`current`.`phase5_chain_customer_releases`"
+            },
+            "historical": {
+              "inserted_count": 4,
+              "output_fingerprint": "debc67c8a8c26891e70a6ee3cec7a76a3617da6a2dc1ee61513cf7b7d8e759fc",
+              "record_count": 4,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_gold`.`historical`.`phase5_chain_customer_releases`"
+            }
+          },
+          "load_date_utc": "2026-10-11T09:46:57.043768+00:00",
+          "quality": {
+            "inserted_count": 2,
+            "output_fingerprint": "7d5477946a8c2b884a88c93840581e42311fa90c31341c58b7471298490aa796",
+            "record_count": 2,
+            "retry_count": 0,
+            "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`quality`.`phase5_chain_customers`"
+          },
+          "raw_vault": {
+            "customer_hub": {
+              "inserted_count": 0,
+              "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "record_count": 0,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase5_chain_hub_customer`"
+            },
+            "link": {
+              "inserted_count": 0,
+              "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "record_count": 0,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase5_chain_link_customer_segment`"
+            },
+            "satellite": {
+              "inserted_count": 1,
+              "output_fingerprint": "06af540625f3d75cf24cf579bb59ce7a743bdec8f2c58ba6fa6bb01024111e9b",
+              "record_count": 1,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase5_chain_sat_customer`"
+            },
+            "segment_hub": {
+              "inserted_count": 0,
+              "output_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "record_count": 0,
+              "retry_count": 0,
+              "target_table": "`Contoso_lakehouse_ontwikkel`.`lh_contoso_processing`.`raw_vault`.`phase5_chain_hub_segment`"
+            }
+          }
+        }
+      ],
+      "owner_released": true,
+      "phase5_version": "0.2.0",
+      "production_release_accepted": false,
+      "scope": "PHASE5_SYNTHETIC_CHAIN_THREE_DELIVERIES",
+      "status": "SUCCEEDED"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+SELECT customer_hk, customer_key, customer_name, email, phone, full_address, city, state_province, postal_code, country_code, customer_segment, customer_type, tenure_band, is_contactable, customer_since, valid_from AS last_changed_at FROM {gold}.historical.dim_customer_hist WHERE is_current AND NOT is_deleted

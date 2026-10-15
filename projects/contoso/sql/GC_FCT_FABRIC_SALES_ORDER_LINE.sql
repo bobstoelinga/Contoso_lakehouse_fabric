@@ -1,0 +1,1 @@
+SELECT sales_order_detail_id, order_quantity, unit_price, unit_price_discount, total_due_amount, order_status_code, source_last_modified_at FROM {gold}.historical.fct_fabric_sales_order_line_hist WHERE is_current AND NOT is_deleted
