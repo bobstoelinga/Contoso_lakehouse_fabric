@@ -27,7 +27,9 @@ python -m pytest -q
 ```
 
 De tests valideren de lokale Fabric-code en bewijzen geen succesvolle
-uitvoering of productieacceptatie in een Fabric-omgeving.
+uitvoering of productieacceptatie in een Fabric-omgeving. Pytest zet de
+checksumgevoelige wheel-testfixtures uit `tests/fixtures/wheels/` klaar in
+de genegeerde map `dist/`.
 
 ## Migratiedocumentatie
 
